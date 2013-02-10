@@ -238,6 +238,7 @@ nav a {
 	display:block;
 	margin-bottom:15px;
 	margin-top:8px;
+	max-width:100%;
 }
 
 .imgcenter {
@@ -325,11 +326,11 @@ pre {
 
 .centvideo {
 	display:block;
-	margin:0 auto;
+	margin:20px auto;
 }
 
 @media screen and (max-width: 850px) {
-	.imgcenter,.imgleft,.imgright,article img {
+	.imgcenter,.imgleft,.imgright,article img,.centaudio,.centvideo {
 		max-width:100%;
 	}
 

@@ -4,7 +4,7 @@
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-10T13:51:11+01:00</updated>
+  <updated>2013-02-10T17:20:52+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
@@ -60,7 +60,7 @@ installé la version Beta mi-Décembre. Le résultat est quasiment parfais. Je s
 La nouvelle version de l’installateur &lt;a href=&quot;http://fedoraproject.org/wiki/Anaconda&quot;&gt;Anaconda&lt;/a&gt; est déroutante, surtout quand on est habitué aux anciens installateurs. Dorénavant, il n’y pas d’ordre pour les différentes étapes (partitionnement, fuseau horaire),
 vous êtes juste obligé de paramétrer toutes les options, avant de pouvoir commencer l’installation. D’ailleurs, j’ai remplacé le miroir par défaut pour un autre situé en Allemagne, car l’installation avait un bug avec ceux inclus automatiquement.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png 700 454&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;J’ai d’abord choisi &lt;a href=&quot;http://mate-desktop.org/&quot;&gt;MATE&lt;/a&gt; que j’attendais beaucoup, mais je n’ai pas été convaincu par ce dernier, donc je suis retourné sous Xfce 4.10. Les changements sont les bienvenus, comme par exemple le remplacement de GDM par &lt;a href=&quot;https://launchpad.net/lightdm&quot;&gt;lightDM&lt;/a&gt;
 (ce qui évite donc des dépendances GNOME presque inutiles) ou encore le dossier /tmp monté automatiquement en tmpfs. Même en passant par BFO, j’ai désinstallé quelques logiciels inclus de base comme Pragha, car je sais pertinemment que je n’allais pas les utiliser.&lt;/p&gt;
@@ -436,7 +436,7 @@ Le cœur n’y était pas, j’étais prêt à appeller le service Orange et à 
 
 &lt;p&gt;Vous pouvez aussi le télécharger avec curl / wget.&lt;/p&gt;
 
-&lt;video width=&quot;800&quot; height=&quot;500&quot; controls=&quot;controls&quot;&gt;&lt;source src=&quot;http://linuxien.legtux.org/uploads/media/cast.ogv&quot; type=&quot;video/ogg&quot; /&gt;&lt;/video&gt;
+&lt;video width=&quot;800&quot; height=&quot;500&quot; class=&quot;centvideo&quot; controls=&quot;controls&quot;&gt;&lt;source src=&quot;http://linuxien.legtux.org/uploads/media/cast.ogv&quot; type=&quot;video/ogg&quot; /&gt;&lt;/video&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -O http://linuxien.legtux.org/uploads/media/cast.ogv
 #ou
@@ -502,7 +502,7 @@ wget http://linuxien.legtux.org/uploads/media/cast.ogv
 
 &lt;p&gt;Dorénavant, il suffit de désactiver ces services (faites attention à ne pas en avoir besoin). Je sais que sendmail est utilisé par Thunderbird, mais je n’en suis pas à 100% sûr. Dans mon cas, j’ai juste touché aux services sendmail et iscsi et ça a suffit pour gagner environ 3 à 4 secondes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/05/screen.png&quot; /&gt; Avant le “tweak”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2012/05/screen.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/05/screen.png&quot; /&gt;&lt;/a&gt; Avant le “tweak”&lt;/p&gt;
 
 &lt;p&gt;On doit user de la commande systemctl pour faire le ménage dans ces services. J’ai donc procédé comme ceci:&lt;/p&gt;
 
@@ -517,7 +517,7 @@ sudo systemctl disable sendmail.service
 
 &lt;p&gt;Faites de même avec les services qui vous posent problèmes. Voilà de précieuses secondes gagnés lors du boot. Je dois dire que c’est assez agréable.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/05/screen2.png&quot; /&gt; Après le “tweak”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2012/05/screen2.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/05/screen2.png&quot; /&gt;&lt;/a&gt; Après le “tweak”&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt; - Plymouth -&lt;/strong&gt;&lt;/p&gt;
 
@@ -582,7 +582,7 @@ GRUB_CMDLINE_LINUX=&quot;rd.md=0 rd.lvm=0 rd.dm=0 quiet SYSFONT=latarcyrheb-sun1
 
 &lt;p&gt;Il y a plusieurs mois, je m’étais mis à Fedora 16 avec GNOME 3 (en mode Fallback) mais non content de certaines choses, comme des programmes qui crashent ou sinon des widgets qui refusent de se lancer au démarrage, j’ai changé d’environnement. J’ai switché sur XFCE et je suis plus que satisfait de ce changement. J’ai pu obtenir un système très stable et qui répond parfaitement à mes besoins.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/04/Capture.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2012/04/Capture.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/04/Capture.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;J’ai grandement modifié les services qui se lancent au démarrage, afin de gagner quelques secondes au boot (désactivation de Plymouth). Je me suis donc frotté à SystemD, pour la première fois et j’ai été assez étonné du fonctionnement.&lt;/p&gt;
 
@@ -1170,7 +1170,7 @@ Cette ligne n’est pas compliquée, elle déclare à moc d’utiliser 10% d’e
 
 &lt;p&gt;Tout simplement, parce que Ranger affiche trois colonnes “liées” et qu’il est donc plus facile de naviguer dans l’arborescence, alors que mc affiche deux colonnes indépendantes. Avec Ranger, vous pouvez aussi voir dans la troisième colonne un aperçu du fichier/dossier sélectionné. Si par exemple, c’est un fichier texte, vous avez un aperçu avec nano, ou avec un fichier audio/vidéo, les propriétés du fichier sont affichées (vous aurez besoin de &lt;a href=&quot;http://mediainfo.sourceforge.net/en&quot;&gt;mediainfo&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png 700 296&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Il dispose d’autres avantages extrêmement utiles:&lt;/p&gt;
 

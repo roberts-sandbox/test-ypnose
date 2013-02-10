@@ -30,7 +30,7 @@ J'ai donc décide d'écrire un article, qui vous permettra d'y voir un peu plus 
 
 Il y a plusieurs mois, je m'étais mis à Fedora 16 avec GNOME 3 (en mode Fallback) mais non content de certaines choses, comme des programmes qui crashent ou sinon des widgets qui refusent de se lancer au démarrage, j'ai changé d'environnement. J'ai switché sur XFCE et je suis plus que satisfait de ce changement. J'ai pu obtenir un système très stable et qui répond parfaitement à mes besoins.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/Capture.png">
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/Capture.png">](http://linuxien.legtux.org/uploads/images/2012/04/Capture.png)
 
 J'ai grandement modifié les services qui se lancent au démarrage, afin de gagner quelques secondes au boot (désactivation de Plymouth). Je me suis donc frotté à SystemD, pour la première fois et j'ai été assez étonné du fonctionnement.
 

@@ -55,7 +55,7 @@ J'étais déjà très content de mc, qui me permettait de gérer mes fichiers as
 
 Tout simplement, parce que Ranger affiche trois colonnes "liées" et qu'il est donc plus facile de naviguer dans l'arborescence, alors que mc affiche deux colonnes indépendantes. Avec Ranger, vous pouvez aussi voir dans la troisième colonne un aperçu du fichier/dossier sélectionné. Si par exemple, c'est un fichier texte, vous avez un aperçu avec nano, ou avec un fichier audio/vidéo, les propriétés du fichier sont affichées (vous aurez besoin de [mediainfo](http://mediainfo.sourceforge.net/en)).
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png 700 296">](http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png)
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png">](http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png)
 
 Il dispose d'autres avantages extrêmement utiles:
 

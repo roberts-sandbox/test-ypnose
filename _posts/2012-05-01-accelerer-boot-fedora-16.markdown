@@ -55,7 +55,7 @@ Et là, on voit nettement quels sont les services qui prennent le plus de temps 
 
 Dorénavant, il suffit de désactiver ces services (faites attention à ne pas en avoir besoin). Je sais que sendmail est utilisé par Thunderbird, mais je n'en suis pas à 100% sûr. Dans mon cas, j'ai juste touché aux services sendmail et iscsi et ça a suffit pour gagner environ 3 à 4 secondes.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen.png"> Avant le "tweak"
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen.png">](http://linuxien.legtux.org/uploads/images/2012/05/screen.png) Avant le "tweak"
 
 On doit user de la commande systemctl pour faire le ménage dans ces services. J'ai donc procédé comme ceci:
 
@@ -68,7 +68,7 @@ Dans mon cas:
 
 Faites de même avec les services qui vous posent problèmes. Voilà de précieuses secondes gagnés lors du boot. Je dois dire que c'est assez agréable.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen2.png"> Après le "tweak"
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen2.png">](http://linuxien.legtux.org/uploads/images/2012/05/screen2.png) Après le "tweak"
 
 ** - Plymouth -**
 
