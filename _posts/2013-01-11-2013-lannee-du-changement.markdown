@@ -49,7 +49,7 @@ installé la version Beta mi-Décembre. Le résultat est quasiment parfais. Je s
 La nouvelle version de l'installateur [Anaconda](http://fedoraproject.org/wiki/Anaconda) est déroutante, surtout quand on est habitué aux anciens installateurs. Dorénavant, il n'y pas d'ordre pour les différentes étapes (partitionnement, fuseau horaire),
 vous êtes juste obligé de paramétrer toutes les options, avant de pouvoir commencer l'installation. D'ailleurs, j'ai remplacé le miroir par défaut pour un autre situé en Allemagne, car l'installation avait un bug avec ceux inclus automatiquement.
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png 700 454">](http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png)
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png">](http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png)
 
 J'ai d'abord choisi [MATE](http://mate-desktop.org/) que j'attendais beaucoup, mais je n'ai pas été convaincu par ce dernier, donc je suis retourné sous Xfce 4.10. Les changements sont les bienvenus, comme par exemple le remplacement de GDM par [lightDM](https://launchpad.net/lightdm)
 (ce qui évite donc des dépendances GNOME presque inutiles) ou encore le dossier /tmp monté automatiquement en tmpfs. Même en passant par BFO, j'ai désinstallé quelques logiciels inclus de base comme Pragha, car je sais pertinemment que je n'allais pas les utiliser.
