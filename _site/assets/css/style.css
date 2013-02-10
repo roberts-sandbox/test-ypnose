@@ -1,0 +1,399 @@
+/* FONT */
+
+@font-face {
+	font-family:"Oswald";
+	src:url("/assets/fonts/Oswald-Regular.ttf")
+}
+
+@font-face {
+	font-family:"Rambla";
+	src:url("/assets/fonts/Rambla-Regular.ttf")
+}
+
+/* MAIN */
+
+html {
+	background-image:url("/assets/images/back_d.png");
+}
+
+body {
+	font-family:"Rambla", sans-serif;
+	font-size:100%;
+}
+
+.container {
+	max-width:850px;
+	margin:10px auto 25px;
+}
+
+#widthmes {
+	display:none;
+}
+
+/* GLOBAL */
+
+h1,h2,h3,h4,h5,h6,.index h1 a,.archive article h1 a {
+	color:#1d1d1d;
+	font-family:"Oswald", sans-serif;
+}
+
+body,nav ul,.infobox,#lastart,#button a,.archive article,.category {
+	text-align:center;
+}
+
+body,nav ul {
+	margin:0;
+}
+
+.githubrib,.githubrib:hover {
+	border:0;
+}
+
+.githubrib:hover,a,a:hover,nav a:hover,#button a {
+	text-decoration:none;
+}
+
+.githubrib,header {
+	background-repeat:no-repeat;
+}
+
+.infobox,.archive article h2 {
+	border-bottom:2px solid #C8C8C8;
+}
+
+.cat,.desc {
+	font-size:0.9em;
+}
+
+.index article,article,#lastart {
+	padding:0;
+}
+
+/* H FAMILY */
+
+h1 {
+	font-size:1.8em;
+}
+
+h2 {
+	font-size:1.5em;
+}
+
+h3 {
+	font-size:1.3em;
+}
+
+h4 {
+	font-size:1.2em;
+}
+
+/* GITHUB */
+
+.githubrib {
+	background-image:url(/assets/images/github_forkme.png);
+	display:block;
+	position:fixed;
+	width:149px;
+	height:149px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	top:0;
+	right:0;
+}
+
+/* LINKS */
+
+a {
+	color:#005994;
+	outline:none;
+}
+
+a:hover,.archive article a:hover {
+	color:#1980C5;
+	border-bottom:2px solid #344061;
+}
+
+a:visited {
+	color:#346E94;
+}
+
+/* HEADER */
+
+header {
+	background-image:url("/assets/images/logo.png");
+	background-position:center top;
+	display:block;
+	height:106px;
+}
+
+/* NAVIGATION */
+
+nav {
+	margin:30px 60px 0;
+}
+
+nav ul {
+	list-style-type:none;
+	padding:0 0 12px;
+}
+
+nav ul li {
+	display:inline;
+}
+
+nav a {
+	margin:0 7px;
+}
+
+/* BAR */
+
+.barnav,.barfoot {
+	border-top:1px solid #BDBDBD;
+	border-bottom:1px solid #FFF;
+}
+
+.barnav {
+	margin:0 60px 10px;
+}
+
+.barart {
+	margin:10px 20px;
+	border-bottom:1px solid #C8C8C8;
+}
+
+.barfoot {
+	margin:10px 30px;
+}
+
+/* VARIOUS */
+
+.infobox {
+	margin:0 80px 30px;
+	padding:0 0 10px;
+}
+
+.archive article h1 {
+	margin-top:20px;
+}
+
+.archive article h1 a:hover {
+	color:#344061;
+}
+
+.archive article h2 {
+	margin:20px 80px;
+	padding-bottom:10px;
+}
+
+.archold {
+	margin:16px 0;
+}
+
+.category {
+}
+
+#button a {
+	display:block;
+	position:fixed;
+	bottom:30px;
+	right:50px;
+	background-color:#242C42;
+	border:2px solid #323D5C;
+	width:30px;
+	padding:4px 0px;
+	text-shadow:1px 1px 0 rgba(0,0,0,0.3);
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	font-weight:bold;
+	color:#FFF;
+	height:18px;
+}
+
+/* INDEX */
+
+.index article {
+	margin:10px auto;
+}
+
+.spleft {
+	float:left;
+}
+
+.spright {
+	float:right;
+}
+
+.desc {
+	text-align:left;
+	padding-left:20px;
+	color:#232328;
+	display:inline-block;
+}
+
+/* IMAGES */
+
+.imgcenter,.imgleft,.imgright {
+	display:block;
+	margin-bottom:15px;
+	margin-top:8px;
+}
+
+.imgcenter {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.imgleft {
+	float:left;
+	margin-right:25px;
+}
+
+.imgright {
+	float:right;
+	margin-left:25px;
+}
+
+/* CONTENT */
+
+article h1 {
+	margin-bottom:12px;
+}
+
+article {
+	max-width:800px;
+	margin:auto;
+	text-align:justify;
+	font-size:1.1em;
+	line-height:1.6em;
+	color:#1d1d1d;
+}
+
+article ul,article ol {
+	padding-left:25px;
+	margin:25px 0;
+}
+
+article img {
+	background-color:#E6E6E6;
+	margin:20px 0;
+	padding:5px;
+	outline:1px solid #CFCFCF;
+}
+
+#lastart h4 {
+	margin:12px 0 5px;
+}
+
+#lastart {
+	line-height:1.7em;
+}
+
+/* FOOTER */
+
+footer {
+	margin:0 10px;
+	font-size:0.95em;
+	line-height:1.3em;
+}
+
+footer a {
+	margin:0 5px;
+}
+
+footer div {
+	margin:5px 0;
+}
+
+pre {
+	display:block;
+	color:#1D4D59;
+	background-color:#C2C2C2;
+	border:1px solid #9D9D9D;
+	padding:8px 13px;
+	overflow-x:auto;
+}
+
+/* MEDIA */
+
+/* centaudio à retravailler! */
+.centaudio {
+	margin:10px auto;
+	width:400px;
+}
+
+.centvideo {
+	display:block;
+	margin:0 auto;
+}
+
+@media screen and (max-width: 850px) {
+	.imgcenter,.imgleft,.imgright,article img {
+		max-width:100%;
+	}
+
+	.index article {
+		margin:10px 20px;
+	}
+
+	article {
+		margin:0 20px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	nav {
+		margin:20px 30px 0;
+	}
+
+	.githubrib {
+		background:none;
+		display:none;
+	}
+
+	header {
+		background-image:url("/assets/images/logo_s.png");
+		background-position:center top;
+		background-repeat:no-repeat;
+		display:block;
+		height:53px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav {
+		margin:10px 30px 0;
+	}
+
+	.barnav,.infobox {
+		margin:0 25px 10px;
+	}
+
+	.barfoot,.barart {
+		margin:8px 25px;
+	}
+
+	.spright,.spleft {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#widthmes {
+		display:inline-block;
+		font-size:0.8em;
+		background-color:#EDEDED;
+		color:#B30035;
+		border:1px solid #CDCDCD;
+		margin:5px 8px;
+	}
+
+	.imgcenter,.imgleft,.imgright,article img {
+		display:none;
+	}
+
+	.desc {
+		text-align:left;
+	}
+}

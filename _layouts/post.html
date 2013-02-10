@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+	<div class="infobox">
+
+		<h1>{{ page.title }}</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">{{ site.author }}</a> - Posté le {{ page.date | date: "%d.%m.%Y" }}
+		</div>
+		<div>
+			{% for cat in page.categories limit:7 %}<span> &rarr; </span><a href="/categories/{{ cat }}">{{ cat }}</a>{% endfor %}
+		</div>
+
+	</div>
+
+	{{ content }}
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	{% for post in site.posts limit:5 %}
+		<div class="artlink"><span>&rsaquo; </span>{{ post.date | date: "%d.%m.%Y" }}<span>&nbsp;&rarr; </span><a href="{{ post.url }}">{{ post.title }}</a></div>
+	{% endfor %}
+</div>

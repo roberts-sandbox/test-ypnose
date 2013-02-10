@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Funtoo: Compilez! - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Funtoo: Compilez!</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 17.06.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Test">Test</a>
+		</div>
+
+	</div>
+
+	<p>Bonjour,</p>
+
+<p>En appliquant ma curiosité légendaire, j’ai par conséquent décidé de me constituer un dualboot, sur mon nouvel ordi. Dans un article plus ancien, j’avais expliqué que je souhaitais essayer une Gentoo. J’ai entendu beaucoup de bien d’une distrib appelé Funtoo, qui a été crée par le grand manitou de Gentoo. Il a quitté le navire en 2008, à cause de problèmes de licences. Attention, ce n’est pas un fork mais une autre variante de Gentoo.</p>
+
+<!-- more -->
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/06/gentoologo.png" /></p>
+
+<p>Je précise que je reste fidèle à ma Arch, qui me satisfait pleinement. Comme je l’ai dit souvent, c’est ma meilleure expérience GNU/Linux. J’utiliserai surtout cette Funtoo à un but expérimental.</p>
+
+<p>Avant tout, il faut être sûr d’avoir des partitions disponibles. Le schéma habituel, à savoir: une racine /, un /home séparé et un /boot de quelques Mo. Funtoo ne s’installe qu’avec <a href="http://lea-linux.org/documentations/index.php/Admin-admin_env-chroot">chroot</a>. Une occasion pour moi, de tester cette méthode que je n’utilise pas. Pour ma Arch, j’utilise l’iso sur une clé USB. L’installation en elle même, est un tantinet plus compliquée que pour une Archlinux. Vous aurez besoin d’une connexion Internet, sans quoi, l’installation doit être encore plus hardue. Vous avez deux choix: utiliser la branche stable ou current, avec beaucoup de softs récents mais peut-être moins fonctionnels. J’ai opté pour la branche “Stable” car je souhaite avoir un système exploitable. En fonction de votre choix (branche, 32 ou 64 bits et processeur), vous télécharger ce que l’on appelle stage3 et l’arbre Portage. Ils comportent le système de base (racine) et les librairies.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/06/funtoo.jpg" /></p>
+
+<p>Après l’extraction, vous devez modifier des fichiers de configs avec nano, comme le /etc/make.conf qui permet de définir le <a href="http://fr.wikipedia.org/wiki/CFLAGS">CFLAGS</a> en fonction du CPU et bien d’autres options. Ce fichier est un des plus importants, car vous en aurez besoin pour toutes vos futures compilations. Il y a environ 7 fichiers à regarder.</p>
+
+<p>Actuellement, vous n’avez aucun noyau d’installé sur Funtoo. Après avoir mis votre système à jour et avoir tout compilé (dans les 2h30 sur mon Phenom, aucun soucis en tout cas), vous devez prendre les sources du kernel et compiler le bouzin.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/06/tux.jpg" /></p>
+
+<p>Cet étape est de loin la plus intéressante de l’installation. Je connaissais déjà la procédure, sachant que je compile un noyau sur Arch. Pour ne pas faire de bêtises, il est conseillé d’appliquer la config de base préconisée par les développeurs (via make defconfig), et de l’adapter à vos besoins ensuite. Cette étape peut prendre vraiment beaucoup de temps, en particulier pour du matos un peu exotique (comme mon microphone USB). Je suis justement en train de me préparer un “.config” (configuration des options du kernel) totalement adapté à mon ordinateur. J’en garderai des copies, et cela me sera utile lors de prochaines compilations de noyau. Par contre, j’avoue que j’ai eu un kernel panic, dû à une option redondante.</p>
+
+<p>Une chose que j’apprécie quand on compile son kernel, c’est qu’il est possible de définir des fonctions qui rendent le tout plus simple, grâce à menuconfig. Par exemple, comme je l’ai déjà expliqué il n’y a pas si longtemps, j’utilise cpufreq parce que le profil de base du CPU, est “performance” et que je souhaite le définir sur “ondemand”; je peux désormais définir le profil de base sur “ondemand”, et ainsi me passer de la mise en oeuvre de cpufreq. Autre bon point, je peux directement désactiver la prise en charge IPv6 dans le noyau, sans passer par une règle dans modprobe.conf.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/06/gcc.png" /></p>
+
+<p>Par conséquent, si votre matériel est plutôt bon, je vous recommande grandement de passer par cet étape, quelque soit votre distribution. Vous découvrirez sûrement des choses intéressantes.</p>
+
+<p>Comme pour Arch, lorsque l’on a fini l’installation et éventuellement modifié GRUB en cas de dualboot, on redémarre et on se retrouve sur un système minimaliste, en tty. Voici les lignes que j’ai rajouté dans GRUB 0.97, pour pouvoir booter sur Funtoo:</p>
+
+<pre><code>title Funtoo Linux
+root (hd0,10)
+kernel /vmlinuz-2.6.38-gentoo-r6 root=/dev/sda9 quiet vga=792
+</code></pre>
+
+<p>Après, à nous d’installer le serveur X et un bon WM, mais tout cela sera expliqué lors d’un prochain article!</p>
+
+<p>Doc: <a href="http://www.funtoo.org/wiki/Welcome">Funtoo</a></p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

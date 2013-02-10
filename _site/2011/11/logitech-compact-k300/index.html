@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Logitech Compact K300 - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Logitech Compact K300</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 09.11.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Avis">Avis</a>
+		</div>
+
+	</div>
+
+	<p>Une fois n’est pas coutume, je vais vous parler aujourd’hui de hardware et non de software, comme j’ai l’habitude de faire.
+Il y a une semaine, j’a décidé de m’acheter un nouveau clavier. Le cahier des charges était: un clavier abordable, compact, bien pris en charge sous GNU/Linux, connecté en filaire (USB). J’ai donc opté pour le Logitech Compact K300.</p>
+
+<!-- more -->
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/K300.jpg" /></p>
+
+<p>En général, les produits Logitech tournent bien et sont reconnus nativement par le système (comme ma G5), et je n’ai pas trouvé de retour catastrophique sur le K300. Petit plus, le clavier dispose de touches “multimédias” bindées sur les Fx (de F1 à F12). Pour les utiliser, on doit passer par la touche “Fn”. Voilà qui sera plus qu’utile pour binder mon DWM.</p>
+
+<p>Le clavier fonctionne “Out of the Box” mais j’ai quand même ajouté une règle Xorg. Je vais vous expliquer pourquoi, un peu plus loin.</p>
+
+<p>Pour connaître l’adressage des touches, on passe par “xev” qui signale par exemple : ‘180 XF86HomePage’. Suffit ensuite, d’aller chercher le fichier appelé ’XF86keysym.h’ dans /usr/include/X11/ et on obtient le code à rajouter dans son config.h.</p>
+
+<pre><code>cat /etc/include/X11/XK86keysym.h | grep XF86XK_HomePage
+#define XF86XK_HomePage 0x1008FF18   /* Display user's home page   */[/sourcecode]
+</code></pre>
+
+<p>On peut sinon ajouter la ligne ‘#define XF86XK_HomePage 0x1008FF18’ dans son config.h, au lieu de passer directement par le code 0xxxxxxxxx. Mon <a href="https://github.com/Ypnose/Madfiles/blob/master/dwm/config.h">config.h</a>.</p>
+
+<p>Le clavier a une frappe agréable trés proche des laptops (comme mon Dell), les touches ne s’enfoncent pas trop et ne font pas de bruits. Cela rend la frappe plaisante, même si j’ai eu besoin de quelques jours pour m’habituer, car la sensation, est un peu déroutante.</p>
+
+<p>Les touches ne sont pas rétro-éclairées (sauf celles touchant au multimédia) et lorsque vous appuyer sur “Fn”, le niveau de l’éclairage augmente sensiblement. Le design du clavier est plutôt joli, avec sur les bords une finition glossy (qui laisse les traces de doigts) assez salissante, malheureusement. Il faudra souvent passer un coup de chiffon.
+Ce que j’aime beaucoup, c’est que ce clavier est très compact. Il prend donc moins de place sur le bureau et je n’ai plus besoin de me contorsionner pour écrire.</p>
+
+<p>Maniaque que je suis, j’ai jeté un oeil sur le Xorg.0.log et j’ai trouvé quelque chose d’assez surprenant. Voyez plutôt:</p>
+
+<pre><code>[  2668.271] (--) Logitech Logitech USB Keyboard: Found 1 mouse buttons
+[  2668.271] (--) Logitech Logitech USB Keyboard: Found scroll wheel(s)
+</code></pre>
+
+<p>Xorg trouve un bouton de souris sur mon clavier. Effectivement, xinput me retourne aussi un résultat dans “Virtual Core Pointer”:</p>
+
+<pre><code>⎡ Virtual core pointer                 id=2   [master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer            id=4   [slave  pointer  (2)]
+⎜   ↳ Logitech Logitech USB Keyboard        id=9   [slave  keyboard (3)]
+⎜   ↳ Logitech USB Gaming Mouse             id=10  [slave  pointer  (2)]
+⎣ Virtual core keyboard                      id=3   [master keyboard (2)]
+	↳ Virtual core XTEST keyboard           id=5   [slave  keyboard (3)]
+	↳ Power Button                          id=6   [slave  keyboard (3)]
+	↳ Power Button                          id=7   [slave  keyboard (3)]
+	↳ Logitech Logitech USB Keyboard        id=8   [slave  keyboard (3)]
+</code></pre>
+
+<p>Je ne sais d’où cela vient, sachant que le clavier ne dispose pas d’un touchpad, comme d’autres modèles Logitech. J’ai donc ajouté des options dans mon ‘10-evdev.conf’ pour essayer d’améliorer ce phénomène.
+Après moults options et essais, j’ai préféré créer un règle spécifique pour Xorg, plutôt que de modifier le ‘10-evdev.conf’. J’ai écris un fichier ‘30-keyboard.conf’ et je l’ai placé dans “/etc/X11/xorg.conf.d”. Vous pouvez le voir <a href="https://github.com/Ypnose/Madfiles/blob/master/Xorg/30-keyboard.conf">ici</a>.</p>
+
+<p>Dorénavant, xinput affiche les deux périphériques ‘Logitech Logitech USB Keyboard’ dans ‘Virtual Core keboard’. Je trouve ça plus propre qu’avant, même si j’obtiens toujours dans les logs:</p>
+
+<pre><code>(--) Logitech Logitech USB Keyboard: Found 1 mouse buttons
+(--) Logitech Logitech USB Keyboard: Found scroll wheel(s)
+(II) Logitech Logitech USB Keyboard: Relative axes present but ignored.
+(II) Logitech Logitech USB Keyboard: Absolute axes present but ignored.
+(--) Logitech Logitech USB Keyboard: Found keys
+(II) Logitech Logitech USB Keyboard: Configuring as mouse
+(II) Logitech Logitech USB Keyboard: Configuring as keyboard
+(II) Logitech Logitech USB Keyboard: Adding scrollwheel support
+(**) Logitech Logitech USB Keyboard: YAxisMapping: buttons 4 and 5 J'ai aussi cette petite erreur que je ne sais pas résoudre:
+
+Logitech Logitech USB Keyboard: failed to initialize for relative axes.
+</code></pre>
+
+<p>Attention, ma règle n’est pas forcément nécessaire. Le clavier répond bien de base et fait son boulot correctement, j’ai juste appliqué mon ’30-keyboard.conf’ pour fignoler le tout.</p>
+
+<p>Au final, je donne un joli 4,5 / 5 à ce produit!</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

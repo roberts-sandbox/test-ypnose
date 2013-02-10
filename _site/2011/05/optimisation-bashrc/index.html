@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Optimisation .bashrc - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Optimisation .bashrc</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 15.05.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Astuce">Astuce</a><span> &rarr; </span><a href="/categories/Personnalisation">Personnalisation</a>
+		</div>
+
+	</div>
+
+	<p>Ayant toujours quelque chose à optimiser ou à améliorer sous Archlinux, j’ai décidé de personnaliser mon terminal (à savoir URxvt), via le bashrc. Si vous êtes un lecteur de ce blog, vous devriez vous souvenir d’un précédent article, où j’avais parlé de changer la couleur en fonction de l’user ou du super-user dans le terminal.
+Dans ce fichier, j’ai entre autres définit la variable $BROWSER afin de déclarer que cette dernière vaut Chromium. Les possibilités sont quasi infinies avec ce fichier. Vous pouvez aussi définir des alias, c’est-à-dire que vous pouvez définir des abréviations pour une commande donnée. Par exemple, avec:</p>
+
+<!-- more -->
+
+<pre><code>alias pacman='sudo pacman'
+</code></pre>
+
+<p>lorsque vous lancer “pacman”, cela reviendra à lancer “sudo pacman”. Plutôt pratique non?</p>
+
+<p>Je ne définit pas beaucoup d’alias pour la simple et bonne raison, que je lance rarement des commandes longues et fastidieuses même si j’utilise beaucoup le terminal.</p>
+
+<p>J’ai surtout concentré mon optimisation, autour de la “forme” du prompt. En me baladant sur <a href="http://www.deviantart.com/">Deviantart.com</a>, j’ai vu de jolies choses et cela ma inspiré. J’ai donc réalisé un prompt avec de la couleur, parce que je n’aime pas quelque chose qui est monochrome.
+Voici les images:</p>
+
+<p>De base:</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/termbase.png" /></p>
+
+<p>Modifié (Normal User):</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/termmodif.png" /></p>
+
+<p>Modifié (Root):</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/termmodifroot.png" /></p>
+
+<p>Je trouve ça plus agréable avec de la couleur ! Le dossier dans lequel on se trouve, est en jaune, l’user en vert, le root en rouge et l’host en bleu.</p>
+
+<p>Voici le code à rentrer dans le .bashrc (je vous conseille de commenter, votre code actuel afin de ne pas se retrouver ennuyé, en cas de problème).</p>
+
+<p><a href="https://github.com/Ypnose/Madfiles/blob/master/.bashrc">Par ici</a> (#user) Ligne PS1</p>
+
+<p>Si vous voulez, avoir aussi ce système pour le root, créer un .bashrc dans /root et remplissez-le avec le code, que vous pourrez modifier.</p>
+
+<p><a href="https://github.com/Ypnose/Madfiles/blob/master/.bashrc_root">Par ici</a> (#root) Ligne PS1</p>
+
+<p>Comme toujours, si vous voulez avoir un bon aperçu des fonctionnalités, vous pouvez vous rendre <a href="https://wiki.archlinux.org/index.php/Bashrc#Configuration">ici</a> et <a href="https://wiki.archlinux.org/index.php/Color_Bash_Prompt">là</a>. Il y a les couleurs possibles et les optimisations possibles pour le .bashrc.</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

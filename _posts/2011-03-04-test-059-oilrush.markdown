@@ -1,0 +1,96 @@
+---
+date: 2011-03-04 12:46:18
+layout: post
+title: Test de la version 0.59 d'OilRush
+description: "Un tour d'horizon de la build 0.59 d'OilRush."
+categories:
+- Test
+tags:
+- oilrush
+- unigine
+---
+
+Le moment fatidique est enfin arrivé. Et oui, il est désormais possible de pré-commander le jeu OilRush sur le [store Unigine](https://store.unigine.com/) pour la modique somme de 15€. Vous savez que je suis un fan inconditionnel, parce que un jeu de qualité sous GNU/Linux, c'est toujours intéressant. J'ai donc allégé mon porte-monnaie, de 14,20€ et j'ai enfin pu mettre la main sur le bon vieux fichier .run. Je vais tester cette "pré-release" et donner mon avis sur différents points.
+
+Si vous hésitez à acheter le jeu parce que vous vous demander, si vous pourrez le faire tourner, télécharger le benchmark Unigine [Tropics](http://unigine.com/products/tropics/). Si vous obtenez des valeurs satisfaisantes, il y a de fortes chances qu'OilRush tourne sur votre PC.
+
+<!-- more -->
+
+**- L'installation**
+
+On dispose de la build de Janvier. Le fichier est un .run. Rien de plus simple, pour l'installer, il suffit de rentrer:
+
+	chmod +x OilRush-0.59.run
+	./OilRush-0.59.run
+
+Et voilà, vous avez un petit dossier, avec tout le nécessaire à l'intérieur. Une précision: il est nécessaire d'avoir installé OpenAL sur son ordi, sinon vous ne pourrez pas bénéficier des sons et des musiques.
+
+**- Le lancement**
+
+Lancer le jeu est assez simple, on exécute un des scripts suivants: 1024*768_windowed.sh ou 1920*1080_fullscreen.sh. La structure des scripts est assez simple. Je suis même sûr qu'on peut créer un petit script perso avec une résolution personnalisée. Voici la structure (1024x768_windowed.sh):
+
+	#!/bin/sh
+
+	export LD_LIBRARY_PATH=./bin:$LD_LIBRARY_PATH
+	./bin/OilRush_x86 -video_app opengl \
+					-sound_app openal \
+					-extern_plugin Network \
+					-data_path ../ \
+					-engine_config ../oilrush-0.5.cfg \
+					-system_script waterwar/unigine.cpp \
+					-console_command "world_load waterwar/waterwar" \
+					-video_multisample 0 \
+					-video_fullscreen 0 \
+					-video_mode -1 \
+					-video_width 1024 \
+					-video_height 768
+
+**- Le gameplay**
+
+On arrive sur un menu très esthétique qui vous permet de choisir Campaign (2 tutoriaux et Tower Defense), Quick Battle et Multi. Les tutoriaux sont assez bien fichus et on comprend assez vite les objectifs.
+
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/sc1-300x168.jpg">](http://linuxien.legtux.org/uploads/images/2011/02/sc1.jpg)
+
+Vous débutez la partie avec une plateforme de base, qui produit des scooters des mers. L'objectif est donc de conquérir les plateformes, qui produisent d'autres types d'unités (destroyers, avions, hélicoptères) et conquérir des plateformes pétrolières, pour obtenir de l'argent. Certaines sont protégées, d'autres non. Le système peut sembler déconcertant, car vous ne controlez pas des unités comme dans _Command et Conquer, _mais vous sélectionnez les plateformes et donc les unités qui s'y rattachent. Il faut savoir que le nombre de compagnies est limité par le nombre de plateformes.
+
+L'argent permet de créer ou améliorer la défense de vos plateformes. Il y différents types de tourelles: canon, mitrailleuse et missile anti-aviation avec la possibilité de les améliorer. D'ailleurs, je vous conseille vraiment de ne pas négliger la défense, parce que l'IA est assez agressive et je me suis fait allumer pas mal de fois. Quand vous détruisez des ennemis, vous accumulez des points qui vous permettent de débloquer des nouvelles technologies disposés en arbre. Par exemple, le radar qui dévoile un endroit de la carte pendant quelques secondes.
+
+<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/batiment.png">
+
+La pré-version comporte 5 maps sur lesquelles il est possible de jouer en 1vs1 ou plus. Les environnements sont assez variés avec des cartes dans des univers remplis de glaces et d'icebergs ou dans des mers plus chaudes (Mer de Chine je pense). Il existe une map, où il y a de la pluie, l'effet est incroyablement réaliste (on a des éclaboussures sur l'eau).
+
+**- Le graphisme**
+
+Ce point m'a vraiment étonné. Effectivement le jeu tourne plutôt bien avec ma GT240. De base, en 1920x1080 avec tous les options activées (sauf anti-aliasing), j'ai dans les 35 FPS, lorsque je visualise une base. En combat, j'ai une chute du framerate, voilà pourquoi j'ai décidé d'affiner les réglages, en abaissant la résolution et en désactivant quelques options gourmandes.
+
+Le niveau de détail est extrêmement fin. Il est possible de voir des personnes marcher, bouger des caisses et monter des escaliers quand on zoome sur les plateformes. Comme je l'ai dit plus haut les effets climatiques sont bien réussis et le tout est vraiment agréable à regarder.
+
+L'interface est tellement intuitive que même un enfant, peut comprendre de quoi il s'agit. On a une mini-map, avec 25%, 50% et 100% (qui sert à utiliser un pourcentage du nombre d'unités sur une plateforme). Grâce au pourcentage, des petits pictogrammes s'affichent en bas de l'écran avec le type de compagnie et le nombre.
+
+<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/unite.png">
+
+En haut à gauche, vous avez 3 pictogrammes: le premier montre le nombre de points de compétences pour l'arbre de technologies, le second le nombre total d'unités (et le nombre max) et en dernier, le pétrole accumulé (la ressource du jeu).
+
+<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/UI.png">
+
+Et a gauche de l'écran, il y a les technologies utilisables par le joueur.
+
+**- La musique et les sons**
+
+Avant tout, si vous souhaitez avoir du son, assurez vous que OpenAL est installé. Sinon, vous n'aurez pas le moindre son. C'est ce qui m'est arrivé, mais je me suis aperçu de ça quand j'ai épluché le script de démarrage.
+
+La musique est vraiment douce, elle crée une bonne ambiance et une bonne atmosphère. Quant aux sons, ils sont adaptés aux situations rencontrées.
+
+**- Les performances**
+
+Bon, niveau CPU, la consommation est très très élevée. Je tourne à 60% de base et j'ai remarqué un bug assez génant, la consommation ne fait qu'augmenter dans le temps pour atteindre 90%. Je ne peux donc pas y jouer très longtemps. La version 0.58 avait des problèmes de performances, je ne sais pas trop si cela sera réglé rapidement (je l'espère).
+
+Ces valeurs ont été obtenus avec Htop.
+
+Certaines personnes ont des crashs du jeu, mais je n'ai pas constaté ce problème.
+
+**- Avis**
+
+Sans surprise, mon verdict est sans appel. La qualité du jeu est indéniable, avec des bonnes idées, des concepts intéressants et un réel plaisir. J'espère juste que certains problèmes seront résolus. Mais, acheter le tout pour cette modique somme, est une affaire.
+
+P.S. Je n'ai pas encore testé le mode Tower Défense. J'attends d'être meilleur.

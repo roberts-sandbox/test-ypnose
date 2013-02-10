@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Accélérer le boot sous Fedora 16 - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Accélérer le boot sous Fedora 16</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 01.05.2012
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Astuce">Astuce</a><span> &rarr; </span><a href="/categories/Conseil">Conseil</a>
+		</div>
+
+	</div>
+
+	<p>Salut,</p>
+
+<p>Encore un article sur Fedora 16, cela signifie qui n’y aura pas d’Archlinux aujourd’hui (mais ce n’est que partie remise).</p>
+
+<p>Fedora 16 me satisfait vraiment beaucoup, actuellement je n’ai pas trouvé mieux en distrib non-minimaliste, pour mon laptop. Cependant, cette dernière nécessite quelques ajustements pour obtenir un résultat quasi-parfait. J’avais déjà traité dans un précédent article, de tweaks au niveau du combo CPU / GPU / RAM. Maintenant, je vais vous parler du boot.</p>
+
+<!-- more -->
+
+<p>Pour moi, c’est un peu le seul point noir de cette Fedora, car effectivement beaucoup de “services” (ils sont appelés comme ça, au niveau de SystemD) sont lancés par défaut au démarrage, alors qu’ils ne sont même pas utilisés (je pense à sendmail). Il faut donc les désactiver et ainsi on peux gagner quelques secondes. Pour le tutoriel, j’ai réactivé les services fautifs que j’avais précédemment enlevé. J’expliquerai aussi comment enlever Plymouth, pour ceux qui le souhaite.</p>
+
+<p>Cet article devrait aussi fonctionner avec les distributions qui utilisent SystemD.</p>
+
+<p><strong>- Services -</strong></p>
+
+<p>Donc on allume notre PC, on espère que le boot sera long et quand vous vous êtes logué en graphique, vous lancez dans votre terminal favori, la commande:</p>
+
+<pre><code>systemd-analyze blame
+</code></pre>
+
+<p>Et là, on voit nettement quels sont les services qui prennent le plus de temps à s’initialiser, plus la valeur est haute, plus le service met du temps à être fonctionnel:</p>
+
+<pre><code>60201ms sendmail.service
+22955ms iscsi.service
+10545ms udev-settle.service
+9069ms fedora-loadmodules.service
+8537ms var-lib-nfs-rpc_pipefs.mount
+8120ms systemd-vconsole-setup.service
+5353ms fedora-readonly.service
+4258ms udev-trigger.service
+3131ms media.mount
+3051ms mdmonitor-takeover.service
+3000ms sys-kernel-debug.mount
+2993ms dev-mqueue.mount
+2992ms sys-kernel-security.mount
+2991ms dev-hugepages.mount
+2981ms udev.service
+2759ms remount-rootfs.service
+2757ms systemd-remount-api-vfs.service
+2345ms systemd-sysctl.service
+786ms fedora-storage-init.service
+410ms NetworkManager.service ...
+</code></pre>
+
+<p>Dorénavant, il suffit de désactiver ces services (faites attention à ne pas en avoir besoin). Je sais que sendmail est utilisé par Thunderbird, mais je n’en suis pas à 100% sûr. Dans mon cas, j’ai juste touché aux services sendmail et iscsi et ça a suffit pour gagner environ 3 à 4 secondes.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen.png" /> Avant le “tweak”</p>
+
+<p>On doit user de la commande systemctl pour faire le ménage dans ces services. J’ai donc procédé comme ceci:</p>
+
+<pre><code>sudo systemctl disable votre_service.service
+</code></pre>
+
+<p>Dans mon cas:</p>
+
+<pre><code>sudo systemctl disable iscsi.service
+sudo systemctl disable sendmail.service
+</code></pre>
+
+<p>Faites de même avec les services qui vous posent problèmes. Voilà de précieuses secondes gagnés lors du boot. Je dois dire que c’est assez agréable.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen2.png" /> Après le “tweak”</p>
+
+<p><strong> - Plymouth -</strong></p>
+
+<p>Plymouth est l’écran qui est affiché lors du chargement de Fedora 16, où on voit le logo Fedora qui se remplit au fur et à mesure que votre système charge, pour enfin afficher le logo final quand tout est terminé.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/plymouth.png" /></p>
+
+<p>Sachant que certains l’aiment et d’autres non, je vais expliquer comment l’enlever. De mon côté, je l’avais désactivé puis je l’ai réactivé peu après, car finalement je trouve ça joli. Donc, éditez votre fichier de configuration GRUB2, avec la commande:</p>
+
+<pre><code>sudo nano /etc/default/grub
+</code></pre>
+
+<p>Vous devriez obtenir quelque chose de la forme:</p>
+
+<pre><code>GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="Fedora"
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+GRUB_CMDLINE_LINUX="rd.md=0 rd.lvm=0 rd.dm=0 quiet SYSFONT=latarcyrheb-sun16 rhgb rd.luks=0  KEYTABLE=fr-pc LANG=fr_FR.UTF-8"
+</code></pre>
+
+<p>Enlevez le paramètre “rhgb” et Plymouth aura disparu au prochain redémarrage. Vous noterez aussi que j’ai rajouté la ligne “GRUB_SAVEDEFAULT”, qui permet d’enregistrer le choix fait dans GRUB2 et de le mettre par défaut.</p>
+
+<p>Ce n’est pas fini, maintenant vous devez update le grub.cfg, avec la commande:</p>
+
+<pre><code>sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+</code></pre>
+
+<p>Voilà, vous pouvez “reboot” votre ordinateur, en espérant que vous ayez gagné des secondes, bien évidemment.</p>
+
+<p>Bye.</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

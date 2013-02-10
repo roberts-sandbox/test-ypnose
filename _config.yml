@@ -1,0 +1,17 @@
+safe:        false
+auto:        false
+server:      false
+server_port: 4000
+baseurl:     /
+url:         http://tetedulinuxien.fr
+
+author:      Ypnose
+title:       "Dans la Tête du Linuxien"
+description: "Les péripéties d'un libriste convaincu et passionné de 23 ans."
+
+source:      .
+destination: ./_site
+
+pygments:    false
+markdown:    kramdown
+permalink:   /:year/:month/:title/

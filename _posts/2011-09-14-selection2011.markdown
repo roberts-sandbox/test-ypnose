@@ -1,0 +1,61 @@
+---
+date: 2011-09-14 21:57:33
+layout: post
+title: 'Ma sélection logicielle: Mi-2011'
+description: "Mes logiciels favoris de 2011 (CLI + GUI)."
+categories:
+- Astuce
+- Avis
+tags:
+- archlinux
+- lecteur
+- urxvt
+---
+
+Bonjour,
+
+Afin que puissiez connaitre mes choix logiciels et pourquoi j'ai choisi telle ou telle applications, j'ai décidé de faire une "liste" des softs que j'utilise et qui me tiennent à cœur. Voici donc la liste. J'explique la fonction du logiciel et pourquoi je l'ai choisi.
+
+<!-- more -->
+
+  * [Dwm](http://dwm.suckless.org/): WM incroyable. Ancien utilisateur d'Openbox, dwm est encore plus léger et pratique. Permet de profiter des joies du Tiling.
+
+  * [Moc (Music on Console)](http://moc.daper.net/): lecteur audio ncurses. Extrêmement pratique, il s'intègre très bien dans des environnements légers. Il est aisé de le personnaliser et de le contrôler via des scripts externes.
+
+  * [Chromium](http://www.chromium.org/Home): navigateur Web webkit. Rapide, esthétique et adapté à mon utilisation. Excellente prise en charge des standards. Beaucoup d'extensions disponibles comme "Silver Bird". Seul défaut, la consommation de RAM assez gourmande.
+
+  * [Rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html): terminal. Le meilleur à mes yeux, hautement paramétrable, supporte un daemon qui augmente encore le démarrage des terminaux clients. Je le recommande chaudement!
+
+  * [Mumble](http://mumble.sourceforge.net/): client VOIP. Permet de communiquer avec des personnes (surtout pour le jeu), temps de latence faible et légèreté du soft.
+
+  * [Geany](http://www.geany.org/): éditeur de texte. Dispose de la coloration syntaxique, léger. Très agréable pour mes scripts et configs.
+
+  * [Nano](http://www.nano-editor.org/overview.php): éditeur de texte en console. Pour modifier des fichiers en CLI. Moins poussé que Vim paraît-il mais très efficace cependant.
+
+  * [Filezilla](http://www.filezilla.fr/): client FTP. La référence. Il est parfait pour envoyer des fichiers sur mon blog.
+
+  * [Feh](http://linuxbrit.co.uk/software/feh/): gestion du wallpaper. Permet d'ouvrir un nombre conséquent de formats.
+
+  * [Alsamixer](http://www.delafond.org/traducmanfr/man/man1/alsamixer.1.html): contrôle du volume. Permet de paramétrer les canaux audio. Pas mieux.
+
+  * [Htop](http://htop.sourceforge.net/): moniteur. Affiche les processus, l'uptime, la consommation CPU et RAM du système. Super, pour monitorer un PC.
+
+  * [Midnight Commander](https://www.midnight-commander.org/): explorateur de fichiers en CLI. Très efficace.
+
+  * [Xarchiver](http://xarchiver.sourceforge.net/): gestionnaire d'archives. Permet d'extraire un grand nombre d'archives. (Maintenant, je suis passé à un extract dans le .bashrc).
+
+  * [The GIMP](http://www.gimp.org/): éditeur d'image. Très populaire sous GNU/Linux et les possibilités sont immenses.
+
+  * [Netcfg](http://netcfg.sourceforge.net/): connexion réseau. Gère les connexions réseaux (Wifi et Ethernet) via des profils. Gros potentiel.
+
+  * [Scrot](http://linuxbrit.co.uk/software/): screenshots. Pratique et utile avec des alias dans le .bashrc.
+
+  * [Mplayer](http://www.mplayerhq.hu/design7/news.html): lecteur vidéo. Le logiciel ultime. Hautement configurable.
+
+Si vous avez des questions, n'hésitez pas à me les poser. Comme d'habitude, allez lire le[ wiki](https://wiki.archlinux.org/index.php/Main_Page) Arch si vous voulez tester l'un de ces logiciels. Ce [wiki](https://wiki.archlinux.org/index.php/Main_Page) est une mine d'or.
+
+Voilà deux images de mon bureau sous dwm 5.9 (bientôt un article sur ce dernier).
+
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/09/2011-09-14-233055_1920x1080_scrot_small.png">](http://linuxien.legtux.org/uploads/images/2011/09/2011-09-14-233055_1920x1080_scrot.png)
+
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/09/screenFetch-2011-09-14_23-43-28_small.png">](http://linuxien.legtux.org/uploads/images/2011/09/screenFetch-2011-09-14_23-43-28.png)

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Le retour d'Ypnose - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Le retour d'Ypnose</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 10.10.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Astuce">Astuce</a><span> &rarr; </span><a href="/categories/News">News</a><span> &rarr; </span><a href="/categories/Personnalisation">Personnalisation</a>
+		</div>
+
+	</div>
+
+	<p>Bonjour,</p>
+
+<p>Cela fait un bon mois que je n’écris plus d’articles. Cette période m’a paru être une éternité car d’habitude, j’écris plus souvent des news. Contrairement, à ce que l’on pourrait croire, le blog n’est pas mort. NON. La passion GNU/Linux m’anime toujours autant.</p>
+
+<p>J’ai toujours autant soif de découverte et ce monde est extrêmement intéressant, car il y a toujours quelqu’un pour nous apprendre une chose. D’ailleurs, ce mois a été plutôt chargé, j’ai effectué beaucoup de “tweaks” sur mon ordinateur de bureau et testé pas mal de nouveaux logiciels. Cette fois-ci, je ne vous écrierai pas un simple article détaillant un point mais je vous ferais profiter d’une sorte de bilan.</p>
+
+<!-- more -->
+
+<p>J’avais déjà publié un article à propos du .bashrc, mais n’utilisant plus aucun GUI (sauf Geany), j’ai passé pas mal de temps à “améliorer” ce petit fichier. Je suis parvenu à un système très pratique et intuitif. Je rappelle que j’utilise dwm 5.9 dans lequel je n’ai que des terminaux clients, me permettant de rentrer des commandes. Je passe donc par des “alias” pour me faciliter la vie et éviter d’écrire des commandes trop compliquées et longues.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/alias.png" /></p>
+
+<p>J’ai aussi totalement modifié mon prompt, pour quelque chose de moins “tape à l’oeil” mais toujours utile. Il est indiqué l’user, le chemin absolu et l’heure à laquelle la commande a été validé.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/prompt.png" /></p>
+
+<p>Xarchiver me paraissant trop contraignant, j’ai décidé de complètement l’effacer et j’ai trouvé une fonction extract à rajouter dans le .bashrc. Cela permet d’extraire un grand nombre d’archives sans se compliquer la vie (avec un alias). Et petit plus, si l’archive comporte un dossier, vous êtes automatiquement placé dans ce dernier grâce à un ‘cd’.</p>
+
+<p>Vous pouvez retrouvez mon .bashrc sur <a href="https://github.com/Ypnose/Madfiles/blob/master/.bashrc">Github</a>. Il est souvent amélioré.</p>
+
+<p>Autre point, je me suis acharné à créer un .Xdefaults comportant une gamme de couleurs convenables et qui soit agréable à regarder. Je pense être non-loin du modèle de couleurs parfait. Comme vous vous en doutez, je suis un utilisateur convaincu de rxvt-unicode (même si à mes débuts sous Arch, j’utilisais XTerm). Voici un screenshot:</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/colors.png" /></p>
+
+<p>Cela représente les couleurs dans le terminal et sans me vanter, je dois dire que je suis content du travail rempli. Evidemment, vous pouvez retrouvez ma config <a href="https://github.com/Ypnose/Madfiles/blob/master/.Xresources">ici</a>.</p>
+
+<hr />
+
+<p>En tant que grand nostalgique, j’ai décidé de ressortir mon légendaire Doom I et II. Je rappelle que nous disposons en natif d’une bonne dizaine de<a href="http://en.wikipedia.org/wiki/Doom_source_port"> ports</a>, permettant de rejouer à ces jeux fabuleux. Il existe Doomsday Engine, ZDoom, GZDoom, PrBoom, PrBoom-Plus, Chocolate Doom et bien d’autres. Je ne fais pas partie de ceux, qui cherchent à tout prix à obtenir un jeu avec des textures HD, je préfère me rapprocher le plus possible de l’original.
+J’ai donc choisi PrBoom-Plus. A moi donc, les longues heures dans des couloirs sombres remplis de démons.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/doom.png" /></p>
+
+<p>Vous vous demandez certainement quel est le rapport avec mon blog? Voulant être de plus en plus impliqué et apporter mon aide en complément des forums, j’ai décidé de me mettre à écrire/modifier des pages du wiki <a href="http://wiki.archlinux.fr/Accueil">Archlinux.fr</a>. Je suis conscient que la communauté à vraiment besoin de contributeurs, voilà pourquoi j’essaie d’apporter mon aide. Attention, je ne me glorifie pas, comparé à d’autres, mon travail est mince.</p>
+
+<p>Par conséquent, j’ai écris une page sur <a href="http://wiki.archlinux.fr/Prboom">PrBoom</a> pour que les personnes tenté par ce port ne soient pas perdues.</p>
+
+<hr />
+
+<p>Actuellement, j’utilise Midnight Commander, que je trouve très adapté à une utilisation CLI. Je suis un ancien utilisateur de Thunar (quand j’avais Openbox), et je m’en suis séparé non sans mal, mais maintenant je suis habitué à MC.
+Tout comme Moc, le thème par défaut est assez disgracieux (un bleu clair), et j’ai donc cherché à modifier les thèmes. Sur le toile, il y a quelques tutos pour créer son thème mais je n’ai pas été convaincu. J’ai trouvé dans /usr/share/mc/skins, des thèmes disponibles. Je m’en suis donc servi de base, pour l’adapter à mes besoins.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/mc.png" /></p>
+
+<p>Utiliser un thème personnalisé n’est pas vraiment compliqué. Il faut ajuster les couleurs, créer le dossier skins dans $HOME/.mc dans lequel on place le thème et modifier la ligne “skin=” dans le fichier ini. Voici un exemple avec l’image précédente.</p>
+
+<p>Encore une fois, retrouvez la config <a href="https://github.com/Ypnose/Madfiles/tree/master/mc">ici</a>.</p>
+
+<p>J’ai réalisé d’autres travaux mais je ne veux pas tout vous détailler, pour ne pas vous paraître répétitif. Mais je peux vous dire que ce n’est pas le boulot qui manque (changement de l’arbre de Portage sous Funtoo qui coince, UUID dans le fstab, ou le /tmp sur la RAM).</p>
+
+<p>Autre chose, j’ai vu que mon article “<a href="http://tetedulinuxien.fr/2011/08/01/balayons-les-prejuges/">Balayons les préjugés</a>”, a été plutôt bien accueilli et même retweeté. Je suis heureux de voir de l’enthousiasme pour ce sujet qui nous concerne tous.</p>
+
+<p>Et n’hésitez pas à parler du blog autour de vous! Vive GNU/Linux.</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

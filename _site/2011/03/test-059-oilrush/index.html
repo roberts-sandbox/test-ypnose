@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Test de la version 0.59 d'OilRush - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Test de la version 0.59 d'OilRush</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 04.03.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Test">Test</a>
+		</div>
+
+	</div>
+
+	<p>Le moment fatidique est enfin arrivé. Et oui, il est désormais possible de pré-commander le jeu OilRush sur le <a href="https://store.unigine.com/">store Unigine</a> pour la modique somme de 15€. Vous savez que je suis un fan inconditionnel, parce que un jeu de qualité sous GNU/Linux, c’est toujours intéressant. J’ai donc allégé mon porte-monnaie, de 14,20€ et j’ai enfin pu mettre la main sur le bon vieux fichier .run. Je vais tester cette “pré-release” et donner mon avis sur différents points.</p>
+
+<p>Si vous hésitez à acheter le jeu parce que vous vous demander, si vous pourrez le faire tourner, télécharger le benchmark Unigine <a href="http://unigine.com/products/tropics/">Tropics</a>. Si vous obtenez des valeurs satisfaisantes, il y a de fortes chances qu’OilRush tourne sur votre PC.</p>
+
+<!-- more -->
+
+<p><strong>- L’installation</strong></p>
+
+<p>On dispose de la build de Janvier. Le fichier est un .run. Rien de plus simple, pour l’installer, il suffit de rentrer:</p>
+
+<pre><code>chmod +x OilRush-0.59.run
+./OilRush-0.59.run
+</code></pre>
+
+<p>Et voilà, vous avez un petit dossier, avec tout le nécessaire à l’intérieur. Une précision: il est nécessaire d’avoir installé OpenAL sur son ordi, sinon vous ne pourrez pas bénéficier des sons et des musiques.</p>
+
+<p><strong>- Le lancement</strong></p>
+
+<p>Lancer le jeu est assez simple, on exécute un des scripts suivants: 1024<em>768_windowed.sh ou 1920</em>1080_fullscreen.sh. La structure des scripts est assez simple. Je suis même sûr qu’on peut créer un petit script perso avec une résolution personnalisée. Voici la structure (1024x768_windowed.sh):</p>
+
+<pre><code>#!/bin/sh
+
+export LD_LIBRARY_PATH=./bin:$LD_LIBRARY_PATH
+./bin/OilRush_x86 -video_app opengl \
+				-sound_app openal \
+				-extern_plugin Network \
+				-data_path ../ \
+				-engine_config ../oilrush-0.5.cfg \
+				-system_script waterwar/unigine.cpp \
+				-console_command "world_load waterwar/waterwar" \
+				-video_multisample 0 \
+				-video_fullscreen 0 \
+				-video_mode -1 \
+				-video_width 1024 \
+				-video_height 768
+</code></pre>
+
+<p><strong>- Le gameplay</strong></p>
+
+<p>On arrive sur un menu très esthétique qui vous permet de choisir Campaign (2 tutoriaux et Tower Defense), Quick Battle et Multi. Les tutoriaux sont assez bien fichus et on comprend assez vite les objectifs.</p>
+
+<p><a href="http://linuxien.legtux.org/uploads/images/2011/02/sc1.jpg"><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/sc1-300x168.jpg" /></a></p>
+
+<p>Vous débutez la partie avec une plateforme de base, qui produit des scooters des mers. L’objectif est donc de conquérir les plateformes, qui produisent d’autres types d’unités (destroyers, avions, hélicoptères) et conquérir des plateformes pétrolières, pour obtenir de l’argent. Certaines sont protégées, d’autres non. Le système peut sembler déconcertant, car vous ne controlez pas des unités comme dans _Command et Conquer, _mais vous sélectionnez les plateformes et donc les unités qui s’y rattachent. Il faut savoir que le nombre de compagnies est limité par le nombre de plateformes.</p>
+
+<p>L’argent permet de créer ou améliorer la défense de vos plateformes. Il y différents types de tourelles: canon, mitrailleuse et missile anti-aviation avec la possibilité de les améliorer. D’ailleurs, je vous conseille vraiment de ne pas négliger la défense, parce que l’IA est assez agressive et je me suis fait allumer pas mal de fois. Quand vous détruisez des ennemis, vous accumulez des points qui vous permettent de débloquer des nouvelles technologies disposés en arbre. Par exemple, le radar qui dévoile un endroit de la carte pendant quelques secondes.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/batiment.png" /></p>
+
+<p>La pré-version comporte 5 maps sur lesquelles il est possible de jouer en 1vs1 ou plus. Les environnements sont assez variés avec des cartes dans des univers remplis de glaces et d’icebergs ou dans des mers plus chaudes (Mer de Chine je pense). Il existe une map, où il y a de la pluie, l’effet est incroyablement réaliste (on a des éclaboussures sur l’eau).</p>
+
+<p><strong>- Le graphisme</strong></p>
+
+<p>Ce point m’a vraiment étonné. Effectivement le jeu tourne plutôt bien avec ma GT240. De base, en 1920x1080 avec tous les options activées (sauf anti-aliasing), j’ai dans les 35 FPS, lorsque je visualise une base. En combat, j’ai une chute du framerate, voilà pourquoi j’ai décidé d’affiner les réglages, en abaissant la résolution et en désactivant quelques options gourmandes.</p>
+
+<p>Le niveau de détail est extrêmement fin. Il est possible de voir des personnes marcher, bouger des caisses et monter des escaliers quand on zoome sur les plateformes. Comme je l’ai dit plus haut les effets climatiques sont bien réussis et le tout est vraiment agréable à regarder.</p>
+
+<p>L’interface est tellement intuitive que même un enfant, peut comprendre de quoi il s’agit. On a une mini-map, avec 25%, 50% et 100% (qui sert à utiliser un pourcentage du nombre d’unités sur une plateforme). Grâce au pourcentage, des petits pictogrammes s’affichent en bas de l’écran avec le type de compagnie et le nombre.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/unite.png" /></p>
+
+<p>En haut à gauche, vous avez 3 pictogrammes: le premier montre le nombre de points de compétences pour l’arbre de technologies, le second le nombre total d’unités (et le nombre max) et en dernier, le pétrole accumulé (la ressource du jeu).</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/UI.png" /></p>
+
+<p>Et a gauche de l’écran, il y a les technologies utilisables par le joueur.</p>
+
+<p><strong>- La musique et les sons</strong></p>
+
+<p>Avant tout, si vous souhaitez avoir du son, assurez vous que OpenAL est installé. Sinon, vous n’aurez pas le moindre son. C’est ce qui m’est arrivé, mais je me suis aperçu de ça quand j’ai épluché le script de démarrage.</p>
+
+<p>La musique est vraiment douce, elle crée une bonne ambiance et une bonne atmosphère. Quant aux sons, ils sont adaptés aux situations rencontrées.</p>
+
+<p><strong>- Les performances</strong></p>
+
+<p>Bon, niveau CPU, la consommation est très très élevée. Je tourne à 60% de base et j’ai remarqué un bug assez génant, la consommation ne fait qu’augmenter dans le temps pour atteindre 90%. Je ne peux donc pas y jouer très longtemps. La version 0.58 avait des problèmes de performances, je ne sais pas trop si cela sera réglé rapidement (je l’espère).</p>
+
+<p>Ces valeurs ont été obtenus avec Htop.</p>
+
+<p>Certaines personnes ont des crashs du jeu, mais je n’ai pas constaté ce problème.</p>
+
+<p><strong>- Avis</strong></p>
+
+<p>Sans surprise, mon verdict est sans appel. La qualité du jeu est indéniable, avec des bonnes idées, des concepts intéressants et un réel plaisir. J’espère juste que certains problèmes seront résolus. Mais, acheter le tout pour cette modique somme, est une affaire.</p>
+
+<p>P.S. Je n’ai pas encore testé le mode Tower Défense. J’attends d’être meilleur.</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

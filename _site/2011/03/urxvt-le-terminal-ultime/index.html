@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>urxvt: le terminal ultime - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>urxvt: le terminal ultime</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 24.03.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Avis">Avis</a>
+		</div>
+
+	</div>
+
+	<p>Ça y est, j’ai officiellement abandonné mon xterm, que je trouvais plutôt pratique. Après avoir lu une tonne d’article comme quoi rxvt-unicode c’est fabuleux, j’ai décidé de tenter l’expérience. Et je n’ai pas été déçu. D’ailleurs, je suppose qu’il y a pas mal de lecteurs, qui l’utilisent sur leurs systèmes.
+Vous pourriez me demandez pourquoi j’ai changé. Tout simplement parce que urxvt comporte certaines fonctionnalités très prometteuse. En effet, il est possible de lancer un daemon lorsque le système démarre, ce qui a pour but de partager les ressources et de lancer tout les terminaux dans un processus. Je trouve l’idée des daemons très bonnes (cf thunar –daemon). Ainsi les applications concernés, répondent au quart de tour. Il est aussi réputé pour être très léger (donc parfais sur Openbox).</p>
+
+<!-- more -->
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/urxvt.png" /></p>
+
+<p>Afin de lancer le daemon dès l’initialisation du système, j’ai ajouté à mon ~/.xinitrc (avant exec openbox-session), l’option:</p>
+
+<pre><code>urxvtd -q -o -f
+</code></pre>
+
+<p>Rendez vous sur cette <a href="http://linux.die.net/man/1/urxvtd">page</a>, pour voir les options disponibles. Dorénavant, si vous souhaitez utiliser le daemon, lancer “urxvtc” (au lieu de urxvt) pour démarrer les terminaux clients.</p>
+
+<p>J’ai bindé la touche F1 dans le rc.xml pour lancer un terminal. Le résultat, c’est instantané et c’est d’une praticité incroyable pour mon “pacman -Syu” quotidien. J’ai même l’impression que l’affichage est sensiblement plus rapide que xterm. Depuis que je l’utilise, je ne peux plus m’en passer et dès que je lance mes applis dans des terms, je trouve ça ultime.</p>
+
+<p>Je n’en ai pas parlé précédemment, mais il supporte la vrai transparence (je ne m’en sert pas). Pour connaître la procédure, la <a href="https://wiki.archlinux.org/index.php/Urxvt#True_transparency">doc</a> vous l’explique. Pour avoir un joli terminal qui correspond a vos goûts, vous devrez certainement, mettre un minimum les mains dans le cambouis (~/.Xdefaults). Cependant, je ne pense pas que cela fasse peur à des Archers.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/rxvt.gif" /></p>
+
+<p>Les options disponibles sont innombrables. Comme la taille et la police utilisée, le type et le style de scrollbar, la taille par défaut de la fenêtre, etc… A vous de vous renseigner. Par ailleurs, vous trouverez des configs qui vous aideront, sur la toile.</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

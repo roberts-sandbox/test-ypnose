@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ypnose" />
+	
+	<meta name="description" content="Les péripéties d'un libriste convaincu et passionné de 23 ans." />
+	
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+	
+	<title>Tweaks sous Fedora 16 - Dans la Tête du Linuxien</title>
+	
+</head>
+<body>
+	<div class="container">
+	<div id="widthmes">
+	Vous utilisez un écran ayant une largeur inférieure à 350px.
+	Par conséquent, les images ne seront pas affichées et il est possible que la navigation ne soit pas optimale.
+</div>
+
+	<div><a href="https://github.com/Ypnose?tab=repositories" class="githubrib">Fork Me</a></div>
+	<header>
+		<a href="/" title="Dans la Tête du Linuxien"></a>
+	</header>
+
+	<nav>
+		<ul>
+		<li><a href="/">/root</a> &middot;</li>
+		<li><a href="/archives">Archives</a> &middot;</li>
+		<li><a href="/hardware">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/atom.xml">RSS</a></li>
+		</ul>
+	</nav>
+
+	<div class="barnav"></div>
+
+	<article>
+	<div class="infobox">
+
+		<h1>Tweaks sous Fedora 16</h1>
+
+		<div>
+			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 21.12.2011
+		</div>
+		<div>
+			<span> &rarr; </span><a href="/categories/Astuce">Astuce</a><span> &rarr; </span><a href="/categories/Conseil">Conseil</a>
+		</div>
+
+	</div>
+
+	<p>Bonjour,</p>
+
+<p>J’en ai pas mal parlé sur mon profil <a href="https://twitter.com/#!/tetedulinuxien/">Twitter</a>, il n’y a pas si longtemps, mais je pense avoir enfin trouvé la distrib pour mon laptop. C’est bel et bien Fedora 16.</p>
+
+<p>Elle fonctionne parfaitement “out-of-the-box” mais chez moi certains réglages semblent nécessaires, car par exemple l’autonomie à subi un sacré coup. Sous Windows Vista, mon laptop tient dans les 3h15 et sous Fedora (non-réglée) je passe à un petit 2h. Il y aussi quelques ajustements au niveau de l’interface.</p>
+
+<!-- more -->
+
+<p>Pour moi ces “tweaks” sont donc incontournables. Je vais donc vous faire un récapitulatif.</p>
+
+<p>Pour commencer, petite parenthèse, lors de l’installation j’applique ce partitionnement (comme sur chaque distrib): une partition 10-12 Go pour la racine en ext4, 2Go pour la swap (remplir une partition du double de la RAM est inutile, je dispose déjà de 4Go sous tout mes ordis) et le reste pour ma /home en ext4 aussi.</p>
+
+<p><em>** Gestion de la fréquence CPU **</em></p>
+
+<p>Pour installer une version améliorée de cpufrequtils appelée cpupowerutils, qui comporte quelques nouvelles fonctionnalités, on passe par le paquet kernel-tools:</p>
+
+<pre><code>sudo yum install kernel-tools
+</code></pre>
+
+<p>En effet, le paquet cpufrequtils est déprécie et est remplacé par kernel-tools. A ce moment là, j’ai eu quelques difficultés pour paramétrer le nécessaire. En fait, il n’y a pas grand chose de compliqué.</p>
+
+<p>Avec ‘nano’, on édite la fichier /etc/sysconfig/cpupower comme ceci:</p>
+
+<pre><code>sudo nano /etc/sysconfig/cpupower
+</code></pre>
+
+<p>et on a ça:</p>
+
+<pre><code># See 'cpupower help' and cpupower(1) for more info
+CPUPOWER_START_OPTS="frequency-set -g performance"
+CPUPOWER_STOP_OPTS="frequency-set -g ondemand"
+</code></pre>
+
+<p>Modifier la ligne  CPUPOWER_START_OPTS en remplaçant “performance” par le “governor” désiré. J’ai moi-même remplacé “performance” par “ondemand”. Vous pouvez ajouter aussi une fréquence minimale avec l’argument -d et une fréquence maximale avec l’argument -u.</p>
+
+<p>Ex: “frequency-set -g ondemand -d 800MHz -u 2GHz”. Je vous invite à lire le man pour plus d’options:</p>
+
+<pre><code>man cpupower-frequency-set
+</code></pre>
+
+<p>Pour vous éviter de relancer le service cpupower à chaque (re)démarrage, procédez comme ceci:</p>
+
+<pre><code>sudo systemctl enable cpupower
+</code></pre>
+
+<p>Et voilà votre “governor” réglé automatiquement à chaque démarrage. Vous pouvez contrôler avec</p>
+
+<pre><code>cat /proc/cpuinfo | grep "cpu MHz"
+</code></pre>
+
+<p>et voir la fréquence minimale gérée par votre CPU.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/cpu.png" /></p>
+
+<p><em>** Gestion du GPU **</em></p>
+
+<p>Mon laptop comporte un GPU ATI HD3450. Je souhaite me passer du driver proprio et utiliser l’alternative libre. Utiliser GNOME3 fonctionne sans problème avec le radeon libre. Cependant, pour gagner quelques minutes et aussi parce que les effets Compiz ne n’importent guère, je suis passé sur GNOME Fallback. J’ai déjà un gain mais je ne vais pas m’arrêter là.</p>
+
+<p>Beaucoup se plaignent du ventilateur qui se met à “chanter” assez tôt, pour ne plus cesser. J’ai failli passer sur le proprio juste à cause de ce phénomène mais finalement non. J’ai trouvé le Saint-Graal. En tombant sur cette <a href="http://www.x.org/wiki/RadeonFeature">doc</a>, j’ai donc encore affiné mes réglages et baissé significativement la vitesse du ventilateur (et aussi la dissipation thermique).</p>
+
+<p>Pour modifier les fichiers suivants, vous ne DEVEZ pas avoir l’option “nomodeset” dans GRUB. Vérifiez avec:</p>
+
+<pre><code>cat /etc/default/grub
+</code></pre>
+
+<p>Je vais retenir les points de la doc dont nous avons besoin. Il faudra regarder/modifier uniquement deux fichiers. AVANT TOUT, CES PROCÉDURES SONT À VOS RISQUES ET PÉRILS, FAITES BIEN ATTENTION.</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/gpu.png" /></p>
+
+<p>Lancez</p>
+
+<pre><code>cat /sys/class/drm/card0/device/power_method
+</code></pre>
+
+<p>Si vous obtenez “profile” (sans les guillemets), c’est OK, rien à modifier donc. Vous pouvez passer à la suite.</p>
+
+<p>Ensuite, rentrez</p>
+
+<pre><code>sudo nano /sys/class/drm/card0/device/power_profile
+</code></pre>
+
+<p>et remplacer ”default” (sans les guillemets) soit par mid soit par autre chose. Il est écrit sur la doc qu’il ne faut pas rentrer low, mais je suis quand même en train d’essayer ce paramètre. Allez <a href="http://www.x.org/wiki/RadeonFeature#KMS_Power_Management_Options">ici</a> pour une liste complète. En modifiant le fichier de “default” à “mid”, j’ai pu entendre le ventilo baisser sa vitesse en temps réel.</p>
+
+<p>Sachant qu’à chaque redémarrage, le paramètre du fichier “power_profile” revient sur default, il faut automatiser la commande. De base, Fedora 16 ne comporte pas de “rc.local”. Il faut donc créer le fichier “/etc/rc.d/rc.local” et ajouter votre commande:</p>
+
+<pre><code>#!/bin/bash
+echo mid &gt; /sys/class/drm/card0/device/power_profile
+</code></pre>
+
+<p>Vous pouvez remplacer mid par ‘low’, ‘‘auto’ et ‘high’. N’oubliez pas de le rendre exécutable avec:</p>
+
+<pre><code>chmod +x /etc/rc.d/rc.local
+</code></pre>
+
+<p>Le fichier sera lu au boot de Fedora sans aucun autre réglage.</p>
+
+<p><em>** Réduire la consommation d’énergie avant le noyau 3.2 **</em></p>
+
+<p>Je vous invite à lire l’<a href="http://blog.rolinh.ch/linux/palier-au-probleme-de-consommation-denergie-des-noyaux-linux-2-6-38-a-3-2/">article</a> de mon blog ami sur Rolin.ch ici, mais un autre tweak consiste à ajouter une option à GRUB, en attendant la correction dans le noyau du problème du surconsommation sur certains processeurs Intel depuis la version 2.6.38.</p>
+
+<p>L’option à rajouter est “pcie_aspm=force”. Pour ceci, rentrez:</p>
+
+<pre><code>sudo nano /etc/default/grub
+</code></pre>
+
+<p>et ajouter ”pcie_aspm=force” (sans les guillemets) à la fin de la ligne GRUB_CMDLINE_LINUX et recharger le grub.cfg avec:</p>
+
+<pre><code>sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+</code></pre>
+
+<p>Redémarrez l’ordi et vous aurez certainement une bonne surprise.</p>
+
+<p>Je suis passé maintenant à 2h50 d’autonomie, ce qui est plutôt important.</p>
+
+<p><em>** Autre réglages **</em></p>
+
+<p>Sachant que mon chipset wifi est un Broadcom 4312 et que le driver free ne permet pas de faire fonctionner mon modèle, j’ai dû ajouter le dépôt RPMfusion qui comporte un driver non-libre.</p>
+
+<p>J’ai ajouté les dépôts “Free” et “Non-free”:</p>
+
+<pre><code>sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+</code></pre>
+
+<p>et</p>
+
+<pre><code>sudo rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+</code></pre>
+
+<p>Il faut ensuite rafraîchir la liste des paquets:</p>
+
+<pre><code>sudo yum update
+</code></pre>
+
+<p>et j’ai installé le paquet kmod-wl avec:</p>
+
+<pre><code>sudo yum install kmod-wl
+</code></pre>
+
+<hr />
+
+<p>Je trouve que de base Fedora 16 consomme beaucoup de RAM, donc il faut désactiver pas mal d’applications au démarrage. J’ai désactivé les applis suivantes et je suis passé de 650 Mo à environ 350 Mo:</p>
+
+<ul>
+  <li>
+    <p>Caribou</p>
+  </li>
+  <li>
+    <p>Démarrer la méthode de saisie</p>
+  </li>
+  <li>
+    <p>Dépôt Tracker</p>
+  </li>
+  <li>
+    <p>Extracteur du système de fichiers Tracker</p>
+  </li>
+  <li>
+    <p>Extracteur Tracker pour Flickr</p>
+  </li>
+  <li>
+    <p>Files</p>
+  </li>
+  <li>
+    <p>Gestionnaire Bluetooth</p>
+  </li>
+  <li>
+    <p>GNOME Login Sound</p>
+  </li>
+  <li>
+    <p>Notificateur de sauvegarde</p>
+  </li>
+  <li>
+    <p>Orca screen reader</p>
+  </li>
+  <li>
+    <p>Partage de bureau</p>
+  </li>
+</ul>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/applis.png" /></p>
+
+<p>Pour modifier ces programmes, lancez:</p>
+
+<pre><code>gnome-session-properties
+</code></pre>
+
+<hr />
+
+<p>J’ai effectué quelques ajustements au niveau de l’interface car avoir une barre en haut et une en bas, c’est un peu trop pour moi. J’ai tout rassemblé sur une barre en haut de l’écran.</p>
+
+<p>Elle rassemble:</p>
+
+<ul>
+  <li>
+    <p>Menu principal</p>
+  </li>
+  <li>
+    <p>Mes applications souvent utilisées</p>
+  </li>
+  <li>
+    <p>Liste des fenêtres</p>
+  </li>
+  <li>
+    <p>Sélecteur d’espaces de travail</p>
+  </li>
+  <li>
+    <p>Heure</p>
+  </li>
+  <li>
+    <p>Zone de notification</p>
+  </li>
+  <li>
+    <p>Menu personnel</p>
+  </li>
+</ul>
+
+<p>Voilà le résultat:</p>
+
+<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/bar.png" /></p>
+
+<p>Vous serez peut-être surpris que cet article ne soit pas en rapport avec Archlinux, mais j’essaie aussi de parler d’autre chose qui soit en rapport avec GNU/Linux.</p>
+
+<p>PS: Il est bien écrit power_profile (ou method) dans les balises. L”underscore” est juste mal affiché dans ces balises.</p>
+
+<p>EDIT: Corrigé une petite erreur au niveau du rc.local.</p>
+
+
+</article>
+
+<div class="barart"></div>
+
+<div id="lastart">
+	<h4>Derniers articles</h4>
+	
+		<div class="artlink"><span>&rsaquo; </span>11.01.2013<span>&nbsp;&rarr; </span><a href="/2013/01/2013-lannee-du-changement/">2013: l'année du changement</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>05.10.2012<span>&nbsp;&rarr; </span><a href="/2012/10/guide-filesystem-archlinux/">Guide de l'upgrade de filesystem sous Archlinux</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>31.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/surveillez-hdd-cron/">Surveiller son HDD avec cron</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>03.08.2012<span>&nbsp;&rarr; </span><a href="/2012/08/ete-chaud/">L'été sera chaud!</a></div>
+	
+		<div class="artlink"><span>&rsaquo; </span>01.05.2012<span>&nbsp;&rarr; </span><a href="/2012/05/accelerer-boot-fedora-16/">Accélérer le boot sous Fedora 16</a></div>
+	
+</div>
+
+
+	<div class="barfoot"></div>
+
+	<footer>
+		<div>
+			<a href="/archives">Archives</a>  &#124;
+			<a href="https://github.com/Ypnose">Github</a>  &#124;
+			<a href="https://bitbucket.org/Ypnose">Bitbucket</a>  &#124;
+			<a href="https://twitter.com/tetedulinuxien/">Twitter</a>
+		</div>
+		<div>
+			Blog amis:
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
+			<a href="http://schoewilliam.legtux.org/">Schoewilliam</a>  &#124;
+			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
+			<a href="http://postblue.info/">Postblue</a>
+		</div>
+		<div>
+			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
+			- Design par<a href="/qui-suis-je">Ypnose</a>
+		</div>
+		<div>
+			<a href="http://validator.w3.org"><img src="/assets/images/html5.png" alt="html5" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/"><img src="/assets/images/css3.png" alt="css3" /></a>
+		</div>
+	</footer>
+	</div>
+		<div id="button"><a href="#">&uarr;&uarr;</a></div>
+</body>
+</html>

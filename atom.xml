@@ -1,0 +1,33 @@
+---
+layout: nil
+---
+
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Dans la Tête du Linuxien</title>
+  <link href="http://tetedulinuxien.fr/"/>
+  <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://tetedulinuxien.fr/</id>
+  <author>
+    <name>Ypnose</name>
+  </author>
+  	<rights>Copyright (c) 2011 - {{ site.time | date: "%Y" }}, Ypnose; all rights reserved.</rights>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://tetedulinuxien.fr{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://tetedulinuxien.fr{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Ypnose</name>
+      <uri>http://tetedulinuxien.fr/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
