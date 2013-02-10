@@ -32,7 +32,7 @@ A la fin de ce fichier, vous pouvez trouver une section qui contient différents
 
 Cette ligne vous permet d'afficher un layout adapté à votre utilisation. Voici mon nouveau résultat:
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png 700 288">](http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png)
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png">](http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png)
 
 
 
@@ -71,7 +71,7 @@ Il dispose d'autres avantages extrêmement utiles:
 
 Je ne suis pas encore, un adepte de vim mais j'arrive tout de même à me familiariser avec les raccourcis. Ils sont souvent sous la forme de deux lettres et lorsque vous appuyer sur la première, une liste s'affiche et montre différentes combinaisons réalisables. Cela aide à se souvenir des combinaisons. Il est aussi possible d'utiliser les raccourcis de mc bindés sur les Fx (de F1 à F10).
 
-[caption id="attachment_1579" align="aligncenter" width="300" caption="Liste de raccourcis"][![](http://tetedulinuxien.fr/wp-content/uploads/2011/11/raccourcis-300x127.png)](http://tetedulinuxien.fr/wp-content/uploads/2011/11/raccourcis.png)[/caption]
+[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png">](http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png)
 
 Chose importante, il faut aussi se décider à modifier le thème de couleur. Celui de base est acceptable (avec un .Xdefaults peaufiné), mais je cherche à obtenir un thème similaire à mc car je me suis habitué aux couleurs.
 

@@ -47,7 +47,7 @@ Vous pouvez le télécharger avec:
 
   * [http://iceberg-interactive.com/news-mainmenu-33/1-latest/457-iceberg-interactive-rush-to-sign-up-oil-rush.html](http://iceberg-interactive.com/news-mainmenu-33/1-latest/457-iceberg-interactive-rush-to-sign-up-oil-rush.html)
 
-  * [http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/page__hl__asap__fromsearch__1](http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/page__hl__asap__fromsearch__1)
+  * [http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/](http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/)
 
 ** Pacman: **
 

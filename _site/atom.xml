@@ -4,7 +4,7 @@
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-10T17:20:52+01:00</updated>
+  <updated>2013-02-10T17:39:40+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
@@ -826,7 +826,7 @@ GRUB_CMDLINE_LINUX=&quot;rd.md=0 rd.lvm=0 rd.dm=0 quiet SYSFONT=latarcyrheb-sun1
     &lt;p&gt;&lt;a href=&quot;http://iceberg-interactive.com/news-mainmenu-33/1-latest/457-iceberg-interactive-rush-to-sign-up-oil-rush.html&quot;&gt;http://iceberg-interactive.com/news-mainmenu-33/1-latest/457-iceberg-interactive-rush-to-sign-up-oil-rush.html&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;[http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/page__hl__asap__fromsearch&lt;strong&gt;1](http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/page__hl__asap__fromsearch&lt;/strong&gt;1)&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/&quot;&gt;http://oilrush-game.com/forum/index.php?/topic/1768-demo-version-asap/&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1147,7 +1147,7 @@ echo mid &amp;gt; /sys/class/drm/card0/device/power_profile
 
 &lt;p&gt;Cette ligne vous permet d’afficher un layout adapté à votre utilisation. Voici mon nouveau résultat:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png 700 288&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;et la ligne correspondante:&lt;/p&gt;
 
@@ -1194,7 +1194,7 @@ Cette ligne n’est pas compliquée, elle déclare à moc d’utiliser 10% d’e
 
 &lt;p&gt;Je ne suis pas encore, un adepte de vim mais j’arrive tout de même à me familiariser avec les raccourcis. Ils sont souvent sous la forme de deux lettres et lorsque vous appuyer sur la première, une liste s’affiche et montre différentes combinaisons réalisables. Cela aide à se souvenir des combinaisons. Il est aussi possible d’utiliser les raccourcis de mc bindés sur les Fx (de F1 à F10).&lt;/p&gt;
 
-&lt;p&gt;[caption id=”attachment_1579” align=”aligncenter” width=”300” caption=”Liste de raccourcis”]&lt;a href=&quot;http://tetedulinuxien.fr/wp-content/uploads/2011/11/raccourcis.png&quot;&gt;&lt;img src=&quot;http://tetedulinuxien.fr/wp-content/uploads/2011/11/raccourcis-300x127.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png&quot;&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Chose importante, il faut aussi se décider à modifier le thème de couleur. Celui de base est acceptable (avec un .Xdefaults peaufiné), mais je cherche à obtenir un thème similaire à mc car je me suis habitué aux couleurs.&lt;/p&gt;
 

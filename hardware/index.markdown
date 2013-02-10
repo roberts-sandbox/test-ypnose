@@ -58,7 +58,7 @@ Voici une liste exhaustive du matériel informatique, sur lequel j'effectue mes 
 
 ** Microphone **
 
-  *Microphone de bureau Logitech USB Desktop
+  Microphone de bureau Logitech USB Desktop
 
 	0556:0001 Asahi Kasei Microsystems Co., Ltd AK5370 I/F A/D Converter
 	Driver = snd-usb-audio
