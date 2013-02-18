@@ -201,6 +201,7 @@ nav a {
 	background-color:#242C42;
 	border:2px solid #323D5C;
 	width:30px;
+	height:16px;
 	padding:4px 0px;
 	text-shadow:1px 1px 0 rgba(0,0,0,0.3);
 	border-radius:2px;
@@ -208,7 +209,6 @@ nav a {
 	-moz-border-radius:2px;
 	font-weight:bold;
 	color:#FFF;
-	height:18px;
 }
 
 /* INDEX */
