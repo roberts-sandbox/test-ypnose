@@ -4,13 +4,136 @@
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-19T12:00:18+01:00</updated>
+  <updated>2013-02-21T20:15:58+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
   </author>
   	<rights>Copyright (c) 2011 - 2013, Ypnose; all rights reserved.</rights>
 
+  
+  <entry>
+    <id>http://tetedulinuxien.fr/2013/02/potato-or-not</id>
+    <link type="text/html" rel="alternate" href="http://tetedulinuxien.fr/2013/02/potato-or-not/"/>
+    <title>Potato or not potato?</title>
+    <published>2013-02-21T14:13:24+01:00</published>
+    <updated>2013-02-21T14:13:24+01:00</updated>
+    <author>
+      <name>Ypnose</name>
+      <uri>http://tetedulinuxien.fr/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Salut,&lt;/p&gt;
+
+&lt;p&gt;Bon OK, le titre peut vous sembler étrange, voire inadapté avec ce qui est fait d’habitude, mais cela fait du bien de se renouveler un peu. Sachant que &lt;a href=&quot;http://neros.fr/blog&quot;&gt;Neros&lt;/a&gt; m’a taggué au jeu
+de la patate chaude via son &lt;a href=&quot;https://twitter.com/NerosTie&quot;&gt;Twitter&lt;/a&gt;, je me suis dit que cela pouvait être amusant et intéressant.&lt;br /&gt;
+En toute franchise, je n’ai pas compris de suite quel était l’objectif et pourquoi on m’avait mentionné sur Twitter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/potato.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bref, voici les règles:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Poster les règles sur le blog&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Répondre aux 11 &lt;a href=&quot;http://neros.fr/blog/i-can-count-to-potato/&quot;&gt;questions&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Inventer 11 nouvelles questions&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Partager le tag avec 11 personnes en mettant un lien vers leurs blogs et leur annoncer la nouvelle !&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s GO!!  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1 &amp;gt; T’es plutôt bœuf ou cheval ?&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;Plutôt bœuf. Je ne me souviens pas avoir déjà mangé du cheval. Et puis un manger du cheval, je trouve ça assez dingue (comme manger du chat ou du chien d’ailleurs).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2 &amp;gt; Quel est ton écrivain préféré ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Dure question. Je ne lis pas très souvent. Mais si j’avais plus de temps pour le faire, je serais certainement tenté par George R. R. Martin, car je suis un grand fan de la série “Game of Thrones”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3 &amp;gt; Tu penses quoi des consoles de maintenant ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;C’est une machine à fric. Quand on voit le prix des jeux et des accessoires, je trouve que c’est un gros business…&lt;br /&gt;
+Sinon au niveau des jeux, je n’ai plus de coups de cœur comme avant. Personnellement, j’ai eu une N64 et quand on voit des jeux comme GoldenEye, Perfect Dark, Super Mario 64 ou encore Turok qui sont
+encore aujourd’hui des références, je trouve ça incroyable. Et ces jeux avaient un réel challenge, ce qui semble moins courant maintenant.&lt;br /&gt;
+Pour finir, je suis plus Retrogaming en fait.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/n64.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4 &amp;gt; Est-ce qu’il y a une cause pour laquelle tu te bats ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Je ne sais pas si on peut vraiment appeler ça une cause, mais je suis un fervent défenseur des OS libres. Après, je ne me bats pas non plus. Je préfère éveiller un sentiment de curiosité chez les utilisateurs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5 &amp;gt; Les poils aux jambes, un problème ou pas ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Non, ce n’est pas un problème. Du moins, par pour l’instant…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6 &amp;gt; Ton alcool préféré (si tu en bois) ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Je ne suis pas un gros consommateur d’alcool. Mais de temps en temps, une petite 1664, un Porto ou un Muscat ambré, je ne dis pas non.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/1664.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7 &amp;gt; Des météorites tombent du ciel, quelle est ta première réaction ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Au début, on m’a dit qu’une météorite était tombée et je n’ai pas vraiment réagi. Mais après avoir regardé toutes les vidéos sur la Toile, j’ai été extrêmement impressionné. Ce n’est pas tout les jours
+que ça se passe. J’essaie aussi d’imaginer la distance que ces corps célestes ont parcouru dans l’espace, mais c’est encore assez abstrait.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8 &amp;gt; Windows, Linux ou MacOS et pourquoi ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is THE question! Linux sans hésiter parce que ça me permets de faire tout ce dont j’ai besoin et aussi parce que j’ai un contrôle total, sur ce que j’utilise. Un logiciel est compilé avec une dépendance
+que je juge inutile; rien de plus simple, je prends les sources et je les modifie selon mes besoins. Linux me fait aussi penser que je découvre l’informatique tel qu’il est, c’est-à-dire que je comprends
+comment un OS est développé et comment il fonctionne.&lt;br /&gt;
+Windows ne me sert que pour mes jeux (comme une console en fait) et MacOS, késako?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9 &amp;gt; Les films avec lunettes 3D, tu en penses quoi ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ai juste vu Avatar en 3D. Mis à part une scène où l’on voit une fougère qui nous frôle, je ne peux pas dire ce qu’il y a en plus. Par contre, les places sont onéreuses et les yeux se fatiguent 3 fois
+plus vite. MALUS &amp;gt; BONUS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10 &amp;gt; On vient de te voler ton pain au chocolat, que fais-tu ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tout dépend de la personne. Si c’est une jolie femme, qu’elle me vole mon pain et qu’il y a un coup de foudre, pourquoi pas… Mais si c’est quelqu’un qui cherche les ennuis, je ne pense pas me laisser faire.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/painchoco.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11 &amp;gt; Le Tardis vient d’apparaître devant toi et le Doctor te propose de devenir son nouveau compagnon. Où et quand sera ta première destination ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;J’avoue humblement que je n’ai pas saisi instantanément la question (je ne regarde pas Doctor Who). Après recherche, je suis en mesure de fournir une réponse.&lt;br /&gt;
+Je pense que reviendrais au temps de l’époque gallo-romaine avec les batailles épiques et des glaives affûtés comme des rasoirs. Cependant, je pense qu’il faudrait avoir des tripes et je ne sais pas
+si j’en serai capable.&lt;/p&gt;
+
+&lt;p&gt;Voilà voilou!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Voici maintenant l’heure de mes 11 questions:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1 &amp;gt; Saucisson ou rillettes?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;2 &amp;gt; Quel est ton style de musique?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;3 &amp;gt; Batman ou Joker?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;4 &amp;gt; Qu’est-ce-qu’un geek pour toi?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;5 &amp;gt; Tu viens de gagner 1 million d’euros, qu’en fais-tu?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;6 &amp;gt; Es-tu un séducteur ou tu es plutôt timide?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;7 &amp;gt; Quel est ton OS principal? Pourquoi?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;8 &amp;gt; L’écologie pour toi, c’est quoi?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;9 &amp;gt; Tu préfères te coucher tôt ou tard?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;10 &amp;gt; PS3, Xbox360 ou PC?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;11 &amp;gt; Morpheus te dit que tu te trouves dans la Matrice, quelle est ta réaction?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Et pour finir, les personnes que j’invite à “jouer”:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://schoewilliam.legtux.org/&quot;&gt;Schoewilliam&lt;/a&gt;, &lt;a href=&quot;http://postblue.info/&quot;&gt;Postblue&lt;/a&gt;, &lt;a href=&quot;http://lazonelibre.eklablog.com/&quot;&gt;Dempiller&lt;/a&gt;, &lt;a href=&quot;http://blog.rolinh.ch/&quot;&gt;Rolinh&lt;/a&gt;, &lt;a href=&quot;http://mart-e.be/&quot;&gt;mart-e&lt;/a&gt;, &lt;a href=&quot;www.tux-planet.fr/&quot;&gt;Tux-planet&lt;/a&gt;, 
+&lt;a href=&quot;http://id-libre.org/blogigor/&quot;&gt;blogiGor&lt;/a&gt;, &lt;a href=&quot;http://influence-pc.fr/&quot;&gt;Influence PC&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bon, je sais, cela ne fait pas 11 personnes mais vous ne m’en voudrez pas, si je n’ai pas d’amis. :(&lt;/p&gt;
+
+</content>
+  </entry>
   
   <entry>
     <id>http://tetedulinuxien.fr/2013/01/2013-lannee-du-changement</id>
@@ -1670,57 +1793,6 @@ $ cp -r /var/abs/community/dwm ~/dwm
 &lt;p&gt;Je rentrerai dans le détail de la config et personnalisation dans un autre billet.&lt;/p&gt;
 
 &lt;p&gt;Tchao et BONNES VACANCES!&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <id>http://tetedulinuxien.fr/2011/06/funtoo-compilez</id>
-    <link type="text/html" rel="alternate" href="http://tetedulinuxien.fr/2011/06/funtoo-compilez/"/>
-    <title>Funtoo: Compilez!</title>
-    <published>2011-06-17T13:39:36+02:00</published>
-    <updated>2011-06-17T13:39:36+02:00</updated>
-    <author>
-      <name>Ypnose</name>
-      <uri>http://tetedulinuxien.fr/</uri>
-    </author>
-    <content type="html">&lt;p&gt;Bonjour,&lt;/p&gt;
-
-&lt;p&gt;En appliquant ma curiosité légendaire, j’ai par conséquent décidé de me constituer un dualboot, sur mon nouvel ordi. Dans un article plus ancien, j’avais expliqué que je souhaitais essayer une Gentoo. J’ai entendu beaucoup de bien d’une distrib appelé Funtoo, qui a été crée par le grand manitou de Gentoo. Il a quitté le navire en 2008, à cause de problèmes de licences. Attention, ce n’est pas un fork mais une autre variante de Gentoo.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/06/gentoologo.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Je précise que je reste fidèle à ma Arch, qui me satisfait pleinement. Comme je l’ai dit souvent, c’est ma meilleure expérience GNU/Linux. J’utiliserai surtout cette Funtoo à un but expérimental.&lt;/p&gt;
-
-&lt;p&gt;Avant tout, il faut être sûr d’avoir des partitions disponibles. Le schéma habituel, à savoir: une racine /, un /home séparé et un /boot de quelques Mo. Funtoo ne s’installe qu’avec &lt;a href=&quot;http://lea-linux.org/documentations/index.php/Admin-admin_env-chroot&quot;&gt;chroot&lt;/a&gt;. Une occasion pour moi, de tester cette méthode que je n’utilise pas. Pour ma Arch, j’utilise l’iso sur une clé USB. L’installation en elle même, est un tantinet plus compliquée que pour une Archlinux. Vous aurez besoin d’une connexion Internet, sans quoi, l’installation doit être encore plus hardue. Vous avez deux choix: utiliser la branche stable ou current, avec beaucoup de softs récents mais peut-être moins fonctionnels. J’ai opté pour la branche “Stable” car je souhaite avoir un système exploitable. En fonction de votre choix (branche, 32 ou 64 bits et processeur), vous télécharger ce que l’on appelle stage3 et l’arbre Portage. Ils comportent le système de base (racine) et les librairies.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/06/funtoo.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Après l’extraction, vous devez modifier des fichiers de configs avec nano, comme le /etc/make.conf qui permet de définir le &lt;a href=&quot;http://fr.wikipedia.org/wiki/CFLAGS&quot;&gt;CFLAGS&lt;/a&gt; en fonction du CPU et bien d’autres options. Ce fichier est un des plus importants, car vous en aurez besoin pour toutes vos futures compilations. Il y a environ 7 fichiers à regarder.&lt;/p&gt;
-
-&lt;p&gt;Actuellement, vous n’avez aucun noyau d’installé sur Funtoo. Après avoir mis votre système à jour et avoir tout compilé (dans les 2h30 sur mon Phenom, aucun soucis en tout cas), vous devez prendre les sources du kernel et compiler le bouzin.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/06/tux.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Cet étape est de loin la plus intéressante de l’installation. Je connaissais déjà la procédure, sachant que je compile un noyau sur Arch. Pour ne pas faire de bêtises, il est conseillé d’appliquer la config de base préconisée par les développeurs (via make defconfig), et de l’adapter à vos besoins ensuite. Cette étape peut prendre vraiment beaucoup de temps, en particulier pour du matos un peu exotique (comme mon microphone USB). Je suis justement en train de me préparer un “.config” (configuration des options du kernel) totalement adapté à mon ordinateur. J’en garderai des copies, et cela me sera utile lors de prochaines compilations de noyau. Par contre, j’avoue que j’ai eu un kernel panic, dû à une option redondante.&lt;/p&gt;
-
-&lt;p&gt;Une chose que j’apprécie quand on compile son kernel, c’est qu’il est possible de définir des fonctions qui rendent le tout plus simple, grâce à menuconfig. Par exemple, comme je l’ai déjà expliqué il n’y a pas si longtemps, j’utilise cpufreq parce que le profil de base du CPU, est “performance” et que je souhaite le définir sur “ondemand”; je peux désormais définir le profil de base sur “ondemand”, et ainsi me passer de la mise en oeuvre de cpufreq. Autre bon point, je peux directement désactiver la prise en charge IPv6 dans le noyau, sans passer par une règle dans modprobe.conf.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2011/06/gcc.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Par conséquent, si votre matériel est plutôt bon, je vous recommande grandement de passer par cet étape, quelque soit votre distribution. Vous découvrirez sûrement des choses intéressantes.&lt;/p&gt;
-
-&lt;p&gt;Comme pour Arch, lorsque l’on a fini l’installation et éventuellement modifié GRUB en cas de dualboot, on redémarre et on se retrouve sur un système minimaliste, en tty. Voici les lignes que j’ai rajouté dans GRUB 0.97, pour pouvoir booter sur Funtoo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;title Funtoo Linux
-root (hd0,10)
-kernel /vmlinuz-2.6.38-gentoo-r6 root=/dev/sda9 quiet vga=792
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Après, à nous d’installer le serveur X et un bon WM, mais tout cela sera expliqué lors d’un prochain article!&lt;/p&gt;
-
-&lt;p&gt;Doc: &lt;a href=&quot;http://www.funtoo.org/wiki/Welcome&quot;&gt;Funtoo&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
