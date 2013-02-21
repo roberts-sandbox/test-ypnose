@@ -77,7 +77,7 @@
 
 <p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/hitachi.jpg" /></p>
 
-<p>Avant tout, sachez que je me suis aperçu de ces parcages que très récemment. Depuis un moment, j’appliquais la commande “hdparm -B 254 /dev/sda” par mesure de sécurité, mais un soir j’ai entendu un bruit bizarre sous mon laptop et en consultant de temps en temps la valeur “193 Load_Cycle_Count” avec smartmontools, j’ai directement compris.</p>
+<p>Avant tout, sachez que je me suis aperçu de ces parcages que très récemment. Depuis un moment, j’appliquais la commande <code>hdparm -B 254 /dev/sda</code> par mesure de sécurité, mais un soir j’ai entendu un bruit bizarre sous mon laptop et en consultant de temps en temps la valeur <code>193 Load_Cycle_Count</code> avec smartmontools, j’ai directement compris.</p>
 
 <p>Les outils utilisés restent assez basiques mais permettent une surveillance efficace et il est aussi possible d’exploiter ces paramètres (courbe dans tableur).</p>
 
@@ -85,9 +85,9 @@
 
 <p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/laptop.jpg" /></p>
 
-<p>Pour commencer, il serait judicieux de baisser la valeur ou même désactiver ce paramètre appelé APM (qui est le responsable). Un bon moyen de rendre la modification permanente et effective après reboot, est de modifier le fichier rc.local et ajouter la commande “hdparm -B 254 /dev/sdx”. Assurez-vous de choisir le bon disque avec “fdisk -l”. La valeur 254 permet de fixer l’APM à la plus basse valeur, mais vous pouvez aussi désactiver ce dernier avec 255.</p>
+<p>Pour commencer, il serait judicieux de baisser la valeur ou même désactiver ce paramètre appelé APM (qui est le responsable). Un bon moyen de rendre la modification permanente et effective après reboot, est de modifier le fichier rc.local et ajouter la commande <code>hdparm -B 254 /dev/sdx</code>. Assurez-vous de choisir le bon disque avec <code>fdisk -l</code>. La valeur 254 permet de fixer l’APM à la plus basse valeur, mais vous pouvez aussi désactiver ce dernier avec 255.</p>
 
-<p>Comme je l’ai déjà dit, sous Fedora 17, rc.local n’existe pas. Il faut le créer dans le dossier “/etc/rc.d/” et le rendre exécutable.</p>
+<p>Comme je l’ai déjà dit, sous Fedora 17, rc.local n’existe pas. Il faut le créer dans le dossier <code>/etc/rc.d/</code> et le rendre exécutable.</p>
 
 <pre><code>#!/bin/sh
 hdparm -B 254 /dev/sdx
@@ -97,7 +97,7 @@ hdparm -B 254 /dev/sdx
 
 <p>Par conséquent, il faut être sûr du logiciel qui est mis en place, sur votre distribution (dans notre exemple, ce sera pm-utils). Si ce n’est pas pm-utils, je vous donnerai un lien pour faire la bidouille avec systemctl.</p>
 
-<p>Afin de fixer cette valeur à chaque sortie de mise en veille, il faut créer une règle pm-utils et la placer dans /etc/pm/sleep.d. Pour plus de clarté, je vous conseille d’inclure hdparm dans le nom du fichier. J’ai appelé la règle 50-hdparm_pm avec les lignes suivantes:</p>
+<p>Afin de fixer cette valeur à chaque sortie de mise en veille, il faut créer une règle pm-utils et la placer dans <code>/etc/pm/sleep.d</code>. Pour plus de clarté, je vous conseille d’inclure hdparm dans le nom du fichier. J’ai appelé la règle 50-hdparm_pm avec les lignes suivantes:</p>
 
 <pre><code>#!/bin/sh
 
@@ -108,7 +108,7 @@ fi
 
 <p>Ainsi à chaque sortie de mise en veille, la commande est lancé et l’APM est réglé automatiquement.</p>
 
-<p>Pour s’assurer que le disque ne se détériore plus, il y a plusieurs astuces. La première c’est de lancer la mise en veille du système et contrôler le log pm-suspend.log qui se trouve dans “/var/log”. Vous pourrez savoir si votre règle est prise en compte. Cherchez 50-hdparm_pm (ou le nom que vous lui avez donné) dans le log.</p>
+<p>Pour s’assurer que le disque ne se détériore plus, il y a plusieurs astuces. La première c’est de lancer la mise en veille du système et contrôler le log pm-suspend.log qui se trouve dans <code>/var/log</code>. Vous pourrez savoir si votre règle est prise en compte. Cherchez 50-hdparm_pm (ou le nom que vous lui avez donné) dans le log.</p>
 
 <p>Veuillez lancer aussi:</p>
 
@@ -117,7 +117,7 @@ fi
 
 <p>Si l’output correspond à la valeur désirée, c’est que la règle fonctionne. Sur mon Desktop (qui ne supporte pas le changement de l’APM), cela ne me retourne rien.</p>
 
-<p>La seconde méthode consiste à vérifier la ligne “193 Load_Cycle_Count” et tout particulièrement la “RAW_VALUE”. Si vous voyez qu’elle commence à se stabiliser, c’est bon signe. Pour ne plus avoir de doutes possibles, j’ai décidé de lancer à intervalle régulier (via cron) un script qui affichera ces mesures dans un fichier. Je pourrais ainsi examiner l’évolution de mon disque.</p>
+<p>La seconde méthode consiste à vérifier la ligne <code>193 Load_Cycle_Count</code> et tout particulièrement la <code>RAW_VALUE</code>. Si vous voyez qu’elle commence à se stabiliser, c’est bon signe. Pour ne plus avoir de doutes possibles, j’ai décidé de lancer à intervalle régulier (via cron) un script qui affichera ces mesures dans un fichier. Je pourrais ainsi examiner l’évolution de mon disque.</p>
 
 <p>J’ai écrit un petit bout de code que j’ai placé dans /etc/cron.d:</p>
 

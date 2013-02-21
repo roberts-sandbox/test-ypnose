@@ -4,7 +4,7 @@
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-21T20:15:58+01:00</updated>
+  <updated>2013-02-21T20:27:41+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
@@ -374,7 +374,7 @@ Je ne l’éditerai pas, mais je passerai plutôt par la commande grpconv. Cette
 
 &lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/08/hitachi.jpg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Avant tout, sachez que je me suis aperçu de ces parcages que très récemment. Depuis un moment, j’appliquais la commande “hdparm -B 254 /dev/sda” par mesure de sécurité, mais un soir j’ai entendu un bruit bizarre sous mon laptop et en consultant de temps en temps la valeur “193 Load_Cycle_Count” avec smartmontools, j’ai directement compris.&lt;/p&gt;
+&lt;p&gt;Avant tout, sachez que je me suis aperçu de ces parcages que très récemment. Depuis un moment, j’appliquais la commande &lt;code&gt;hdparm -B 254 /dev/sda&lt;/code&gt; par mesure de sécurité, mais un soir j’ai entendu un bruit bizarre sous mon laptop et en consultant de temps en temps la valeur &lt;code&gt;193 Load_Cycle_Count&lt;/code&gt; avec smartmontools, j’ai directement compris.&lt;/p&gt;
 
 &lt;p&gt;Les outils utilisés restent assez basiques mais permettent une surveillance efficace et il est aussi possible d’exploiter ces paramètres (courbe dans tableur).&lt;/p&gt;
 
@@ -382,9 +382,9 @@ Je ne l’éditerai pas, mais je passerai plutôt par la commande grpconv. Cette
 
 &lt;p&gt;&lt;img class=&quot;imgcenter&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2012/08/laptop.jpg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Pour commencer, il serait judicieux de baisser la valeur ou même désactiver ce paramètre appelé APM (qui est le responsable). Un bon moyen de rendre la modification permanente et effective après reboot, est de modifier le fichier rc.local et ajouter la commande “hdparm -B 254 /dev/sdx”. Assurez-vous de choisir le bon disque avec “fdisk -l”. La valeur 254 permet de fixer l’APM à la plus basse valeur, mais vous pouvez aussi désactiver ce dernier avec 255.&lt;/p&gt;
+&lt;p&gt;Pour commencer, il serait judicieux de baisser la valeur ou même désactiver ce paramètre appelé APM (qui est le responsable). Un bon moyen de rendre la modification permanente et effective après reboot, est de modifier le fichier rc.local et ajouter la commande &lt;code&gt;hdparm -B 254 /dev/sdx&lt;/code&gt;. Assurez-vous de choisir le bon disque avec &lt;code&gt;fdisk -l&lt;/code&gt;. La valeur 254 permet de fixer l’APM à la plus basse valeur, mais vous pouvez aussi désactiver ce dernier avec 255.&lt;/p&gt;
 
-&lt;p&gt;Comme je l’ai déjà dit, sous Fedora 17, rc.local n’existe pas. Il faut le créer dans le dossier “/etc/rc.d/” et le rendre exécutable.&lt;/p&gt;
+&lt;p&gt;Comme je l’ai déjà dit, sous Fedora 17, rc.local n’existe pas. Il faut le créer dans le dossier &lt;code&gt;/etc/rc.d/&lt;/code&gt; et le rendre exécutable.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/bin/sh
 hdparm -B 254 /dev/sdx
@@ -394,7 +394,7 @@ hdparm -B 254 /dev/sdx
 
 &lt;p&gt;Par conséquent, il faut être sûr du logiciel qui est mis en place, sur votre distribution (dans notre exemple, ce sera pm-utils). Si ce n’est pas pm-utils, je vous donnerai un lien pour faire la bidouille avec systemctl.&lt;/p&gt;
 
-&lt;p&gt;Afin de fixer cette valeur à chaque sortie de mise en veille, il faut créer une règle pm-utils et la placer dans /etc/pm/sleep.d. Pour plus de clarté, je vous conseille d’inclure hdparm dans le nom du fichier. J’ai appelé la règle 50-hdparm_pm avec les lignes suivantes:&lt;/p&gt;
+&lt;p&gt;Afin de fixer cette valeur à chaque sortie de mise en veille, il faut créer une règle pm-utils et la placer dans &lt;code&gt;/etc/pm/sleep.d&lt;/code&gt;. Pour plus de clarté, je vous conseille d’inclure hdparm dans le nom du fichier. J’ai appelé la règle 50-hdparm_pm avec les lignes suivantes:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/bin/sh
 
@@ -405,7 +405,7 @@ fi
 
 &lt;p&gt;Ainsi à chaque sortie de mise en veille, la commande est lancé et l’APM est réglé automatiquement.&lt;/p&gt;
 
-&lt;p&gt;Pour s’assurer que le disque ne se détériore plus, il y a plusieurs astuces. La première c’est de lancer la mise en veille du système et contrôler le log pm-suspend.log qui se trouve dans “/var/log”. Vous pourrez savoir si votre règle est prise en compte. Cherchez 50-hdparm_pm (ou le nom que vous lui avez donné) dans le log.&lt;/p&gt;
+&lt;p&gt;Pour s’assurer que le disque ne se détériore plus, il y a plusieurs astuces. La première c’est de lancer la mise en veille du système et contrôler le log pm-suspend.log qui se trouve dans &lt;code&gt;/var/log&lt;/code&gt;. Vous pourrez savoir si votre règle est prise en compte. Cherchez 50-hdparm_pm (ou le nom que vous lui avez donné) dans le log.&lt;/p&gt;
 
 &lt;p&gt;Veuillez lancer aussi:&lt;/p&gt;
 
@@ -414,7 +414,7 @@ fi
 
 &lt;p&gt;Si l’output correspond à la valeur désirée, c’est que la règle fonctionne. Sur mon Desktop (qui ne supporte pas le changement de l’APM), cela ne me retourne rien.&lt;/p&gt;
 
-&lt;p&gt;La seconde méthode consiste à vérifier la ligne “193 Load_Cycle_Count” et tout particulièrement la “RAW_VALUE”. Si vous voyez qu’elle commence à se stabiliser, c’est bon signe. Pour ne plus avoir de doutes possibles, j’ai décidé de lancer à intervalle régulier (via cron) un script qui affichera ces mesures dans un fichier. Je pourrais ainsi examiner l’évolution de mon disque.&lt;/p&gt;
+&lt;p&gt;La seconde méthode consiste à vérifier la ligne &lt;code&gt;193 Load_Cycle_Count&lt;/code&gt; et tout particulièrement la &lt;code&gt;RAW_VALUE&lt;/code&gt;. Si vous voyez qu’elle commence à se stabiliser, c’est bon signe. Pour ne plus avoir de doutes possibles, j’ai décidé de lancer à intervalle régulier (via cron) un script qui affichera ces mesures dans un fichier. Je pourrais ainsi examiner l’évolution de mon disque.&lt;/p&gt;
 
 &lt;p&gt;J’ai écrit un petit bout de code que j’ai placé dans /etc/cron.d:&lt;/p&gt;
 
