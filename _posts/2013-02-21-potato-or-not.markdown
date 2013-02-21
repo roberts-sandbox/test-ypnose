@@ -51,7 +51,7 @@ Je ne sais pas si on peut vraiment appeler ça une cause, mais je suis un ferven
 
 __5 > Les poils aux jambes, un problème ou pas ?__
 
-Non, ce n'est pas un problème. Du moins, par pour l'instant...
+Non, ce n'est pas un problème. Du moins, pas pour l'instant...
 
 __6 > Ton alcool préféré (si tu en bois) ?__
 
@@ -110,16 +110,3 @@ Et pour finir, les personnes que j'invite à "jouer":
 [blogiGor](http://id-libre.org/blogigor/), [Influence PC](http://influence-pc.fr/)
 
 Bon, je sais, cela ne fait pas 11 personnes mais vous ne m'en voudrez pas, si je n'ai pas d'amis. :(
-
-
-
-
-
-
-
-
-
-
-
-
-
