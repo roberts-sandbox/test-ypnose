@@ -42,7 +42,7 @@ Je pense "signer" encore pour un an au minimum, après je ferai mon choix en dé
 
 ### 2013 commence... ###
 
-** Fedora 18 **
+*Fedora 18*
 
 Depuis début Décembre, j'attends avec impatience la nouvelle mouture de Fedora 18. La sortie a été repoussée de deux mois au total, mais elle arrivera le 15 Janvier 2013. Sachant, que je n'ai pas été capable d'attendre la release pour l'essayer, j'ai
 installé la version Beta mi-Décembre. Le résultat est quasiment parfais. Je suis passé par [BFO](http://boot.fedoraproject.org/) pour l'installer, c'est une sorte de netinstall, avec laquelle on peut choisir les versions de Fedora (même les plus anciennes).  
@@ -60,7 +60,7 @@ d'attendre qu'un paquet soit téléchargé, pour commencer le suivant.
 Au quotidien, cette Fedora est très agréable, ça répond au quart de tour et je suis comme un poisson dans l'eau. Comme d'habitude, j'ai fait des réglages de systemd (désactiver des services au démarrage, ajout de services / tmpfiles personnels). J'ai aussi
 créé une sauvegarde de la racine avec dd (j'adore ce soft). Je vous conseille grandement cette distribution, que j'apprécie énormément depuis la version 16.
 
-** Migration FreeBSD, début... **
+*Migration FreeBSD, début...*
 
 Je pense profiter de cette nouvelle année pour sérieusement me lancer dans l'univers BSD et plus particulièrement FreeBSD. Je suis motivé par plusieurs choses comme la curiosité et l'envie de tester un OS différent, mais pas uniquement. D'autres points
 commencent à peser lourd sur la balance. Durant cette année, ça va pas mal bouger dans l'écosystème Linux. Peut-être que vous l'ignorez mais le successeur de X (presque 30 ans d'âge) arrive à grands pas et il s'appelle [Wayland](http://wayland.freedesktop.org/).
@@ -90,7 +90,7 @@ Je déplore grandement cette manie qu'ont les devs Red Hat, à imposer leurs log
 
 Quelques [articles](http://linuxfr.org/news/x-org-est-mort-vive-wayland) assez [instructifs](http://linuxfr.org/users/sinma/journaux/linux-only-et-bsd).
 
-** Et fin. **
+*Et fin.*
 
 Il y a d'autres news qui ne me rassurent pas et qui m'inquiètent même. Vous ne le savez peut-être pas, mais Valve va sortir une console appelé Steambox, basée sur un noyau Linux (je savais que le client natif n'était pas un cadeau fait aux Linuxiens, mais plutôt un projet caché de Valve).
 Inévitablement, cela aura pour objectif de "populariser" GNU/Linux. Tous les Windows "haters" et les missionnaires linuxiens vont être aux anges. Plusieurs choses: je suis totalement contre cette politique, qui consiste à "convertir" le plus d'users possible. Convertir n'est pas tout, il

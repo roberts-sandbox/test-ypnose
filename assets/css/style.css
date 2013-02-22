@@ -287,6 +287,10 @@ article img {
 	outline:1px solid #CFCFCF;
 }
 
+article a:hover img {
+	outline:1px solid #323D5C;
+}
+
 #lastart h4 {
 	margin:12px 0 5px;
 }
