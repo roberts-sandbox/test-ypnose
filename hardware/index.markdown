@@ -1,9 +1,7 @@
 ---
 layout: page
 comments: false
-sharing: true
 title: "Hardware"
-footer: false
 ---
 
 Voici une liste exhaustive du matériel informatique, sur lequel j'effectue mes tests. Les périphériques USB sont parfaitements fonctionnels.
@@ -22,7 +20,7 @@ Voici une liste exhaustive du matériel informatique, sur lequel j'effectue mes 
 
   * GPU Asus Nvidia GTX460
 
-  * HDD Western Digital Caviar Blue 750 Go + Caviar Blue 500 Go
+  * SSD Samsung 830 64 Go / HDD Western Digital Caviar Blue 750 Go + Caviar Blue 500 Go
 
   * Alimentation Seasonic S12 II 82+ 520 W
 
@@ -30,7 +28,7 @@ Voici une liste exhaustive du matériel informatique, sur lequel j'effectue mes 
 
   * Onduleur Eaton Ellipse Max 850 VA USBS (550W)
 
-  * Tourne sous Archlinux / Chakra Linux (64 bits) (et Seven pour deux/trois jeux).
+  * Tourne sous Archlinux (64 bits) (et Seven pour deux/trois jeux).
 
 #### Périphériques USB ####
 
