@@ -108,6 +108,11 @@ Voici une liste exhaustive du matériel informatique, sur lequel j'effectue mes 
 	046d:c218 Logitech, Inc. Logitech RumblePad 2 USB
 	Driver = usbhid
 
+  Buffalo Classic USB SNES GamePad
+
+	0583:2060 Padix Co., Ltd (Rockfire) 
+	Driver = usbhid
+
 ### Ordinateur portable ###
 
 * Ordinateur Dell Studio 15'
