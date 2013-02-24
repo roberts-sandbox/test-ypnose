@@ -3,8 +3,8 @@
  
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
-  <link type="application/xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-24T13:47:08+01:00</updated>
+  <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
+  <updated>2013-02-24T13:55:42+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
