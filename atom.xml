@@ -7,7 +7,7 @@ layout: nil
  
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
-  <link type="application/xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
+  <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
