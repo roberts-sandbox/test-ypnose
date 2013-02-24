@@ -22,7 +22,7 @@ Pendant une période, je ne savais pas trop de quoi parler et puis tout d'un cou
 
 Je mentionne aussi très souvent le fait que j'aimerais avoir plus de lecteurs, qui profitent de mes contenus mais le format de se blog (c'est-à-dire des articles à intervalles non-réguliers) n'est pas quelque chose de communs, comme d'autres blogs où il y a des news plusieurs fois par semaine. Cela je pense, m'empêche de vraiment faire mon trou. Je vous encourage à faire un peu de bouche à oreille autour de vous, peu importe si le public est novice ou confirmé.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/twitter.png">
+<img class="imgcenter" alt="twitter" src="http://linuxien.legtux.org/uploads/images/2012/04/twitter.png">
 
 J'ai donc décide d'écrire un article, qui vous permettra d'y voir un peu plus clair sur les sujets que je souhaite développer, dans les prochains mois. Les points cités sont survolés car j'écrirai des articles complets en les traitant au cas par cas.
 
@@ -30,7 +30,7 @@ J'ai donc décide d'écrire un article, qui vous permettra d'y voir un peu plus 
 
 Il y a plusieurs mois, je m'étais mis à Fedora 16 avec GNOME 3 (en mode Fallback) mais non content de certaines choses, comme des programmes qui crashent ou sinon des widgets qui refusent de se lancer au démarrage, j'ai changé d'environnement. J'ai switché sur XFCE et je suis plus que satisfait de ce changement. J'ai pu obtenir un système très stable et qui répond parfaitement à mes besoins.
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/Capture.png">](http://linuxien.legtux.org/uploads/images/2012/04/Capture.png)
+[<img class="imgcenter" alt="desk" src="http://linuxien.legtux.org/uploads/images/2012/04/Capture.png">](http://linuxien.legtux.org/uploads/images/2012/04/Capture.png)
 
 J'ai grandement modifié les services qui se lancent au démarrage, afin de gagner quelques secondes au boot (désactivation de Plymouth). Je me suis donc frotté à SystemD, pour la première fois et j'ai été assez étonné du fonctionnement.
 
@@ -44,7 +44,7 @@ Si vous suivez le blog (et le [twitter](https://twitter.com/#!/tetedulinuxien/))
 
 J'en ai profité pour comme d'habitude y installer une Debian Squeeze dessus. Pourquoi une Debian? Parce que la grande force de cette distrib, est quelle ne nécessite pas de mise à jour fréquente. Elle peut fonctionner de manière stable, tout en étant totalement autonome.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/dockstar.png">
+<img class="imgcenter" alt="dockstar" src="http://linuxien.legtux.org/uploads/images/2012/04/dockstar.png">
 
 Les Dockstars me permettent de réaliser pleins d'applications très utiles comme:
 
@@ -64,7 +64,7 @@ En tout cas, j'aime beaucoup "travailler" et tester des choses sur les Dockstars
 
 Afin de fournir une connexion internet à mes Dockstars, sans descendre à l'étage inférieur (où se trouve la Box), j'ai paramétré un partage de connexion à partir du PC de bureau (avec IPtables) qui est relié en Wifi vers les périphériques en aval, branchés en Ethernet sur un routeur. Cela fonctionne parfaitement et me facilite la tâche pour mettre à jour mon matériel.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/dir100.jpg">
+<img class="imgcenter" alt="routeur" src="http://linuxien.legtux.org/uploads/images/2012/04/dir100.jpg">
 
 En parlant de matériel, vous pouvez consulter la page "[Hardware](http://tetedulinuxien.fr/hardware/)", qui liste tout le matériel que j'utilise. Cela peux aider des personnes, qui ne savent pas si tel ou tel matos, est pris en charge.
 

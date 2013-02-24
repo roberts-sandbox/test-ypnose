@@ -11,11 +11,11 @@ Si vous tournez avec GNOME ou KDE, il doit vous arriver d'utiliser le lanceur in
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/bashrun.jpg">
+<img class="imgcenter" alt="bashlaunch" src="http://linuxien.legtux.org/uploads/images/2011/03/bashrun.jpg">
 
 Je trouve ce dernier plus intuitif et il s'intègre mieux sous Openbox ou PekWM (il prend en compte le thème GTK). Par ailleurs, il gère l’auto complétion. Comme d'habitude, sa configuration passe par la modification d'un fichier de config. Vous pouvez donc créer un fichier appelé .gmrunrc dans votre /home, avec à l'intérieur les options nécessaires.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/gmrun.png">
+<img class="imgcenter" alt="gmlaunch" src="http://linuxien.legtux.org/uploads/images/2011/03/gmrun.png">
 
 Les options ne sont pas compliquées, voilà par exemple mon [fichier](http://tetedulinuxien.fr/wp-content/uploads/2011/03/gmrunrc.txt). Ce fichier vous permettra de fixer la taille, la position sur l'écran, le navigateur où sera lancé les URL, le terminal par défaut pour les commandes, etc...
 

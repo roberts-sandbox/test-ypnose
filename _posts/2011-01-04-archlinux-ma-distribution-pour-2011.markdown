@@ -15,7 +15,7 @@ J'ai toujours été une personne curieuse, c'est pour ça que j'ai testé pas ma
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/Chakra-gradient.png">
+<img class="imgcenter" alt="Chakra logo" src="http://linuxien.legtux.org/uploads/images/2011/01/Chakra-gradient.png">
 
 Mais lors de la sortie de la version 9.10, j'ai rencontré beaucoup de problèmes comme la surconsommation de CPU par le système (20 à 25% à vide). J'ai donc décidé de changer. Après cela, j'ai eu plus que du mal à trouver une distribution qui me convienne. J'ai utilisé pendant un long moment une [Chakra Linux](http://chakra-project.org/), qui avait à l'époque ArchLinux comme base. J'en garde un excellent souvenir avec par exemple une intégration de KDE exceptionnelle, comportant des thèmes uniques à la distrib', le gestionnaire de paquets [pacman](http://wiki.archlinux.fr/arch/pacman) qui est d'une efficacité redoutable (ancien adepte de Synaptic), un démarrage rapide, KDEmod (un KDE modifié par les développeurs avec plus de fonctionnalités). Cependant la version était en Alpha et malgré la stabilité, il y avait certains bugs.
 
@@ -29,7 +29,7 @@ Ce que j'aime sur Archlinux: L'installation n'est pas si difficile et en s'aidan
 
 Autre bonne surprise, l'installation se déroule vite.  En 25 minutes c'est réglé. Certes, c'est plutôt minimal mais fini les gigas inutiles. La grande force d'Archlinux c'est que l'on choisi ce qui va être installé. Pas de fioritures, on a juste l'essentiel. Après la mise en place de xorg et les drivers pour les GPU, on peut choisir son environnement de bureau ou encore son gestionnaire de fenêtres en stand-alone. C'est l'opportunité pour moi de tester [OpenBox](http://fr.wikipedia.org/wiki/Openbox) et [PekWm](http://fr.wikipedia.org/wiki/Pekwm) qui me faisaient de l'œil depuis pas mal de temps.
 
-<img class="imgleft" src="http://linuxien.legtux.org/uploads/images/2011/01/OpenBox_logo_v2_by_skeletux.png"> <img class="imgright" src="http://linuxien.legtux.org/uploads/images/2011/01/pekwm_logo.png">
+<img class="imgleft" "Openbox" src="http://linuxien.legtux.org/uploads/images/2011/01/OpenBox_logo_v2_by_skeletux.png"> <img class="imgright" alt="PekWM" src="http://linuxien.legtux.org/uploads/images/2011/01/pekwm_logo.png">
 
 OpenBox n'est pas très difficile à paramétrer. On peut utiliser un éditeur de texte comme vim ou gEdit pour modifier les fichiers mais il existe aussi quelques utilitaires comme Obmenu, Obconf (pour le thème Openbox). Et bien sûr on peut utiliser Lxappearance pour le thème GTK. Le système est très léger et consomme peu de RAM (140 Mo à vide).
 

@@ -8,10 +8,10 @@ layout: default
 		<h1>{{ page.title }}</h1>
 
 		<div>
-			Par <a href="/qui-suis-je">{{ site.author }}</a> - Posté le {{ page.date | date: "%d.%m.%Y" }}
+			Par <a href="/qui-suis-je/">{{ site.author }}</a> - Posté le {{ page.date | date: "%d.%m.%Y" }}
 		</div>
 		<div>
-			{% for cat in page.categories limit:7 %}<span> &rarr; </span><a href="/categories/{{ cat }}">{{ cat }}</a>{% endfor %}
+			{% for cat in page.categories limit:7 %}<span> &rarr; </span><a href="/categories/{{ cat }}/">{{ cat }}</a>{% endfor %}
 		</div>
 
 	</div>

@@ -16,7 +16,7 @@ Vous pourriez me demandez pourquoi j'ai changé. Tout simplement parce que urxvt
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/urxvt.png">
+<img class="imgcenter" alt="pacman" src="http://linuxien.legtux.org/uploads/images/2011/03/urxvt.png">
 
 Afin de lancer le daemon dès l'initialisation du système, j'ai ajouté à mon ~/.xinitrc (avant exec openbox-session), l'option:
 
@@ -28,6 +28,6 @@ J'ai bindé la touche F1 dans le rc.xml pour lancer un terminal. Le résultat, c
 
 Je n'en ai pas parlé précédemment, mais il supporte la vrai transparence (je ne m'en sert pas). Pour connaître la procédure, la [doc](https://wiki.archlinux.org/index.php/Urxvt#True_transparency) vous l'explique. Pour avoir un joli terminal qui correspond a vos goûts, vous devrez certainement, mettre un minimum les mains dans le cambouis (~/.Xdefaults). Cependant, je ne pense pas que cela fasse peur à des Archers.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/rxvt.gif">
+<img class="imgcenter" alt="logo" src="http://linuxien.legtux.org/uploads/images/2011/03/rxvt.gif">
 
 Les options disponibles sont innombrables. Comme la taille et la police utilisée, le type et le style de scrollbar, la taille par défaut de la fenêtre, etc... A vous de vous renseigner. Par ailleurs, vous trouverez des configs qui vous aideront, sur la toile.

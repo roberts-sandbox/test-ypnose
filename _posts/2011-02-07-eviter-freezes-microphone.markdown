@@ -18,6 +18,6 @@ Et oui aussi bizarre que cela puisse paraître, j'ai rencontré des freezes d
 
 L'astuce consiste donc à paramétrer Alsamixer comme l'image ci-dessous:
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/alsa.png">
+<img class="imgcenter" alt="ALSA" src="http://linuxien.legtux.org/uploads/images/2011/02/alsa.png">
 
 Comme vous pouvez le constater, on a déclaré que "Capture" doit enregistrer le son alors même qu'aucun microphone n'est branché. Par la suite, pour utiliser le bon périphérique, il vous suffit de choisir celui que vous désirez, lors des réglages du logiciel.

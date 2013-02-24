@@ -19,7 +19,7 @@ Il y a une semaine, j'a décidé de m'acheter un nouveau clavier. Le cahier des 
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/K300.jpg">
+<img class="imgcenter" alt="k300" src="http://linuxien.legtux.org/uploads/images/2011/11/K300.jpg">
 
 En général, les produits Logitech tournent bien et sont reconnus nativement par le système (comme ma G5), et je n'ai pas trouvé de retour catastrophique sur le K300. Petit plus, le clavier dispose de touches "multimédias" bindées sur les Fx (de F1 à F12). Pour les utiliser, on doit passer par la touche "Fn". Voilà qui sera plus qu'utile pour binder mon DWM.
 

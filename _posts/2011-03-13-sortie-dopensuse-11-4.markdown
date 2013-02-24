@@ -16,13 +16,13 @@ Certains pourront déplorer le nombre considérables de distributions mais je pe
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/logo-open-suse.jpg">
+<img class="imgcenter" alt="OS" src="http://linuxien.legtux.org/uploads/images/2011/03/logo-open-suse.jpg">
 
 Le niveau requis pour utiliser le caméléon est entre débutant et averti. Grâce à YAST, la configuration est aisée mais peut être plus fouillée en activant les réglages expert. Une autre amélioration notoire est le perfectionnement du système de paquets Zypp, qui dans les versions précédentes pouvait paraître un peu lent et lourd (mises à jours longues). Le système contient aussi le patch, qui avait fait parler de lui (il permet d'optimiser l'utilisation des processus pour une meilleur fluidité).
 
 Ayant vu des images et quelques vidéos (j'avais aussi testé la Milestone 4), je peux signaler que tout est très soigné. Des wallpapers dans les tons vert du plus bel effet. Les aficionados de Firefox seront heureux de constater la version 4 bêta 12, LibreOffice 3.3.1 ainsi que pas mal de logiciels assez récents comme Chromium.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/opensuse11.4.png">
+<img class="imgcenter" alt="OS2" src="http://linuxien.legtux.org/uploads/images/2011/03/opensuse11.4.png">
 
 On retrouve: Kernel 2.6.37, KDE 4.6 (de base), GNOME 2.32, Xorg 1.9, GCC 4.5.2 et glib 2.26. Voici la [liste](http://en.opensuse.org/Product_highlights#Chromium.2C_Konqueror_and_others) de toutes les features (sur [Distrowatch](http://distrowatch.com/table.php?distribution=suse)). Par ailleurs, je suis satisfait de voir que grub 0.97 est toujours le bootloader par défaut (trop de problèmes avec GRUB2).
 

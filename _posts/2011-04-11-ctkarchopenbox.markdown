@@ -17,11 +17,11 @@ Il y a quatre jours, la version 0.7 à vu le jour avec par exemple le kernel 2.6
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/04/ctkarch.png">
+<img class="imgcenter" alt="ctkarch" src="http://linuxien.legtux.org/uploads/images/2011/04/ctkarch.png">
 
 Vous pourrez télécharger le tout sur cette [page](http://ctkarch.org/download/0.7/?isos&fr#iso). L'image .iso pèse 560 Mo contre 324 Mo pour une Archlinux de base. Les images qui ont été postées montrent deux thèmes différents: un foncé et un plus clair. Tout le monde devrait donc voir midi à sa porte. Je trouve aussi les choix logiciels assez bien pensé, pas mal d'applications proposées sont celles que j'ai sur mon système (Xarchiver, scrot).
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/04/ctkshot.jpg">
+<img class="imgcenter" alt="ctkshot" src="http://linuxien.legtux.org/uploads/images/2011/04/ctkshot.jpg">
 
 Par contre, je pense que pour l'explorateur de fichiers, Thunar aurait été plus adapté que PCman FM. En effet, vous pouvez ajouter dans votre autostart.sh (pour Openbox), le lancement du daemon. Votre Thunar démarre donc plus vite et ouvre une fenêtre lorsque vous insérez un média amovible.
 

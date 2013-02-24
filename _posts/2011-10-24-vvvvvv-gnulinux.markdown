@@ -16,7 +16,7 @@ Ce jeu a été créé début 2010 en Flash et a été porté en C++ à l'occasio
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/game.png">
+<img class="imgcenter" alt="menu" src="http://linuxien.legtux.org/uploads/images/2011/10/game.png">
 
 Le principal objectif, est de retrouver les membres d'équipage, qui sont perdus dans un vaisseau. Je ne vais pas trop parler de l'histoire, pour ne pas révéler le scénario. Les graphismes sont rétros et les musiques 8 bits (qui sont fabuleuses) rappellent l'ère des jeux old-school. La particularité de ce jeu, est de pouvoir marcher sur le plafond. Vous avancez donc dans des puzzles / plate-formes de plus en plus durs, et c'est même assez addictif.
 
@@ -40,7 +40,7 @@ ou
 
 	mv VVVVVV_64 VVVVVV_64.bak
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/gpu.png">
+<img class="imgcenter" alt="gpu" src="http://linuxien.legtux.org/uploads/images/2011/10/gpu.png">
 
 Vous pouvez maintenant extraire l'archive dans le dossier du jeu. De nouvelles dépendances sont au rendez-vous, comme libtiff, aalib, libcaca et [libjpeg6](http://aur.archlinux.org/packages.php?ID=49446) (sur AUR).
 
@@ -60,4 +60,4 @@ essayer de modifier le fichier VVVVVV (avec votre éditeur de texte) comme sur c
 
 C'est bon! Assurez-vous d'avoir activé l'option 'Enable OpenGL" dans le menu "Graphics". Profitez bien de ce jeu fabuleux.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/screen.png">
+<img class="imgcenter" alt="level" src="http://linuxien.legtux.org/uploads/images/2011/10/screen.png">

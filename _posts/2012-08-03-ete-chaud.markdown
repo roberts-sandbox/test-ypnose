@@ -32,7 +32,7 @@ Avant tout, sachez que pendant cette période où le site a été silencieux, il
 
 Je pense qu'une partie de mes lecteurs sont sous Archlinux. Par conséquent, vous n'êtes pas sans savoir qu'actuellement ça bouge pas mal (/lib vers /usr/lib avec la mise à jour de glibc, GRUB 0.97 déprécié, disparition d'AIF). Sachant que GRUB n'est plus officiellement maintenu, j'ai décidé de switcher vers un soft disponible en [core]. Vous n'êtes en aucun cas obligé de changer, si vous n'utiliser pas GPT et UEFI, vous pouvez rester avec votre petit GRUB, qui restera pleinement fonctionnel. Le paquet est passé de [core] vers AUR.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/arch.png">
+<img class="imgcenter" alt="arch" src="http://linuxien.legtux.org/uploads/images/2012/08/arch.png">
 
 J'ai donc installé syslinux qui est pour moi ,le frère spirituel de GRUB Legacy.
 
@@ -42,7 +42,7 @@ ENFIN!
 
 Oui, c'est le premier sentiment que j'ai après avoir attendu plus de 7 mois pour me procurer ce SoC ARM. L'architecture ARM n'est pas nouvelle pour moi. J'ai déjà travaillé sur du ARM avec les Dockstars via SSH. Par contre, tester, paramétrer et utiliser une carte comportant un GPU, est totalement inédit.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/dockstar.jpg">
+<img class="imgcenter" alt="dockstar" src="http://linuxien.legtux.org/uploads/images/2012/08/dockstar.jpg">
 
 Actuellement, j'hésite à installer Archlinux ARM (une Arch compilée en ARM), Raspbmc (une distrib basée sur Debian et comportant XBMC de base) ou encore Raspbian. Car malgré le fait que Raspbian LXDE soit disponible en téléchargement, cela ne me convient pas. Pourquoi?
 
@@ -50,7 +50,7 @@ Pour deux choses, pour commencer je veux faire les choix logiciels moi-même (c'
 
 Ce Raspberry sera pour moi l'occasion d'expérimenter des choses connues et aussi de découvrir des choses assez floues pour moi (je pense à *BSD).
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/raspberry.jpg">
+<img class="imgcenter" alt="raspberry" src="http://linuxien.legtux.org/uploads/images/2012/08/raspberry.jpg">
 
 Tout ça pour vous dire, que je ne vais pas tarder à réaliser des travaux sur ce matos peu conventionnel et que je vous écrirez un article dédié. Il a été dit beaucoup de choses sur ce périphérique, et je vais essayer de rétablir le vrai du faux.
 
@@ -62,7 +62,7 @@ Grande nouvelle, non?
 
 Oui et non. Je suis d'accord que c'est un grand tournant pour notre OS. En effet, cela va proposer de bons jeux comme Left for Dead 2 en natif (ainsi que d'autres jeux Source plus tard). Cela va certainement supprimer un pourcentage non négligeable de "DualBoot", pour finalement utiliser à 100% du GNU/Linux. Peut-être aussi que certaines compagnies du jeu aka Blizzard, se décideront à reconnaitre Linux comme un OS mature et qu'ils proposeront des binaires natifs. Ou qu'ils enlèveront les [bans](http://www.cinemablend.com/games/Banned-Diablo-3-Linux-Users-Speak-Out-We-Cheaters-44240.html) des comptes qui jouent via Wine...
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/steam-linux.jpg">
+<img class="imgcenter" alt="steam4linux" src="http://linuxien.legtux.org/uploads/images/2012/08/steam-linux.jpg">
 
 Mais tout n'est pas rose. Loin de là. Depuis plus de 10 ans, nous (comprenez une partie des Linuxiens) réclamons une version native. Jusqu'à maintenant, nous n'avons eu que des refus. Bien sûr, nous sommes soit 0.0001% soit 0.15% selon les comparatifs, ce n'est pas assez rentable. Alors oui, chaque compagnie crée un produit pour ensuite le vendre à des clients. Cependant, certaines semblent montrer une philosophie différente. Je pense par exemple à ID ou à Unigine qui sortent des versions natives, même si cela n'est pas facile pour eux. Petite parenthèse, le développement d'OilRush est amorti (avec quasiment 70% de ventes linuxiennes). De plus, cette annonce occulte le travail effectué par d'autres personnes essayant de s'impliquer, comme [Loki Software](http://fr.wikipedia.org/wiki/Loki_Entertainment_Software) qui a réalisé de ports natifs de jeux Windows, il y a plusieurs années. Soulignons donc que Steam n'est pas le seul acteur, qui essaie de changer le statut de jeu vidéo.
 
@@ -70,7 +70,7 @@ Avec Valve, j'ai vraiment l'impression qu'ils sortent ce client, parce que Windo
 
 Malgré le fait que Steam soit pratique pour faire des affaires ou découvrir de vieux jeux et permette à l'univers vidéoludique de subsister, il y a d'autres soucis. Il ne faut pas oublier que Steam prône et fait l'apologie du [DRM](http://fr.wikipedia.org/wiki/Gestion_des_droits_num%C3%A9riques) (des dispositifs de restrictions). Qui est touché? L'utilisateur bien sûr. Je suis bien placé pour en parler, puisqu'il m'est impossible de revendre des jeux, qui sont liés à mon compte. Je trouve que de tels choses n'ont pas tellement leurs places sur notre système, qui favorise l'ouverture et la transparence des softs.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/drm.jpg">
+<img class="imgcenter" alt="drm" src="http://linuxien.legtux.org/uploads/images/2012/08/drm.jpg">
 
 Je rejoins le [communiqué](https://www.gnu.org/philosophy/nonfree-games.en.html) de Stallman qui explique qu'il est mieux d'installer Steam sous GNU/Linux, plutôt que sous Windows et que cela peut "booster" des personnes à migrer. Par ailleurs, il rappelle qu'il est préférable d'utiliser des jeux libres (même si un jeu n'est pas identique à un logiciel) en citant des initiatives / projets.
 
@@ -82,13 +82,13 @@ Dernier point, je pense que cette sortie va aussi avoir un effet collatéral, qu
 
 Lorsque j'ai quitté Windows, je ne pensais pas encore utiliser un système de fichier propre à DOS. Oui, mais ce n'est pas le cas. Pour mes PCs (à base de disque dur magnétique), le choix est très clair: EXT*. Constamment amélioré, c'est un peu le NTFS de Windows (en moins vieux), EXT3/4 est à mon avis le FS le plus pratique pour 90% des users (Btrfs semble pas non plus, trop instable par contre). Le sujet est clos, alors?
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/usb.jpg">
+<img class="imgcenter" alt="fat32" src="http://linuxien.legtux.org/uploads/images/2012/08/usb.jpg">
 
 Non, ce n'est pas si simple. Car quand on se pose la question pour les clés USB, on pourrait aussi se dire EXT. Sachant qu'une clé USB utilise de la mémoire flash (qui a donc des cycles de lectures / écritures limités), l'EXT2 serait parfait. Pas de journalisation, une fragmentation limitée, une taille de fichier max de 16Go (contrairement à 4Go pour le FAT16), de bonnes performances, la gestion des droits UNIX. Stop, le rêve s'arrête là...
 
 Je m'y suis essayé et ce n'est pas si efficace que ça. Rien à redire au niveau des perfs et de la gestion des données. Mais c'est surtout pour l'interopérabilité entre les OS et aussi la difficulté à pouvoir monter sa clé, de façon pas trop compliquée. Après des essais infructueux, je suis revenue au FAT. Ce dernier fonctionne de manière assez intuitive, que ce soit de manière automatique, ou montage via fstab. À l'arrivée, je déplore grandement que nous ne disposions pas d'un FS plus évolué pour nos clés USB. On se retrouve donc à subir un système préhistorique, qui ne gère aucunes permissions UNIX et qui est beaucoup trop basique.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/fs.png">
+<img class="imgcenter" alt="fsdiag" src="http://linuxien.legtux.org/uploads/images/2012/08/fs.png">
 
 À chaque transfert, vous devez donc soit appliquer un "chmod -x" sur votre fichier, parce que le FAT à la bonne idée de tout déclarer "exécutable", soit laisser tel quel (mais c'est moche). Cela passe du vulgaire morceau de musique au simple fichier torrent. Vous pouvez vérifier avec ls, je ne ment pas. Voilà; après avoir quitté le monde DOS il y a 5 ans, je suis encore prisonnier de leur technologie vieillissante...
 

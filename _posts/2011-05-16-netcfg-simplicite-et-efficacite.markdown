@@ -16,7 +16,7 @@ Même si mon [Wicd](http://wicd.sourceforge.net/) fonctionnait du tonnerre et é
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/wifi.png">
+<img class="imgcenter" alt="wifi" src="http://linuxien.legtux.org/uploads/images/2011/05/wifi.png">
 
 Tellement, je trouve ce logiciel fabuleux, j'ai décidé de trouver quelque chose de similaire, qui puisse me connecter à mon réseau sans fil (j'utilise toujours le même), pendant le démarrage du système et je suis tombé sur [Netcfg](https://wiki.archlinux.org/index.php/Netcfg). Tout comme son homologue, il est plutôt simple et lorsque vous l'installez avec:
 

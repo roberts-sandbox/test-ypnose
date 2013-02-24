@@ -25,7 +25,7 @@ NON!
 
 Utiliser cet OS, en oubliant ou en ignorant des points comme le Libre et la contribution, est plus que dommage. Deux comportements sont à souligner: l'ignorance (volontaire ou non) et l'indifférence. Je rappelle que Linux sans GNU, ça n’existe pas.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/02/GNU.png">
+<img class="imgcenter" alt="gnu" src="http://linuxien.legtux.org/uploads/images/2012/02/GNU.png">
 
 Il y a ceux qui ignorent que GNU/Linux défend des idées et soutient un informatique communautaire (au sens large du terme), dans lequel chacun peut apporter son aide. Et il y les autres, qui ne pensent qu'a eux. Ils ont un OS gratuit, qui est assez sécurisé, qui est maintenu et le reste ils s'en fichent. Cela ne représente pas la majorité des users, bien heureusement.
 
@@ -33,7 +33,7 @@ C'est ce que j'essaie d'expliquer aux personnes que je fréquente et qui sont da
 
 Stallman qui parfois est maladroit mais qui croit en sa philosophie (ce qui est respectable), est trop souvent raillé par des utilisateurs qui sont eux-mêmes concernés par le Libre (car ils tournent sous du GNU/Linux). Voilà l'exemple type, d'un comportement à éviter.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/02/stallman.jpg">
+<img class="imgcenter" alt="RMS" src="http://linuxien.legtux.org/uploads/images/2012/02/stallman.jpg">
 
 Bien heureusement, un autre informatique est possible. C'est pourquoi, j'essaie à ma manière de contribuer en apportant par exemple, mon aide sur les forums ou en écrivant des pages wiki. C'est le principe du bénévolat.
 

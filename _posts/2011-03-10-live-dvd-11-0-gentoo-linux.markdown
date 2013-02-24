@@ -13,7 +13,7 @@ Je profite de mon nouveau nom de domaine pour lancer le premier article autour d
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/03/gentoo.png">
+<img class="imgcenter" alt="gentoo" src="http://linuxien.legtux.org/uploads/images/2011/03/gentoo.png">
 
 Cette version contient:
 

@@ -14,11 +14,11 @@ En me baladant sur la toile, j'ai fait la découverte d'un logiciel appelé [QJo
 
 <!-- more -->
 
-<img class="imgcenter" src="http://qjoypad.sourceforge.net/logo.gif">
+<img class="imgcenter" alt="logo" src="http://qjoypad.sourceforge.net/logo.gif">
 
 Cependant, je pense qu'il est impératif que votre manette soit détectée par le noyau (/dev/input/js0) sinon je ne garanti pas la prise en charge du périphérique. Quand vous le démarrez, une icone s'affiche dans le systray et vous pouvez afficher la fenêtre du logiciel. Il est possible de créer plusieurs profils (un profil par logiciel) et quand vous appuyer sur une touche, QJoypad vous le signale. Il est même possible de définir qu'un joystick remplace la souris.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/joypad.png">
+<img class="imgcenter" alt="exemple" src="http://linuxien.legtux.org/uploads/images/2011/02/joypad.png">
 
 Depuis qu'il se trouve sur mon PC, je l'utilise beaucoup, en particulier sur [XBMC](http://www.xbmc.fr/) qui supportait bizarrement ma manette (seulement 2 touches fonctionnait). Le plaisir de naviguer, dans les menus avec une manette est immense. Vous pouvez aussi le mettre à contribution pour vos jeux, comme [M.A.R.S.](http://mars-game.sourceforge.net/) (ne supporte pas encore les joysticks sauf pour le SVN).
 

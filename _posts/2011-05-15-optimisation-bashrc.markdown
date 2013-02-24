@@ -30,15 +30,15 @@ Voici les images:
 
 De base:
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/termbase.png">
+<img class="imgcenter" alt="base" src="http://linuxien.legtux.org/uploads/images/2011/05/termbase.png">
 
 Modifié (Normal User):
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/termmodif.png">
+<img class="imgcenter" alt="modif" src="http://linuxien.legtux.org/uploads/images/2011/05/termmodif.png">
 
 Modifié (Root):
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/termmodifroot.png">
+<img class="imgcenter" alt="root" src="http://linuxien.legtux.org/uploads/images/2011/05/termmodifroot.png">
 
 Je trouve ça plus agréable avec de la couleur ! Le dossier dans lequel on se trouve, est en jaune, l'user en vert, le root en rouge et l'host en bleu.
 

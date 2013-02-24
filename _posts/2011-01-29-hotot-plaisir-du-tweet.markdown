@@ -14,13 +14,13 @@ Certains d'entres vous possèdent certainement un compte Twitter pour suivre des
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/pythonlogo.png">
+<img class="imgcenter" alt="Python" src="http://linuxien.legtux.org/uploads/images/2011/01/pythonlogo.png">
 
 Ce dernier est très intuitif. Il suffit de cliquer sur un bouton pour ajouter un nouveau compte, se loguer sous son profil pour récupérer un code PIN, le coller sous Hotot et le tour est joué. Facile non?
 
 Mais ce que j'ai vraiment aimé, c'est l'interface très propre avec de belles "transitions", quand on veux consulter ses messages ou chercher un profil. J'ai crû comprendre que l'interface est gérée en CSS sou-poudrée de javascript. Je ne l'utilise pas encore à plein temps, mais il y a des chances que je lâche mon "Chromed Bird" bientôt.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/hototdesk.png">
+<img class="imgcenter" alt="Window" src="http://linuxien.legtux.org/uploads/images/2011/01/hototdesk.png">
 
 Par exemple, lorsque vous recevez un nouveau tweet, une notification s'affiche en haut de votre écran.
 

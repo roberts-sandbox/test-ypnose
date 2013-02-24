@@ -18,7 +18,7 @@ Avec le problème des parcages des têtes de disques durs (en grande majorité d
 
 Sachant que mon laptop tournant sous Fedora 17 et comportant un modèle de HDD Hitachi, est concerné par ce phénomène, j'ai essayé d'appliquer un correctif suivi d'un monitorage assez drastique.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/hitachi.jpg">
+<img class="imgcenter" alt="hdd" src="http://linuxien.legtux.org/uploads/images/2012/08/hitachi.jpg">
 
 Avant tout, sachez que je me suis aperçu de ces parcages que très récemment. Depuis un moment, j'appliquais la commande `hdparm -B 254 /dev/sda` par mesure de sécurité, mais un soir j'ai entendu un bruit bizarre sous mon laptop et en consultant de temps en temps la valeur `193 Load_Cycle_Count` avec smartmontools, j'ai directement compris.
 
@@ -26,7 +26,7 @@ Les outils utilisés restent assez basiques mais permettent une surveillance eff
 
 Cette méthode est fonctionnelle sur Fedora 17 et très certainement sur Arch. Je vais d'ailleurs la mettre en place, dans quelques jours. Cependant, je surveillerai uniquement mon HDD mais je n'appliquerai aucun changements, car je ne peux pas le faire avec le modèle, sur mon Desktop.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/laptop.jpg">
+<img class="imgcenter" alt="dellaptop" src="http://linuxien.legtux.org/uploads/images/2012/08/laptop.jpg">
 
 Pour commencer, il serait judicieux de baisser la valeur ou même désactiver ce paramètre appelé APM (qui est le responsable). Un bon moyen de rendre la modification permanente et effective après reboot, est de modifier le fichier rc.local et ajouter la commande `hdparm -B 254 /dev/sdx`. Assurez-vous de choisir le bon disque avec `fdisk -l`. La valeur 254 permet de fixer l'APM à la plus basse valeur, mais vous pouvez aussi désactiver ce dernier avec 255.
 
@@ -85,7 +85,7 @@ J'ai spécifié EDITOR=nano car de base crontab utilise $EDITOR. Sous mon user, 
 
 Voici quelques explications: discp est lancé toutes les deux heures (à 10:00 - 12:00 - 14:00), tout les jours de l'année et il redirige le résultat vers un fichier, situé dans mon $HOME. Changez la période en fonction de  vos besoins.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/crontab-syntax.gif">
+<img class="imgcenter" alt="cron" src="http://linuxien.legtux.org/uploads/images/2012/08/crontab-syntax.gif">
 
 Sur mon Desktop, il sera amorcé un fois par jour à 18h00.
 

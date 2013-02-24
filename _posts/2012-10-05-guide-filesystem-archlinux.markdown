@@ -19,7 +19,7 @@ Malgré le fait que je sois plutôt occupé en ce moment, j'arrive à trouver le
 
 Aujourd'hui, j'ai décidé d'écrire un article fonctionnel. Je sais qu'une bonne partie de mes lecteurs provient du forum [Archlinux.fr](http://forums.archlinux.fr/) et aussi de son [Planet](http://planet.archlinux.fr/). Cela implique que pas mal de personnes ici, utilisent Archlinux. D'ailleurs, je dois beaucoup à cette communauté et à cette distrib, je ne l'oublie pas.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/10/archlinux.png">
+<img class="imgcenter" alt="arch" src="http://linuxien.legtux.org/uploads/images/2012/10/archlinux.png">
 
 Lors de la mise-à-jour quasi-journalière, il a été proposé [filesystem](http://www.archlinux.org/packages/core/any/filesystem/) en plus de [systemd](http://www.archlinux.org/packages/core/x86_64/systemd/) (que je trouve super) et [util-linux](http://www.archlinux.org/packages/core/x86_64/util-linux/). Je me suis renseigné sur le [git](https://projects.archlinux.org/svntogit/packages.git/log/trunk?h=packages/filesystem), comme j'ai l'habitude de faire pour les paquets "essentiels", afin de voir les changements. À l'issue de cette maintenance, pacman m'installe les fichiers passwd, group et gshadow (contenus dans l'archive), en *.pacnew. L'intervention administrateur impose le merge des nouveautés dans les fichiers existants.
 

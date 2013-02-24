@@ -14,7 +14,7 @@ Sous ma OpenBox, il m'arrive d'utiliser quelques applications Qt comme Mumble (e
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/qt-logo.png">
+<img class="imgcenter" alt="Qt" src="http://linuxien.legtux.org/uploads/images/2011/01/qt-logo.png">
 
 L'astuce consiste à rajouter dans votre ~/.xinitrc , la ligne ``` export GTK2_RC_FILES="$HOME/.gtkrc-2.0" ``` . Vous pouvez éditer votre fichier avec nano ou Gedit. Si vous utiliser OpenBox ou PekWM, assurez vous que cette ligne soit avant "exec openbox-session" (pour OpenBox) ou avant "exec pekwm" (pour PekWM). Ayant, par erreur ajouté cette ligne après, l'astuce ne fonctionnait pas.
 

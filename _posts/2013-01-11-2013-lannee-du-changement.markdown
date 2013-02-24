@@ -22,14 +22,14 @@ Octopress est un framework pour le mythique [Jekyll](http://jekyllrb.com/), qui 
 Tout est géré via [Git](http://git-scm.com/). On reste donc dans l'aspect [KISS](http://fr.wikipedia.org/wiki/Principe_KISS), qui est si cher à mes yeux. Autre point qui m'a conquis, c'est que je n'ai plus besoin de PHP et MySQL, l'hébergement ne nécessite donc rien de bien puissant. Cela me permet aussi de réfléchir
 à une éventuelle évolution (auto-hébergement avec Dockstar / Raspberry ?).
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/octopress.png">
+<img class="imgcenter" alt="octopress" src="http://linuxien.legtux.org/uploads/images/2013/articles/octopress.png">
 
 Question légèreté, j'avais déjà été tenté par [PluXml](http://www.pluxml.org/) (CMS sans BDD), il y a quelque mois. Cependant, j'avais fait machine arrière, car il était question que je perde mes "précieux" commentaires. Effectivement, j'accorde beaucoup d'importance aux liens auteur / lecteurs.
 Toutefois,  j'ai décidé de sauter le pas, sans exporter les commentaires. Pourquoi? Simplement, parce que cela est trop contraignant. L'export des articles et des pages a été relativement facile, même si j'ai dû modifier la mise en page effectuée
 par Wordpress et les liens vers les images (merci [sed](http://www.grymoire.com/Unix/Sed.html)); cela m'a finalement pris du temps de rattraper les erreurs de Wordpress. Je n'ai pas exporté les commentaires, car Octopress et Jekyll ont besoin d'applications externes comme [Disqus](http://disqus.com/) pour les
 afficher. Ceci est contraire à ma philosophie et puis ce n'est pas comme ci j'avais 25 commentaires par jour, je peux m'en passer.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/kiss.gif">
+<img class="imgcenter" alt="KISS" src="http://linuxien.legtux.org/uploads/images/2013/articles/kiss.gif">
 
 Le thème affiché est une modification de celui de base. Je me suis dirigé vers un design ultra-minimaliste. Au final, je suis vraiment satisfait du résultat actuel. C'est clair, simple et parfaitement lisible. Nous n'avons pas besoin de plus.
 Plutôt que d'afficher une "sidebar", j'ai décidé de placer les liens importants dans des pages ou les afficher dans le bas de la page principale. N'hésitez pas à jeter un œil à ces pages / liens.
@@ -49,7 +49,7 @@ installé la version Beta mi-Décembre. Le résultat est quasiment parfais. Je s
 La nouvelle version de l'installateur [Anaconda](http://fedoraproject.org/wiki/Anaconda) est déroutante, surtout quand on est habitué aux anciens installateurs. Dorénavant, il n'y pas d'ordre pour les différentes étapes (partitionnement, fuseau horaire),
 vous êtes juste obligé de paramétrer toutes les options, avant de pouvoir commencer l'installation. D'ailleurs, j'ai remplacé le miroir par défaut pour un autre situé en Allemagne, car l'installation avait un bug avec ceux inclus automatiquement.
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png">](http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png)
+[<img class="imgcenter" alt="anaconda" src="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png">](http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png)
 
 J'ai d'abord choisi [MATE](http://mate-desktop.org/) que j'attendais beaucoup, mais je n'ai pas été convaincu par ce dernier, donc je suis retourné sous Xfce 4.10. Les changements sont les bienvenus, comme par exemple le remplacement de GDM par [lightDM](https://launchpad.net/lightdm)
 (ce qui évite donc des dépendances GNOME presque inutiles) ou encore le dossier /tmp monté automatiquement en tmpfs. Même en passant par BFO, j'ai désinstallé quelques logiciels inclus de base comme Pragha, car je sais pertinemment que je n'allais pas les utiliser.
@@ -66,7 +66,7 @@ Je pense profiter de cette nouvelle année pour sérieusement me lancer dans l'u
 commencent à peser lourd sur la balance. Durant cette année, ça va pas mal bouger dans l'écosystème Linux. Peut-être que vous l'ignorez mais le successeur de X (presque 30 ans d'âge) arrive à grands pas et il s'appelle [Wayland](http://wayland.freedesktop.org/).
 On pourrait se réjouir, mais malheureusement tout n'est pas rose.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/wayland.png">
+<img class="imgcenter" alt="wayland" src="http://linuxien.legtux.org/uploads/images/2013/articles/wayland.png">
 
 *Premier point*, actuellement Wayland utilise [KMS](http://fr.wikipedia.org/wiki/Kernel-based_mode-setting) ce qui implique donc, que seuls les drivers libres sont capables de supporter Wayland. Ne nous mentons pas, même si les drivers libres sont de bonne qualité (j'utilise moi-même le radeon libre avec mon laptop), au niveau de
 l'accélération 3D, on est loin du niveau des drivers privateurs. Dans mon cas, je dispose d'un GPU NVidia GTX 460, je suis donc obligé d'utiliser ce driver "officiel". Pourquoi? Je joue à une poignée de jeux sous GNU/Linux, qui ont besoin de la 3D. Il est donc impossible
@@ -77,12 +77,12 @@ Si les fabricants de GPU (actuellement seul NVidia est concerné) décident dans
 tourner des applis, pour ainsi assurer une certaine compatibilité. Oui, c'est vrai, mais cela à ses limites et c'est plus une solution de contournement qu'un véritable tournant. Ainsi, pour certains programmes (comme ceux cités avant), je pense qu'il est préférable de les porter
 sur Wayland. Cependant, les devs ne semblent pas particulièrement chaud, et ça pourrait se comprendre.
 
-*Troisième point*, comme je l'ai expliqué plus haut, Wayland à besoin de KMS et sous *BSD, on n'a pas encore de KMS. Les devs sont en train de s'en occuper, mais le projet n'est pas encore fini. Quel plaisir de pouvoir trouver son logiciel favori
+*Troisième point*, comme je l'ai expliqué plus haut, Wayland à besoin de KMS et sous \*BSD, on n'a pas encore de KMS. Les devs sont en train de s'en occuper, mais le projet n'est pas encore fini. Quel plaisir de pouvoir trouver son logiciel favori
 sous BSD, simplement parce les standards [POSIX](http://fr.wikipedia.org/wiki/POSIX), ont été respectés. Et alors, on en fait quoi de POSIX? Actuellement, on dirait que c'est la mode de bouder POSIX et par conséquent cela entraîne une limitation.
 Je pense en particulier à systemd, qui n'est pas portable sur BSD car il utilise des fonctions internes au kernel Linux. Et c'est même le développeur principal de systemd, aka [Lennart Poettering](http://linuxfr.org/users/patrick_g/journaux/linux-ou-posix) qui s'en vante.
 C'est du beau! Cette philosophie ne me plaît pas du tout et me révolte.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/xorg.png">
+<img class="imgcenter" alt="xorg" src="http://linuxien.legtux.org/uploads/images/2013/articles/xorg.png">
 
 Notez que je ne suis pas le genre de personne à troller, sinon je me serais bien amusé avec l'adoption de systemd, sur "presque" toutes les distribs grands publics (cf débat systemd / Arch). D'ailleurs, notre ami Lennart Poettering ne comprends pas pourquoi, Ubuntu exploite [Upstart](https://plus.google.com/115547683951727699051/posts/X3fUhyJREKq)
 au lieu de systemd. Et encore, je ne parle pas des propos calomnieux, suite au fork de udev, par les devs de Gentoo.  
@@ -101,7 +101,7 @@ j'ai la nette impression que ce noyau (qui est à disposition de tous) est parfo
 Ainsi, vous vous doutez que notre OS favori va devenir "en vogue" (avec une bonne partie d'users, qui ne s'occupe pas des principes). N'est-ce-pas le déclin, qui est en marche? Beaucoup essaient d'enlever ou oublient volontairement GNU de Linux, et il semblerait que cela fonctionne dans l'esprit général.  
 Je ne supporterai pas de voir GNU/Linux, comme un produit grand public et formaté. J'ai une peur maladive en pensant à ce que pourrait devenir cet OS, si nous ne défendons pas l'éthique et si nous laissons faire n'importe quoi, n'importe comment...
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/bsd.jpg">
+<img class="imgcenter" alt="BSD" src="http://linuxien.legtux.org/uploads/images/2013/articles/bsd.jpg">
 
 C'est pourquoi la famille des BSD me tente de plus en plus. Je vois BSD comme un concept qui s'assume, c'est-à-dire qu'il n'y a pas cette volonté de ramener le plus de gens possibles, ou de devenir l'alternative à DOS. L'OS est là, avec ses qualités et ses difficultés, seuls la passion et la soif
 de découverte motivent le changement. C'est un peu ce que je reproche à GNU/Linux, qui cherche désespérement à s'affirmer et à avoir sa place (alors que c'est déjà le cas). Nous pourrions être 1000 dans le monde, ça ne changerai rien aux qualités...  
@@ -116,16 +116,3 @@ Pour finir, j'ai me suis vraiment appliqué à l'écrire et j'espère que vous v
 À bientôt
 
 Ypnose
-
-
-
-
-
-
-
-
-
-
-
-
-

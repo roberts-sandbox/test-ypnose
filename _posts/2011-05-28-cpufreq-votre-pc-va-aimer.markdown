@@ -18,7 +18,7 @@ Depuis que j'ai ce PC, la fréquence des coeurs du Phenom X4 était au maximum,
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/05/amd-phenom-ii-x4-955.jpg">
+<img class="imgcenter" alt="Phenom" src="http://linuxien.legtux.org/uploads/images/2011/05/amd-phenom-ii-x4-955.jpg">
 
 Avant de vous expliquer, je tiens à vous dire que j'ai gagné environ 9°C en idle, ce qui est non négligeable.
 

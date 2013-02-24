@@ -19,7 +19,7 @@ Je ne parlerai pas non plus du cas d'[Unreal Tournament III](http://www.phoronix
 
 <!-- more -->
 
-<img class="imgcenter" src="http://technabob.com/blog/wp-content/uploads/2010/05/Humble-Indie-Bundle.jpg">
+<img class="imgcenter" alt="Humble Bundle" src="http://technabob.com/blog/wp-content/uploads/2010/05/Humble-Indie-Bundle.jpg">
 
 N'étant pas un adepte de Wine (par choix et par conviction), je dois dire que les news en rapport avec de nouveaux projets sont alléchantes. Dernièrement, je rappelle qu'il y a eu d'excellentes initiatives, comme l'[Humble Indie Bundle](http://www.humblebundle.com/) qui fournissait un pack contenant 11 jeux (dont World of Goo, Machinarium et autres chefs d'oeuvres) avec des binaires natifs pour Linux et le tout pour un montant que l'on choisissait. Ayant été tout simplement, très emballé par cette initiative, j'ai acheté ce pack et je n'ai pas été déçu. De longues heures de jeu s'offrent à moi. Les linuxiens semblent être les plus généreux, car ils ont la moyenne des dons était la plus élevée. Il faut souligner que cela aura rapporté 1,825,175 $ toutes plateformes confondues.
 
@@ -27,7 +27,7 @@ Mais à part cela, qu'en est-il?
 
 Et bien il semble que des projets ambitieux (commerciaux) soient en cours de réalisation. Comme j'en ai déjà parlé précédemment, il y a [OilRush](http://www.oilrush-game.com/), mais également d'autres comme [Overgrowth](http://www.wolfire.com/), [Dilogus](http://dilogus-game.com/blog/) ou encore [Steel Storm](http://www.steel-storm.com/content/). Effectivement, si il est possible d'acheter des jeux de bonne qualité pour une modique somme de 20 ou 25 $, avec des clients natifs, alors pourquoi ne pas franchir le pas?
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/unidev.jpg">
+<img class="imgcenter" alt="Unigine" src="http://linuxien.legtux.org/uploads/images/2011/01/unidev.jpg">
 
 Pour faire court, Overgrowth est la suite de [Lugaru](http://en.wikipedia.org/wiki/Lugaru), un jeu où l'on incarne un lapin qui fait des arts martiaux. Dilogus est un RPG avec plusieurs classes de héros et Steel Storm un jeu de vaisseau. Pour plus d'infos, je vous invite à consulter les liens fournis dans l'article.
 

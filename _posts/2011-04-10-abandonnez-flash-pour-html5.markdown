@@ -16,7 +16,7 @@ Cette fonction était déjà activé, il y a quelques temps mais cela avait prov
 
 Je rappelle que HTML5 comporte une balise video et diffuse le stream en [WebM](http://fr.wikipedia.org/wiki/WebM) et en Vorbis pour l'audio
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/04/HTML-5.png">
+<img class="imgcenter" alt="html5" src="http://linuxien.legtux.org/uploads/images/2011/04/HTML-5.png">
 
 Si vous souhaitez activer cette fonction pratique, rendez-vous sur cette adresse pour [Youtube](http://www.youtube.com/html5) et celle-ci pour [Dailymotion](http://http://www.dailymotion.com/html5). Cette fonctionnalité a de nombreux avantages comme une demande moins gourmande en ressources, rien à installer en plus de votre navigateur, un chargement des vidéos plus rapide et plus aucune publicités.
 

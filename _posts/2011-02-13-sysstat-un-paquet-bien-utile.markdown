@@ -23,7 +23,7 @@ sar: Permet d'afficher et de comparer la consommation de CPU globale. La command
 
 affiche l'utilisation du CPU toutes les secondes et pendant 10 fois dans votre shell. La première valeur est l'intervalle de temps et la deuxième le nombre de relevés. La consommation est affiché sous la forme: %user, %nice, %system, %iowait, %steal et %idle.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/sar.png">
+<img class="imgcenter" alt="sar" src="http://linuxien.legtux.org/uploads/images/2011/02/sar.png">
 
 Vraiment pratique lorsque l'on démarre un logiciel en plein écran pour faire ses relevés.
 
@@ -35,7 +35,7 @@ Vous pouvez aussi l'utiliser comme ceci afin de lancer la commande:
 
 	iostat -tc 2 3
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/iostat.png">
+<img class="imgcenter" alt="iostat" src="http://linuxien.legtux.org/uploads/images/2011/02/iostat.png">
 
 mpstat: Permet d'afficher l'activité du processeur. La commande
 
@@ -43,6 +43,6 @@ mpstat: Permet d'afficher l'activité du processeur. La commande
 
 affiche les infos pour chaque coeur (ou noyau) du CPU en commençant par 0.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/mpstat.png">
+<img class="imgcenter" alt="mpstat" src="http://linuxien.legtux.org/uploads/images/2011/02/mpstat.png">
 
 Voilà quelques outils pour "jouer" avec votre ordi.

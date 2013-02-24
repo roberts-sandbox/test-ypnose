@@ -13,6 +13,6 @@ Il y a quelques jours, une faille GNU/Linux a été découverte. Il était possi
 
 La vrai somme: 7174bdd52a1dab26e2d5c55051221154
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/04/gnulinux.jpg">
+<img class="imgcenter" alt="gnutux" src="http://linuxien.legtux.org/uploads/images/2011/04/gnulinux.jpg">
 
 Si cet utilisateur réussi donc à mettre la lib dans /usr/lib, il pourra effectuer des opérations non permises comme la modification du nom d'hôtes, de l'utilisateur root et de bien d'autres choses touchant à l'administration. Je vous conseille donc de tester les libs qui semble suspectes. Les développeurs ont confirmés un correctif dans les heures qui viennent.

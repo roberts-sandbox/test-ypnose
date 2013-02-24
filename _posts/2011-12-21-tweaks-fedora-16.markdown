@@ -57,7 +57,7 @@ Et voilà votre "governor" réglé automatiquement à chaque démarrage. Vous po
 
 et voir la fréquence minimale gérée par votre CPU.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/cpu.png">
+<img class="imgcenter" alt="cpupower" src="http://linuxien.legtux.org/uploads/images/2011/12/cpu.png">
 
 *** Gestion du GPU ***
 
@@ -71,7 +71,7 @@ Pour modifier les fichiers suivants, vous ne DEVEZ pas avoir l'option "nomodeset
 
 Je vais retenir les points de la doc dont nous avons besoin. Il faudra regarder/modifier uniquement deux fichiers. AVANT TOUT, CES PROCÉDURES SONT À VOS RISQUES ET PÉRILS, FAITES BIEN ATTENTION.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/gpu.png">
+<img class="imgcenter" alt="gpu" src="http://linuxien.legtux.org/uploads/images/2011/12/gpu.png">
 
 Lancez
 
@@ -159,7 +159,7 @@ Je trouve que de base Fedora 16 consomme beaucoup de RAM, donc il faut désactiv
 
   * Partage de bureau
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/applis.png">
+<img class="imgcenter" alt="ramless" src="http://linuxien.legtux.org/uploads/images/2011/12/applis.png">
 
 Pour modifier ces programmes, lancez:
 
@@ -188,7 +188,7 @@ Elle rassemble:
 
 Voilà le résultat:
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/12/bar.png">
+<img class="imgcenter" alt="bar" src="http://linuxien.legtux.org/uploads/images/2011/12/bar.png">
 
 Vous serez peut-être surpris que cet article ne soit pas en rapport avec Archlinux, mais j'essaie aussi de parler d'autre chose qui soit en rapport avec GNU/Linux.
 

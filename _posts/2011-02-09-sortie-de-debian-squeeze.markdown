@@ -14,12 +14,12 @@ Vous voulez une bonne nouvelle? Et bien, il est sorti une nouvelle version de De
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/debiansqueeze.png">
+<img class="imgcenter" alt="Debian" src="http://linuxien.legtux.org/uploads/images/2011/02/debiansqueeze.png">
 
 Cette dernière est plus qu'intéressante puisque elle semble être exempt de bugs. J'ai lu beaucoup de retours comme quoi le tout, est d'une redoutable stabilité (même en testing). Si je n'étais pas sous Archlinux, je pense que j'irais sous Debian en courant. Pour rien vous cacher, je pense sérieusement à migrer mais je n'arrive pas à quitter mon Archlinux.
 
 Il a énormément de mise à jour de logiciels même si ce ne sont pas les dernières. La version du kernel est la 2.6.32, KDE 4.4.5, GNOME 2.30, Apache 2.2.16 et PHP 5.3.3. On dispose aussi de plus de 29000 paquets prêts à être installés sur le système.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/debianslog.gif">
+<img class="imgcenter" alt="Slogan" src="http://linuxien.legtux.org/uploads/images/2011/02/debianslog.gif">
 
 Vous voulez passer le pas, et bien rendez-vous [ici](http://www.debian.org/CD/) où vous pouvez télécharger le ou les CD/DVD (le 1er suffit pour une installation de base) en torrent, HTTP ou FTP.

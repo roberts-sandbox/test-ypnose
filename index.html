@@ -10,7 +10,7 @@ layout: default
 			<a href="{{ post.url }}">{{ post.title }}</a>
 
 		{% for cat in post.categories limit:4 %}
-			<span class="spright">&nbsp;&middot; <a href="/categories/{{ cat }}" class="cat">{{ cat }}</a></span>
+			<span class="spright">&nbsp;&middot; <a href="/categories/{{ cat }}/" class="cat">{{ cat }}</a></span>
 		{% endfor %}
 		</div>
 

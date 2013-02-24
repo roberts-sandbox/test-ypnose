@@ -55,7 +55,7 @@ Et là, on voit nettement quels sont les services qui prennent le plus de temps 
 
 Dorénavant, il suffit de désactiver ces services (faites attention à ne pas en avoir besoin). Je sais que sendmail est utilisé par Thunderbird, mais je n'en suis pas à 100% sûr. Dans mon cas, j'ai juste touché aux services sendmail et iscsi et ça a suffit pour gagner environ 3 à 4 secondes.
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen.png">](http://linuxien.legtux.org/uploads/images/2012/05/screen.png) Avant le "tweak"
+[<img class="imgcenter" alt="systemd1" src="http://linuxien.legtux.org/uploads/images/2012/05/screen.png">](http://linuxien.legtux.org/uploads/images/2012/05/screen.png) Avant le "tweak"
 
 On doit user de la commande systemctl pour faire le ménage dans ces services. J'ai donc procédé comme ceci:
 
@@ -68,13 +68,13 @@ Dans mon cas:
 
 Faites de même avec les services qui vous posent problèmes. Voilà de précieuses secondes gagnés lors du boot. Je dois dire que c'est assez agréable.
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/05/screen2.png">](http://linuxien.legtux.org/uploads/images/2012/05/screen2.png) Après le "tweak"
+[<img class="imgcenter" alt="systemd2" src="http://linuxien.legtux.org/uploads/images/2012/05/screen2.png">](http://linuxien.legtux.org/uploads/images/2012/05/screen2.png) Après le "tweak"
 
 ** - Plymouth -**
 
 Plymouth est l'écran qui est affiché lors du chargement de Fedora 16, où on voit le logo Fedora qui se remplit au fur et à mesure que votre système charge, pour enfin afficher le logo final quand tout est terminé.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/04/plymouth.png">
+<img class="imgcenter" alt="plymouth" src="http://linuxien.legtux.org/uploads/images/2012/04/plymouth.png">
 
 Sachant que certains l'aiment et d'autres non, je vais expliquer comment l'enlever. De mon côté, je l'avais désactivé puis je l'ai réactivé peu après, car finalement je trouve ça joli. Donc, éditez votre fichier de configuration GRUB2, avec la commande:
 

@@ -44,11 +44,11 @@
 	<nav>
 		<ul>
 		<li><a href="/">/root</a> &middot;</li>
-		<li><a href="/archives">Archives</a> &middot;</li>
-		<li><a href="/hardware">Hardware</a> &middot;</li>
-		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
-		<li><a href="/a-savoir">À savoir</a> &middot;</li>
-		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/archives/">Archives</a> &middot;</li>
+		<li><a href="/hardware/">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je/">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir/">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter/">Me contacter</a> &middot;</li>
 		<li><a href="/atom.xml">RSS</a></li>
 		</ul>
 	</nav>
@@ -61,10 +61,10 @@
 		<h1>2013: l'année du changement</h1>
 
 		<div>
-			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 11.01.2013
+			Par <a href="/qui-suis-je/">Ypnose</a> - Posté le 11.01.2013
 		</div>
 		<div>
-			<span> &rarr; </span><a href="/categories/News">News</a><span> &rarr; </span><a href="/categories/Avis">Avis</a>
+			<span> &rarr; </span><a href="/categories/News/">News</a><span> &rarr; </span><a href="/categories/Avis/">Avis</a>
 		</div>
 
 	</div>
@@ -80,14 +80,14 @@ Octopress est un framework pour le mythique <a href="http://jekyllrb.com/">Jekyl
 Tout est géré via <a href="http://git-scm.com/">Git</a>. On reste donc dans l’aspect <a href="http://fr.wikipedia.org/wiki/Principe_KISS">KISS</a>, qui est si cher à mes yeux. Autre point qui m’a conquis, c’est que je n’ai plus besoin de PHP et MySQL, l’hébergement ne nécessite donc rien de bien puissant. Cela me permet aussi de réfléchir
 à une éventuelle évolution (auto-hébergement avec Dockstar / Raspberry ?).</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/octopress.png" /></p>
+<p><img class="imgcenter" alt="octopress" src="http://linuxien.legtux.org/uploads/images/2013/articles/octopress.png" /></p>
 
 <p>Question légèreté, j’avais déjà été tenté par <a href="http://www.pluxml.org/">PluXml</a> (CMS sans BDD), il y a quelque mois. Cependant, j’avais fait machine arrière, car il était question que je perde mes “précieux” commentaires. Effectivement, j’accorde beaucoup d’importance aux liens auteur / lecteurs.
 Toutefois,  j’ai décidé de sauter le pas, sans exporter les commentaires. Pourquoi? Simplement, parce que cela est trop contraignant. L’export des articles et des pages a été relativement facile, même si j’ai dû modifier la mise en page effectuée
 par Wordpress et les liens vers les images (merci <a href="http://www.grymoire.com/Unix/Sed.html">sed</a>); cela m’a finalement pris du temps de rattraper les erreurs de Wordpress. Je n’ai pas exporté les commentaires, car Octopress et Jekyll ont besoin d’applications externes comme <a href="http://disqus.com/">Disqus</a> pour les
 afficher. Ceci est contraire à ma philosophie et puis ce n’est pas comme ci j’avais 25 commentaires par jour, je peux m’en passer.</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/kiss.gif" /></p>
+<p><img class="imgcenter" alt="KISS" src="http://linuxien.legtux.org/uploads/images/2013/articles/kiss.gif" /></p>
 
 <p>Le thème affiché est une modification de celui de base. Je me suis dirigé vers un design ultra-minimaliste. Au final, je suis vraiment satisfait du résultat actuel. C’est clair, simple et parfaitement lisible. Nous n’avons pas besoin de plus.
 Plutôt que d’afficher une “sidebar”, j’ai décidé de placer les liens importants dans des pages ou les afficher dans le bas de la page principale. N’hésitez pas à jeter un œil à ces pages / liens.</p>
@@ -107,7 +107,7 @@ installé la version Beta mi-Décembre. Le résultat est quasiment parfais. Je s
 La nouvelle version de l’installateur <a href="http://fedoraproject.org/wiki/Anaconda">Anaconda</a> est déroutante, surtout quand on est habitué aux anciens installateurs. Dorénavant, il n’y pas d’ordre pour les différentes étapes (partitionnement, fuseau horaire),
 vous êtes juste obligé de paramétrer toutes les options, avant de pouvoir commencer l’installation. D’ailleurs, j’ai remplacé le miroir par défaut pour un autre situé en Allemagne, car l’installation avait un bug avec ceux inclus automatiquement.</p>
 
-<p><a href="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png"><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png" /></a></p>
+<p><a href="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png"><img class="imgcenter" alt="anaconda" src="http://linuxien.legtux.org/uploads/images/2013/articles/fedora-18.png" /></a></p>
 
 <p>J’ai d’abord choisi <a href="http://mate-desktop.org/">MATE</a> que j’attendais beaucoup, mais je n’ai pas été convaincu par ce dernier, donc je suis retourné sous Xfce 4.10. Les changements sont les bienvenus, comme par exemple le remplacement de GDM par <a href="https://launchpad.net/lightdm">lightDM</a>
 (ce qui évite donc des dépendances GNOME presque inutiles) ou encore le dossier /tmp monté automatiquement en tmpfs. Même en passant par BFO, j’ai désinstallé quelques logiciels inclus de base comme Pragha, car je sais pertinemment que je n’allais pas les utiliser.</p>
@@ -124,7 +124,7 @@ créé une sauvegarde de la racine avec dd (j’adore ce soft). Je vous conseill
 commencent à peser lourd sur la balance. Durant cette année, ça va pas mal bouger dans l’écosystème Linux. Peut-être que vous l’ignorez mais le successeur de X (presque 30 ans d’âge) arrive à grands pas et il s’appelle <a href="http://wayland.freedesktop.org/">Wayland</a>.
 On pourrait se réjouir, mais malheureusement tout n’est pas rose.</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/wayland.png" /></p>
+<p><img class="imgcenter" alt="wayland" src="http://linuxien.legtux.org/uploads/images/2013/articles/wayland.png" /></p>
 
 <p><em>Premier point</em>, actuellement Wayland utilise <a href="http://fr.wikipedia.org/wiki/Kernel-based_mode-setting">KMS</a> ce qui implique donc, que seuls les drivers libres sont capables de supporter Wayland. Ne nous mentons pas, même si les drivers libres sont de bonne qualité (j’utilise moi-même le radeon libre avec mon laptop), au niveau de
 l’accélération 3D, on est loin du niveau des drivers privateurs. Dans mon cas, je dispose d’un GPU NVidia GTX 460, je suis donc obligé d’utiliser ce driver “officiel”. Pourquoi? Je joue à une poignée de jeux sous GNU/Linux, qui ont besoin de la 3D. Il est donc impossible
@@ -140,7 +140,7 @@ sous BSD, simplement parce les standards <a href="http://fr.wikipedia.org/wiki/P
 Je pense en particulier à systemd, qui n’est pas portable sur BSD car il utilise des fonctions internes au kernel Linux. Et c’est même le développeur principal de systemd, aka <a href="http://linuxfr.org/users/patrick_g/journaux/linux-ou-posix">Lennart Poettering</a> qui s’en vante.
 C’est du beau! Cette philosophie ne me plaît pas du tout et me révolte.</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/xorg.png" /></p>
+<p><img class="imgcenter" alt="xorg" src="http://linuxien.legtux.org/uploads/images/2013/articles/xorg.png" /></p>
 
 <p>Notez que je ne suis pas le genre de personne à troller, sinon je me serais bien amusé avec l’adoption de systemd, sur “presque” toutes les distribs grands publics (cf débat systemd / Arch). D’ailleurs, notre ami Lennart Poettering ne comprends pas pourquoi, Ubuntu exploite <a href="https://plus.google.com/115547683951727699051/posts/X3fUhyJREKq">Upstart</a>
 au lieu de systemd. Et encore, je ne parle pas des propos calomnieux, suite au fork de udev, par les devs de Gentoo.<br />
@@ -159,7 +159,7 @@ j’ai la nette impression que ce noyau (qui est à disposition de tous) est par
 <p>Ainsi, vous vous doutez que notre OS favori va devenir “en vogue” (avec une bonne partie d’users, qui ne s’occupe pas des principes). N’est-ce-pas le déclin, qui est en marche? Beaucoup essaient d’enlever ou oublient volontairement GNU de Linux, et il semblerait que cela fonctionne dans l’esprit général.<br />
 Je ne supporterai pas de voir GNU/Linux, comme un produit grand public et formaté. J’ai une peur maladive en pensant à ce que pourrait devenir cet OS, si nous ne défendons pas l’éthique et si nous laissons faire n’importe quoi, n’importe comment…</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2013/articles/bsd.jpg" /></p>
+<p><img class="imgcenter" alt="BSD" src="http://linuxien.legtux.org/uploads/images/2013/articles/bsd.jpg" /></p>
 
 <p>C’est pourquoi la famille des BSD me tente de plus en plus. Je vois BSD comme un concept qui s’assume, c’est-à-dire qu’il n’y a pas cette volonté de ramener le plus de gens possibles, ou de devenir l’alternative à DOS. L’OS est là, avec ses qualités et ses difficultés, seuls la passion et la soif
 de découverte motivent le changement. C’est un peu ce que je reproche à GNU/Linux, qui cherche désespérement à s’affirmer et à avoir sa place (alors que c’est déjà le cas). Nous pourrions être 1000 dans le monde, ça ne changerai rien aux qualités…  </p>
@@ -174,7 +174,6 @@ Pour finir, j’ai me suis vraiment appliqué à l’écrire et j’espère que 
 <p>À bientôt</p>
 
 <p>Ypnose</p>
-
 
 
 </article>
@@ -215,7 +214,7 @@ Pour finir, j’ai me suis vraiment appliqué à l’écrire et j’espère que 
 		</div>
 		<div>
 			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
-			- Design par<a href="/qui-suis-je">Ypnose</a>
+			- Design par<a href="/qui-suis-je/">Ypnose</a>
 		</div>
 		<div>
 			<a href="http://validator.w3.org/check?uri=http%3A%2F%2Ftetedulinuxien.fr&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0"><img src="/assets/images/html5.png" alt="html5" /></a>

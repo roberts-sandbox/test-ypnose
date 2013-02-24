@@ -13,7 +13,7 @@ La version Ashoc de la distribution [Chakra Linux](http://chakra-project.org/new
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/chakra.jpg">
+<img class="imgcenter" alt="Chakra Project" src="http://linuxien.legtux.org/uploads/images/2011/01/chakra.jpg">
 
 Ainsi, ceux qui sont un peu "effrayés" par Archlinux (c'est à dire une installation minimale avec pas mal de configuration) et un système vide au premier redémarrage, devraient l’affectionner. Effectivement, le CD comporte un installateur graphique très esthétique et assez simple. Les drivers propriétaires pour les GPU ATI et Nvidia sont aussi disponibles sur le média. Vous pouvez télécharger le live CD en ISO, ce qui vous permet de tester la bête avant de l'installer.
 

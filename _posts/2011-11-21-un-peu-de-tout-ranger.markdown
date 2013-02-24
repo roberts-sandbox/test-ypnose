@@ -24,7 +24,7 @@ Le "layout" par défaut de Moc n'est pas très pratique, je trouve. Surtout dans
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/10/mocdefaut.png">
+<img class="imgcenter" alt="mocdef" src="http://linuxien.legtux.org/uploads/images/2011/10/mocdefaut.png">
 
 A la fin de ce fichier, vous pouvez trouver une section qui contient différents layouts prédéfinis. Comme par exemple:
 
@@ -32,9 +32,7 @@ A la fin de ce fichier, vous pouvez trouver une section qui contient différents
 
 Cette ligne vous permet d'afficher un layout adapté à votre utilisation. Voici mon nouveau résultat:
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png">](http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png)
-
-
+[<img class="imgcenter" alt="newlayout" src="http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png">](http://linuxien.legtux.org/uploads/images/2011/11/mocperso.png)
 
 et la ligne correspondante:
 
@@ -55,7 +53,7 @@ J'étais déjà très content de mc, qui me permettait de gérer mes fichiers as
 
 Tout simplement, parce que Ranger affiche trois colonnes "liées" et qu'il est donc plus facile de naviguer dans l'arborescence, alors que mc affiche deux colonnes indépendantes. Avec Ranger, vous pouvez aussi voir dans la troisième colonne un aperçu du fichier/dossier sélectionné. Si par exemple, c'est un fichier texte, vous avez un aperçu avec nano, ou avec un fichier audio/vidéo, les propriétés du fichier sont affichées (vous aurez besoin de [mediainfo](http://mediainfo.sourceforge.net/en)).
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png">](http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png)
+[<img class="imgcenter" alt="ranger" src="http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png">](http://linuxien.legtux.org/uploads/images/2011/11/rangeraperçu.png)
 
 Il dispose d'autres avantages extrêmement utiles:
 
@@ -71,11 +69,11 @@ Il dispose d'autres avantages extrêmement utiles:
 
 Je ne suis pas encore, un adepte de vim mais j'arrive tout de même à me familiariser avec les raccourcis. Ils sont souvent sous la forme de deux lettres et lorsque vous appuyer sur la première, une liste s'affiche et montre différentes combinaisons réalisables. Cela aide à se souvenir des combinaisons. Il est aussi possible d'utiliser les raccourcis de mc bindés sur les Fx (de F1 à F10).
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png">](http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png)
+[<img class="imgcenter" alt="shortcuts" src="http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png">](http://linuxien.legtux.org/uploads/images/2011/11/raccourcis.png)
 
 Chose importante, il faut aussi se décider à modifier le thème de couleur. Celui de base est acceptable (avec un .Xdefaults peaufiné), mais je cherche à obtenir un thème similaire à mc car je me suis habitué aux couleurs.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/11/color.png">
+<img class="imgcenter" alt="color" src="http://linuxien.legtux.org/uploads/images/2011/11/color.png">
 
 Avant de personnaliser toutes ses configs, exporter les dans le dossier '~/.config' avec:
 

@@ -16,7 +16,7 @@ De nombreuses nouveautés sont au rendez-vous comme des nouvelles textures plus 
 
 <!-- more -->
 
-<img class="imgcenter" src="http://www.xonotic.org/m/uploads/2010/05/maps-ctf-dance-center-500x375.jpg">
+<img class="imgcenter" alt="xonotic map" src="http://www.xonotic.org/m/uploads/2010/05/maps-ctf-dance-center-500x375.jpg">
 
 Je vous invite à vous rendre [ici](http://www.xonotic.org/2010/12/xonotic-0-1-preview-released/) pour plus d'informations. Je pense que le fork qui a été crée suite à la vente de licence Nexuiz au studio Illfonic pour programmer un jeu sur PS3 a été une bonne chose. Effectivement, le créateur de Nexuiz semblait ne plus être impliqué dans son projet depuis plusieurs mois.
 

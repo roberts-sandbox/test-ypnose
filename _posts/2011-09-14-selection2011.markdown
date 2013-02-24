@@ -56,6 +56,6 @@ Si vous avez des questions, n'hésitez pas à me les poser. Comme d'habitude, al
 
 Voilà deux images de mon bureau sous dwm 5.9 (bientôt un article sur ce dernier).
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/09/2011-09-14-233055_1920x1080_scrot_small.png">](http://linuxien.legtux.org/uploads/images/2011/09/2011-09-14-233055_1920x1080_scrot.png)
+[<img class="imgcenter" alt="clean" src="http://linuxien.legtux.org/uploads/images/2011/09/2011-09-14-233055_1920x1080_scrot_small.png">](http://linuxien.legtux.org/uploads/images/2011/09/2011-09-14-233055_1920x1080_scrot.png)
 
-[<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/09/screenFetch-2011-09-14_23-43-28_small.png">](http://linuxien.legtux.org/uploads/images/2011/09/screenFetch-2011-09-14_23-43-28.png)
+[<img class="imgcenter" alt="busy" src="http://linuxien.legtux.org/uploads/images/2011/09/screenFetch-2011-09-14_23-43-28_small.png">](http://linuxien.legtux.org/uploads/images/2011/09/screenFetch-2011-09-14_23-43-28.png)

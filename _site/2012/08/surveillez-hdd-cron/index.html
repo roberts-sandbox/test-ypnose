@@ -44,11 +44,11 @@
 	<nav>
 		<ul>
 		<li><a href="/">/root</a> &middot;</li>
-		<li><a href="/archives">Archives</a> &middot;</li>
-		<li><a href="/hardware">Hardware</a> &middot;</li>
-		<li><a href="/qui-suis-je">Qui suis-je?</a> &middot;</li>
-		<li><a href="/a-savoir">À savoir</a> &middot;</li>
-		<li><a href="/me-contacter">Me contacter</a> &middot;</li>
+		<li><a href="/archives/">Archives</a> &middot;</li>
+		<li><a href="/hardware/">Hardware</a> &middot;</li>
+		<li><a href="/qui-suis-je/">Qui suis-je?</a> &middot;</li>
+		<li><a href="/a-savoir/">À savoir</a> &middot;</li>
+		<li><a href="/me-contacter/">Me contacter</a> &middot;</li>
 		<li><a href="/atom.xml">RSS</a></li>
 		</ul>
 	</nav>
@@ -61,10 +61,10 @@
 		<h1>Surveiller son HDD avec cron</h1>
 
 		<div>
-			Par <a href="/qui-suis-je">Ypnose</a> - Posté le 31.08.2012
+			Par <a href="/qui-suis-je/">Ypnose</a> - Posté le 31.08.2012
 		</div>
 		<div>
-			<span> &rarr; </span><a href="/categories/Astuce">Astuce</a><span> &rarr; </span><a href="/categories/Personnalisation">Personnalisation</a>
+			<span> &rarr; </span><a href="/categories/Astuce/">Astuce</a><span> &rarr; </span><a href="/categories/Personnalisation/">Personnalisation</a>
 		</div>
 
 	</div>
@@ -75,7 +75,7 @@
 
 <p>Sachant que mon laptop tournant sous Fedora 17 et comportant un modèle de HDD Hitachi, est concerné par ce phénomène, j’ai essayé d’appliquer un correctif suivi d’un monitorage assez drastique.</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/hitachi.jpg" /></p>
+<p><img class="imgcenter" alt="hdd" src="http://linuxien.legtux.org/uploads/images/2012/08/hitachi.jpg" /></p>
 
 <p>Avant tout, sachez que je me suis aperçu de ces parcages que très récemment. Depuis un moment, j’appliquais la commande <code>hdparm -B 254 /dev/sda</code> par mesure de sécurité, mais un soir j’ai entendu un bruit bizarre sous mon laptop et en consultant de temps en temps la valeur <code>193 Load_Cycle_Count</code> avec smartmontools, j’ai directement compris.</p>
 
@@ -83,7 +83,7 @@
 
 <p>Cette méthode est fonctionnelle sur Fedora 17 et très certainement sur Arch. Je vais d’ailleurs la mettre en place, dans quelques jours. Cependant, je surveillerai uniquement mon HDD mais je n’appliquerai aucun changements, car je ne peux pas le faire avec le modèle, sur mon Desktop.</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/laptop.jpg" /></p>
+<p><img class="imgcenter" alt="dellaptop" src="http://linuxien.legtux.org/uploads/images/2012/08/laptop.jpg" /></p>
 
 <p>Pour commencer, il serait judicieux de baisser la valeur ou même désactiver ce paramètre appelé APM (qui est le responsable). Un bon moyen de rendre la modification permanente et effective après reboot, est de modifier le fichier rc.local et ajouter la commande <code>hdparm -B 254 /dev/sdx</code>. Assurez-vous de choisir le bon disque avec <code>fdisk -l</code>. La valeur 254 permet de fixer l’APM à la plus basse valeur, mais vous pouvez aussi désactiver ce dernier avec 255.</p>
 
@@ -148,7 +148,7 @@ exit
 
 <p>Voici quelques explications: discp est lancé toutes les deux heures (à 10:00 - 12:00 - 14:00), tout les jours de l’année et il redirige le résultat vers un fichier, situé dans mon $HOME. Changez la période en fonction de  vos besoins.</p>
 
-<p><img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2012/08/crontab-syntax.gif" /></p>
+<p><img class="imgcenter" alt="cron" src="http://linuxien.legtux.org/uploads/images/2012/08/crontab-syntax.gif" /></p>
 
 <p>Sur mon Desktop, il sera amorcé un fois par jour à 18h00.</p>
 
@@ -204,7 +204,7 @@ exit
 		</div>
 		<div>
 			Copyright &copy; "Dans la Tête du Linuxien" 2011 / 2013 
-			- Design par<a href="/qui-suis-je">Ypnose</a>
+			- Design par<a href="/qui-suis-je/">Ypnose</a>
 		</div>
 		<div>
 			<a href="http://validator.w3.org/check?uri=http%3A%2F%2Ftetedulinuxien.fr&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0"><img src="/assets/images/html5.png" alt="html5" /></a>

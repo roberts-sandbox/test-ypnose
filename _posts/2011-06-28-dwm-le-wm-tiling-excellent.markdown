@@ -20,7 +20,7 @@ Les candidats sont nombreux: WMFS, WMII, Awesome et Subtle (pas dynamique mais m
 
 Pour WMFS, il m'a semblé qu'il était gourmand, en particulier sur le CPU. Subtle est assez dur à régler et a utiliser, malgré les possibilités immenses. Pour Awesome, j'ai un peu eu peur de voir la syntaxe évoluer dans le temps, et par conséquent, devoir mettre mes configs à jour après telle ou telle update, ne me plait pas.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/06/dwm-logo.png">
+<img class="imgcenter" alt="dwmkiss" src="http://linuxien.legtux.org/uploads/images/2011/06/dwm-logo.png">
 
 La particularité de Dwm est sa légèreté. Le soft est codé en C, ne comporte que 2000 lignes de codes et dispose de nombreux patchs pour ajouter des fonctionnalités. Il ne lit pas de fichier de config, pour les options (au contraire de WMFS ou Awesome), il faut directement modifier les sources du logiciel pour personnaliser les options. Et par conséquent, il faut tout recompiler par la suite (0.25s chez moi). Cela pourrait sembler être une tâche contraignante, mais ce n'est pas le cas.
 
@@ -32,7 +32,7 @@ Les fonctionnalités sont fournies: jusqu'à 9 tags différents, 3 layouts par d
 
 Je me sens très bien sous Dwm et de jours en jours, je m'habitue pleinement au tiling et aux raccourcis. C'est très plaisant à utiliser.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/06/arch-linux.png">
+<img class="imgcenter" alt="arch" src="http://linuxien.legtux.org/uploads/images/2011/06/arch-linux.png">
 
 Pour l'installer sous Archlinux, on passe donc par [ABS](https://wiki.archlinux.org/index.php/ABS), avec:
 

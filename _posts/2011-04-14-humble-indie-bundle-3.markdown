@@ -15,7 +15,7 @@ En effet, cela est plus qu'intéressant pour nous qui souffrons d'une pénurie 
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/04/bundle.png">
+<img class="imgcenter" alt="frozen" src="http://linuxien.legtux.org/uploads/images/2011/04/bundle.png">
 
 
 Les jeux inclus de cette offre sont:

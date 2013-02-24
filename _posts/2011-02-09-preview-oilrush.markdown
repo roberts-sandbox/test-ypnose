@@ -15,13 +15,13 @@ Ces derniers temps, il y a beaucoup de news et d'infos autour d'Oilrush. Effec
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/oilrushrig.jpg">
+<img class="imgcenter" alt="screen1" src="http://linuxien.legtux.org/uploads/images/2011/02/oilrushrig.jpg">
 
 Je vais donc essayer de résumer ce qui a été dit. Les anglophones pourront lire les articles en plus du mien. Sans surprise, les graphismes assurent et tiennent leurs promesses, même si on baisse la qualité. Il y aussi des effets météo assez impressionnants et les moments de la journée changent. Les cartes se déroulent dans plusieurs endroits comme en Antarctique ou en Asie.
 
 L'objectif est plutôt simpliste, en effet il s'agit de coloniser des plateformes. Certaines sont protégées, d'autres non. Avec ces plateformes, il sera possible de créer différents types d'unités. Il y a aura plusieurs types d'unités, du petit scooter des mers au gros submersible en passant par les aéronefs. Chacunes ayant un domaine de prédilection précis. Il faudra aussi capturer des gisements de pétrole, afin de collecter des ressources pour développer des unités et des moyens de défense avant d'attaquer. Petite précision, au-dessus de la mini-map, on a des pourcentages (25%, 50% et 100%) qui permettent de sélectionner une partie ou toutes les unités d'une plateforme. On pourra aussi utiliser des technologies pour rendre l'armée plus efficace.
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/02/oilrush_2.jpg">
+<img class="imgcenter" alt="screen2" src="http://linuxien.legtux.org/uploads/images/2011/02/oilrush_2.jpg">
 
 Le jeu comporte aussi un autre mode appelé "Tower Defense" où il est question de résister à des vagues d'ennemis de plus en plus nombreuses et fréquentes en construisant des défenses.
 

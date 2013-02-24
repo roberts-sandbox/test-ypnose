@@ -16,7 +16,7 @@ Grâce à la [documentation](http://openbox.org/wiki/Main_Page) Openbox, j'ai r�
 
 <!-- more -->
 
-<img class="imgcenter" src="http://linuxien.legtux.org/uploads/images/2011/01/gpuscript.png">
+<img class="imgcenter" alt="GPUscript" src="http://linuxien.legtux.org/uploads/images/2011/01/gpuscript.png">
 
 Pour le mettre en place, vous devez:
 
