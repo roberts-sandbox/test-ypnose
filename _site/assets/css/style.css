@@ -18,7 +18,7 @@ html {
 
 body {
 	font-family:"OpenSans", Helvetica, Arial, sans-serif;
-	font-size:1em;
+	font-size:.9em;
 }
 
 .container {
@@ -62,7 +62,7 @@ body,nav ul {
 }
 
 .cat,.desc,nav,footer,#lastart {
-	font-size:0.9em;
+	font-size:.8em;
 }
 
 .index article,article,#lastart {
@@ -277,7 +277,7 @@ figure {
 }
 
 figcaption {
-	font-size:0.8em;
+	font-size:.75em;
 	background-color:#E6E6E6;
 	outline:1px solid #CFCFCF;
 	padding:0 6px;
@@ -408,7 +408,7 @@ pre {
 @media screen and (max-width: 350px) {
 	#widthmes {
 		display:inline-block;
-		font-size:0.7em;
+		font-size:.7em;
 		background-color:#EDEDED;
 		color:#B30035;
 		border:1px solid #CDCDCD;
