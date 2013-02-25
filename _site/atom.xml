@@ -4,7 +4,7 @@
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-25T13:51:42+01:00</updated>
+  <updated>2013-02-25T14:18:04+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
@@ -569,7 +569,7 @@ Le cœur n’y était pas, j’étais prêt à appeller le service Orange et à 
 
 &lt;p&gt;Vous pouvez aussi le télécharger avec curl / wget.&lt;/p&gt;
 
-&lt;video width=&quot;800&quot; height=&quot;500&quot; class=&quot;centvideo&quot; controls=&quot;controls&quot;&gt;&lt;source src=&quot;http://linuxien.legtux.org/uploads/media/cast.ogv&quot; type=&quot;video/ogg&quot; /&gt;&lt;/video&gt;
+&lt;video width=&quot;750&quot; height=&quot;468&quot; class=&quot;centvideo&quot; controls=&quot;controls&quot;&gt;&lt;source src=&quot;http://linuxien.legtux.org/uploads/media/cast.ogv&quot; type=&quot;video/ogg&quot; /&gt;&lt;/video&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -O http://linuxien.legtux.org/uploads/media/cast.ogv
 #ou
