@@ -4,7 +4,7 @@
   <title>Dans la Tête du Linuxien</title>
   <link href="http://tetedulinuxien.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://tetedulinuxien.fr/atom.xml"/>
-  <updated>2013-02-24T13:58:15+01:00</updated>
+  <updated>2013-02-25T13:41:12+01:00</updated>
   <id>http://tetedulinuxien.fr/</id>
   <author>
     <name>Ypnose</name>
@@ -28,7 +28,10 @@
 de la patate chaude via son &lt;a href=&quot;https://twitter.com/NerosTie&quot;&gt;Twitter&lt;/a&gt;, je me suis dit que cela pouvait être amusant et intéressant.&lt;br /&gt;
 En toute franchise, je n’ai pas compris de suite quel était l’objectif et pourquoi on m’avait mentionné sur Twitter.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; alt=&quot;La Patate&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/potato.jpg&quot; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;La Patate&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/potato.jpg&quot; /&gt;
+&lt;figcaption&gt;La Patate a froid, malgré son écharpe !&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Bref, voici les règles:&lt;/p&gt;
 
@@ -64,7 +67,10 @@ Sinon au niveau des jeux, je n’ai plus de coups de cœur comme avant. Personne
 encore aujourd’hui des références, je trouve ça incroyable. Et ces jeux avaient un réel challenge, ce qui semble moins courant maintenant.&lt;br /&gt;
 Pour finir, je suis plus Retrogaming en fait.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; alt=&quot;N64 Pad&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/n64.jpg&quot; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;N64 Pad&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/n64.jpg&quot; /&gt;
+&lt;figcaption&gt;Un des meilleurs pad à ce jour&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;4 &amp;gt; Est-ce qu’il y a une cause pour laquelle tu te bats ?&lt;/strong&gt;&lt;/p&gt;
 
@@ -78,7 +84,10 @@ Pour finir, je suis plus Retrogaming en fait.&lt;/p&gt;
 
 &lt;p&gt;Je ne suis pas un gros consommateur d’alcool. Mais de temps en temps, une petite 1664, un Porto ou un Muscat ambré, je ne dis pas non.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; alt=&quot;1664&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/1664.jpg&quot; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;1664&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/1664.jpg&quot; /&gt;
+&lt;figcaption&gt;Une excellente bière à (re)decouvrir&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;7 &amp;gt; Des météorites tombent du ciel, quelle est ta première réaction ?&lt;/strong&gt;&lt;/p&gt;
 
@@ -101,7 +110,10 @@ plus vite. MALUS &amp;gt; BONUS.&lt;/p&gt;
 
 &lt;p&gt;Tout dépend de la personne. Si c’est une jolie femme, qu’elle me vole mon pain et qu’il y a un coup de foudre, pourquoi pas… Mais si c’est quelqu’un qui cherche les ennuis, je ne pense pas me laisser faire.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;imgcenter&quot; alt=&quot;painchoco&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/painchoco.jpg&quot; /&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;painchoco&quot; src=&quot;http://linuxien.legtux.org/uploads/images/2013/painchoco.jpg&quot; /&gt;
+&lt;figcaption&gt;Qui a osé voler mon pain au chocolat ?&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;11 &amp;gt; Le Tardis vient d’apparaître devant toi et le Doctor te propose de devenir son nouveau compagnon. Où et quand sera ta première destination ?&lt;/strong&gt;&lt;/p&gt;
 

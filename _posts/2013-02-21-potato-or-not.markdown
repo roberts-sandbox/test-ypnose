@@ -13,7 +13,10 @@ Bon OK, le titre peut vous sembler étrange, voire inadapté avec ce qui est fai
 de la patate chaude via son [Twitter](https://twitter.com/NerosTie), je me suis dit que cela pouvait être amusant et intéressant.  
 En toute franchise, je n'ai pas compris de suite quel était l'objectif et pourquoi on m'avait mentionné sur Twitter.
 
-<img class="imgcenter" alt="La Patate" src="http://linuxien.legtux.org/uploads/images/2013/potato.jpg">
+<figure>
+<img alt="La Patate" src="http://linuxien.legtux.org/uploads/images/2013/potato.jpg">
+<figcaption>La Patate a froid, malgré son écharpe !</figcaption>
+</figure>
 
 Bref, voici les règles:
 
@@ -43,7 +46,10 @@ Sinon au niveau des jeux, je n'ai plus de coups de cœur comme avant. Personnell
 encore aujourd'hui des références, je trouve ça incroyable. Et ces jeux avaient un réel challenge, ce qui semble moins courant maintenant.  
 Pour finir, je suis plus Retrogaming en fait.
 
-<img class="imgcenter" alt="N64 Pad" src="http://linuxien.legtux.org/uploads/images/2013/n64.jpg">
+<figure>
+<img alt="N64 Pad" src="http://linuxien.legtux.org/uploads/images/2013/n64.jpg">
+<figcaption>Un des meilleurs pad à ce jour</figcaption>
+</figure>
 
 __4 > Est-ce qu'il y a une cause pour laquelle tu te bats ?__
 
@@ -57,7 +63,10 @@ __6 > Ton alcool préféré (si tu en bois) ?__
 
 Je ne suis pas un gros consommateur d'alcool. Mais de temps en temps, une petite 1664, un Porto ou un Muscat ambré, je ne dis pas non.
 
-<img class="imgcenter" alt="1664" src="http://linuxien.legtux.org/uploads/images/2013/1664.jpg">
+<figure>
+<img alt="1664" src="http://linuxien.legtux.org/uploads/images/2013/1664.jpg">
+<figcaption>Une excellente bière à (re)decouvrir</figcaption>
+</figure>
 
 __7 > Des météorites tombent du ciel, quelle est ta première réaction ?__
 
@@ -80,7 +89,10 @@ __10 > On vient de te voler ton pain au chocolat, que fais-tu ?__
 
 Tout dépend de la personne. Si c'est une jolie femme, qu'elle me vole mon pain et qu'il y a un coup de foudre, pourquoi pas... Mais si c'est quelqu'un qui cherche les ennuis, je ne pense pas me laisser faire.
 
-<img class="imgcenter" alt="painchoco" src="http://linuxien.legtux.org/uploads/images/2013/painchoco.jpg">
+<figure>
+<img alt="painchoco" src="http://linuxien.legtux.org/uploads/images/2013/painchoco.jpg">
+<figcaption>Qui a osé voler mon pain au chocolat ?</figcaption>
+</figure>
 
 __11 > Le Tardis vient d’apparaître devant toi et le Doctor te propose de devenir son nouveau compagnon. Où et quand sera ta première destination ?__
 
