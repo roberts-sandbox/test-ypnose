@@ -53,6 +53,7 @@ body {
 h1,h2,h3,h4,h5,h6,.index h1 a,.archive article h1 a {
 	color:#1d1d1d;
 	font-family:"Oswald", sans-serif;
+	line-height:1.2em;
 }
 
 body,nav ul,.infobox,#lastart,#button a,.archive article,.category,figure {
@@ -88,11 +89,11 @@ nav,footer,#lastart,#button a {
 }
 
 code,pre {
-	color:#1D4D59;
+	color:#224568;
 	background-color:#C2C2C2;
 }
 
-.barart,.barfoot,.index article,.centaudio {
+.barfoot,.centaudio {
 	margin:10px auto;
 }
 
@@ -194,6 +195,7 @@ nav a {
 .barart {
 	max-width:90%;
 	border-bottom:1px solid #C8C8C8;
+	margin:10px auto 8px;
 }
 
 .barfoot {
@@ -210,6 +212,7 @@ nav a {
 
 .archive article h1 {
 	margin-top:20px;
+	line-height:1.5em;
 }
 
 .archive article h1 a:hover {
@@ -217,7 +220,8 @@ nav a {
 }
 
 .archive article h2 {
-	margin:20px 80px;
+	margin:20px auto;
+	max-width:40%;
 	padding-bottom:10px;
 }
 
@@ -382,7 +386,7 @@ code {
 	}
 
 	.index article {
-		margin:10px 20px;
+		margin:8px 20px;
 	}
 
 	article {
@@ -401,7 +405,7 @@ code {
 		margin-top:15px;
 	}
 
-	article {
+	article,.archold {
 		line-height:1.5em;
 		font-size:.9em;
 	}
