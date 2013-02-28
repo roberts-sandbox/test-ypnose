@@ -353,7 +353,7 @@ footer a {
 }
 
 footer div {
-	margin:5px 0;
+	margin:8px 0;
 }
 
 pre {
@@ -364,9 +364,9 @@ pre {
 	overflow-x:auto;
 }
 
-code {
+/*code {
 	padding:2px 4px;
-}
+}*/
 
 /* MEDIA */
 

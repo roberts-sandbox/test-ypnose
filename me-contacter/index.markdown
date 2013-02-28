@@ -14,11 +14,11 @@ Il existe plusieurs moyens de me contacter:
   <input type='hidden' name='redirect_to' value='http://tetedulinuxien.fr/merci.html' />
   <label for='name'>Nom / Name</label>
   <br/>
-  <input name='content' type='text' id='name' placeholder='Votre Nom / Your Name' />
+  <input name='name' type='text' id='name' placeholder='Votre Nom / Your Name' />
   <br/>
   <label for='email'>Email</label>
   <br/>
-  <input name='content' type='text' id='email' placeholder='Email' />
+  <input name='title' type='text' id='email' placeholder='Email' />
   <br/>
   <label for='title'>Titre / Title</label>
   <br/>
