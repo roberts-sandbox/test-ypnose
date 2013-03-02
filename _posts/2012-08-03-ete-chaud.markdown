@@ -6,7 +6,7 @@ description: "Un article assez conséquent pour ces vacances d'été avec en plu
 categories:
 - Avis
 - Enregistrement
-- News
+- Libre
 - Reflexion
 tags:
 - archlinux

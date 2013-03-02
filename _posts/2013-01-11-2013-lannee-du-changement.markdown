@@ -6,6 +6,7 @@ date: 2013-01-11 13:33
 categories:
 - News
 - Avis
+- Libre
 tags:
 - archlinux
 - bilan

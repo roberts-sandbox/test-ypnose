@@ -6,6 +6,7 @@ description: "Mes préocupations sur l'avenir du Libre et cela s'annonce rude."
 categories:
 - Avis
 - Reflexion
+- Libre
 tags:
 - archlinux
 - gnu
