@@ -1,6 +1,5 @@
 ---
 layout: page
-comments: false
 title: "Hardware"
 ---
 
