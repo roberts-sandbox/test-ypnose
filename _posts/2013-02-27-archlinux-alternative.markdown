@@ -4,16 +4,16 @@ title: "Pourquoi Archlinux est-elle si efficace?"
 description: "Mon avis sur cette distribution et aussi sur d'éventuelles alternatives."
 date: 2013-02-27 13:30:16
 categories:
+- Libre
 - Avis
 - Reflexion
-- Libre
 published: false
 ---
 
 Bonjour,
 
 Cette question, je me la suis posé un bon nombre de fois et pour moi c'est finalement assez clair. La réponse est en même temps simple et compliqué. Pourquoi?  
-Simplement parce que  
+Simplement parce que   
 Finalement, je me suis aperçu que je reste accroché ou "aimanté" à cette distrib'. Il y a quelques semaines, je suis parti à la recherche d'une alternative solide et cela n'a pas été si facile.  
 Entre les distributions "Source-based", les minimalistes et les autres, le choix n'est pas simple.
 

@@ -29,6 +29,6 @@ Ypnose
 Envypn:  
 Police `pcf` pour les émulateurs de terminaux, tels que rxvt-unicode ou xterm.  
 Paquet disponible pour Archlinux sur [AUR](https://aur.archlinux.org/packages/envypn-font/). Sous licence [GPL+FE](http://en.wikipedia.org/wiki/GPL_font_exception).  
-Pour connaître la dernière version:
+Plus d'infos sur le [forum Archlinux](https://bbs.archlinux.org/viewtopic.php?id=144462) anglophone. Pour connaître la dernière version:
 
 	curl http://linuxien.legtux.org/projects/envypn-font/REVISION
