@@ -27,6 +27,17 @@
 	font-style:normal;
 }
 
+@font-face {
+	font-family:"Asap";
+	src:url('/assets/fonts/asap-regular-webfont.eot');
+	src:url('/assets/fonts/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/asap-regular-webfont.svg#oswaldregular') format('svg'),
+		url('/assets/fonts/asap-regular-webfont.woff') format('woff'),
+		url('/assets/fonts/asap-regular-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
 /* MAIN */
 
 html {
@@ -52,7 +63,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,.index h1 a,.archive article h1 a {
 	color:#1d1d1d;
-	font-family:"Oswald", sans-serif;
+	font-family:"Asap", sans-serif;
 	line-height:1.2em;
 }
 
