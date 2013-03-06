@@ -43,7 +43,7 @@ Pour passwd et group, rien de bien compliqué. Plusieurs possibilités:
 
 - Vous pouvez passer par les commandes vipw et vigr pour les éditer, ajouter les lignes nécessaires et aussi vérifier la syntaxe (évite les erreurs). L’éditeur par défaut est vi, mais il est possible de passer par $EDITOR pour en spécifier un autre (qui a dit nano?). vipw edite le fichier /etc/passwd et vigr edite le fichier /etc/group.
 
-	EDITOR=nano vigr
+`EDITOR=nano vigr`
 
 Je vous conseille une petite lecture de man:
 
