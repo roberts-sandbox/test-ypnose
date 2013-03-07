@@ -7,9 +7,9 @@ layout: default
 	<article>
 		<p class="datart">{{ post.date | date: "%d . %m . %Y" }}</p>
 		<div class="fix">
-			<a href="{{ post.url }}" class="titleindex">{{ post.title }}</a>
+			<h1 class="titleindex"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 		{% for cat in post.categories limit:5 %}
-			<span class="spright">&nbsp;&middot; <a href="/categories/{{ cat }}/" class="cat">{{ cat }}</a></span>
+			<span class="catindex">&nbsp;&middot; <a href="/categories/{{ cat }}/" class="cat">{{ cat }}</a></span>
 		{% endfor %}
 		</div>
 		{% if post.content != null %}

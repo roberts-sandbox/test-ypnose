@@ -3,10 +3,14 @@ layout: default
 ---
 
 <article>
-	<div class="infobox">
+	<div id="infobox">
 		<h1>{{ page.title }}</h1>
 		<p>
+			{% if page.previous %}<a href="{{ page.previous.url }}" class="leftar">
+				<img src="/assets/images/arrowp.png" alt="prec" title="Article précédent" /></a>{% endif %}
 			Par <a href="/qui-suis-je/">{{ site.author }}</a> - Posté le {{ page.date | date: "%d.%m.%Y" }}
+			{% if page.next %}<a href="{{ page.next.url }}" class="rightar">
+				<img src="/assets/images/arrown.png" alt="suiv" title="Article suivant" /></a>{% endif %}
 		</p>
 		<p>
 			{% for cat in page.categories limit:7 %}<span> &rarr; </span><a href="/categories/{{ cat }}/">{{ cat }}</a>{% endfor %}

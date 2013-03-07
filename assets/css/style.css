@@ -39,7 +39,7 @@ body {
 	font-size:1em;
 }
 
-.container {
+#container {
 	max-width:900px;
 	margin:20px auto;
 }
@@ -50,29 +50,30 @@ h1,h2,h3,h4,h5,h6,.index h1 a,.archive article h1 a,.titleindex {
 	color:#1d1d1d;
 	font-family:"Oswald", sans-serif;
 	line-height:1.2em;
+	font-weight:normal;
 }
 
-body,nav ul,.infobox,#lastart,#button a,.archive article,.category,figure,.more {
+body,nav ul,#infobox,#lastart,#button a,.archive article,.category,figure,.more {
 	text-align:center;
 }
 
-body,nav ul,.infobox p,.more {
+body,nav ul,.more,#infobox p {
 	margin:0;
 }
 
-.githubrib,.githubrib:hover {
+#githubrib,#githubrib:hover,.leftar:hover,.rightar:hover {
 	border:0;
 }
 
-.githubrib:hover,a,a:hover,nav a:hover,#button a {
+#githubrib:hover,a,a:hover,nav a:hover,#button a {
 	text-decoration:none;
 }
 
-.githubrib,header {
+#githubrib,header,#button a {
 	background-repeat:no-repeat;
 }
 
-.infobox,.archive article h2 {
+#infobox,.archive article h2 {
 	border-bottom:2px solid #C8C8C8;
 }
 
@@ -93,12 +94,20 @@ code,pre {
 	margin:10px auto;
 }
 
-.githubrib:hover,#button a:hover,footer img:hover {
+#githubrib:hover,#button a:hover,footer img:hover {
 	opacity:1.0;
 }
 
 footer,#lastart {
-	margin:0 10px;
+	margin:0 20px;
+}
+
+.catindex,.imgright,.rightar {
+	float:right;
+}
+
+.imgleft,.leftar {
+	float:left;
 }
 
 /* H FAMILY */
@@ -121,7 +130,7 @@ h4 {
 
 /* GITHUB */
 
-.githubrib {
+#githubrib {
 	background-image:url(/assets/images/github_forkme.png);
 	display:block;
 	position:fixed;
@@ -132,7 +141,7 @@ h4 {
 	white-space:nowrap;
 	top:0;
 	right:0;
-	opacity:0.85;
+	opacity:0.8;
 }
 
 /* LINKS */
@@ -211,10 +220,14 @@ nav a {
 
 /* VARIOUS */
 
-.infobox {
+#infobox {
 	margin:0 auto 30px;
 	max-width:70%;
 	padding:0 0 10px;
+}
+
+.leftar,.rightar {
+	margin-top:3px;
 }
 
 .archive article h1 {
@@ -222,7 +235,7 @@ nav a {
 	line-height:1.5em;
 }
 
-.archive article h1 a:hover,.titleindex:hover,.titleindex:visited {
+.archive article h1 a:hover,.titleindex a:hover,.titleindex a:visited {
 	color:#344061;
 }
 
@@ -245,6 +258,8 @@ nav a {
 	bottom:30px;
 	right:50px;
 	background-color:#242C42;
+	background-image:url("/assets/images/button.png");
+	background-position:center center;
 	border:2px solid #323D5C;
 	width:30px;
 	height:16px;
@@ -260,12 +275,9 @@ nav a {
 
 /* INDEX */
 
-.spleft {
-	float:left;
-}
-
-.spright {
-	float:right;
+.catindex {
+	padding-top:3px;
+	padding-left:4px;
 }
 
 .desc {
@@ -288,12 +300,10 @@ nav a {
 }
 
 .imgleft {
-	float:left;
 	margin-right:25px;
 }
 
 .imgright {
-	float:right;
 	margin-left:25px;
 }
 
@@ -355,6 +365,7 @@ article a:hover img {
 
 .titleindex {
 	font-size:1.7em;
+	display:inline;
 }
 
 /* FOOTER */
@@ -406,11 +417,11 @@ pre {
 	}
 
 	.index article {
-		margin:8px 20px;
+		margin:8px 25px;
 	}
 
 	article {
-		margin:0 20px;
+		margin:0 25px;
 	}
 }
 
@@ -429,7 +440,7 @@ pre {
 		line-height:1.5em;
 	}
 
-	.githubrib {
+	#githubrib {
 		display:none;
 		background:none;
 	}
@@ -444,7 +455,7 @@ pre {
 }
 
 @media screen and (max-width: 450px) {
-	.spright,.spleft {
+	.catindex {
 		display:none;
 	}
 
