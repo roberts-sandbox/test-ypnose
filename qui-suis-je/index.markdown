@@ -4,8 +4,8 @@ title: "Qui suis-je?"
 ---
 
 <img class="imgleft" alt="moi" src="http://linuxien.legtux.org/uploads/images/2011/01/pic.jpg">
-Je suis un jeune de 23 ans, totalement geek, passionné par l'informatique et tout particulièrement les systèmes alternatifs basé sur [UNIX](http://fr.wikipedia.org/wiki/Unix),
-comme GNU/Linux ou BSD.  
+Je suis un jeune de 23 ans, totalement <s>geek</s> (mot galvaudé, malheureusement), passionné par l'informatique et tout particulièrement les systèmes alternatifs basé sur [UNIX](http://fr.wikipedia.org/wiki/Unix),
+comme GNU/Linux ou BSD. Je me qualiferai donc de "UNIX Elitist".  
 Je suis un fervent défenseur de l'aspect [KISS](http://fr.wikipedia.org/wiki/Principe_KISS) et du minimalisme.  
 J'ai une vision assez précise de ce que doit être un logiciel. Il doit être compréhensible, facilement modifiable, respecter le [principe UNIX](http://fr.wikipedia.org/wiki/Philosophie_d%27Unix) 
 et inclure un nombre réduit de dépendances.
