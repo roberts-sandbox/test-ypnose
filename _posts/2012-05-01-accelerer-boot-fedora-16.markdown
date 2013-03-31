@@ -1,6 +1,7 @@
 ---
 date: 2012-05-01 11:22:00
 layout: post
+published: false
 title: "Accélérer le boot sous Fedora 16"
 description: "Des optimisations pour réduire le temps de démarrage de votre PC, tournant sous Fedora."
 categories:

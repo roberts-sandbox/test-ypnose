@@ -1,6 +1,7 @@
 ---
 date: 2011-04-10 10:20:33
 layout: post
+published: false
 title: Abandonnez Flash pour HTML5
 description: "Quand les technologies Open-Source surpassent les outils privateurs."
 categories:

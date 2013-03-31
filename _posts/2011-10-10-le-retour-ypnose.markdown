@@ -1,6 +1,7 @@
 ---
 date: 2011-10-10 17:43:29
 layout: post
+published: false
 title: Le retour d'Ypnose
 description: "Je suis toujours vivant et motivé par ce blog!"
 categories:

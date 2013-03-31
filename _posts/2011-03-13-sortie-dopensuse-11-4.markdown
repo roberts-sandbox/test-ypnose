@@ -1,6 +1,7 @@
 ---
 date: 2011-03-13 18:24:13
 layout: post
+published: false
 title: Sortie d'OpenSUSE 11.4
 description: "Une nouvelle mouture d'OpenSUSE version 11.4."
 categories:

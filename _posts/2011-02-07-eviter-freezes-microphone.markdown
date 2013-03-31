@@ -1,6 +1,7 @@
 ---
 date: 2011-02-07 20:36:23
 layout: post
+published: false
 title: Eviter les "freezes" à cause du microphone
 description: "Comment éviter un bug bien ennuyeux à cause du microphone."
 categories:

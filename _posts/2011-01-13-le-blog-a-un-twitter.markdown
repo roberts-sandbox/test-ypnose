@@ -1,6 +1,7 @@
 ---
 date: 2011-01-13 16:51:52
 layout: post
+published: false
 title: "Le blog a un Twitter!"
 categories:
 - News

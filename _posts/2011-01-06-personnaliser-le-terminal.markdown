@@ -1,6 +1,7 @@
 ---
 date: 2011-01-06 16:27:51
 layout: post
+published: false
 title: "Personnaliser le terminal"
 description: "Un petit PS1, qui sort de l'ordinaire."
 categories:

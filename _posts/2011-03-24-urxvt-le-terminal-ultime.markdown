@@ -1,6 +1,7 @@
 ---
 date: 2011-03-24 12:09:14
 layout: post
+published: false
 title: 'urxvt: le terminal ultime'
 description: "Rxvt-unicode où comment utiliser le meilleur terminal actuel."
 categories:

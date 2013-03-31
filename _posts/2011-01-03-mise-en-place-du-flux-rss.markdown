@@ -1,6 +1,7 @@
 ---
 date: 2011-01-03 21:34:29
 layout: post
+published: false
 title: "Mise en place du flux RSS"
 categories:
 - News

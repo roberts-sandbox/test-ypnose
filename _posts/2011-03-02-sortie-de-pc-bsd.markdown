@@ -1,6 +1,7 @@
 ---
 date: 2011-03-02 14:13:04
 layout: post
+published: false
 title: Sortie de PC-BSD
 description: "FreeBSD pour les nuls avec comme base KDE."
 categories:

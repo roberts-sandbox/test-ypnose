@@ -1,6 +1,7 @@
 ---
 date: 2011-01-04 14:30:35
 layout: post
+published: false
 title: 'Archlinux: ma distribution pour 2011'
 categories:
 - Avis

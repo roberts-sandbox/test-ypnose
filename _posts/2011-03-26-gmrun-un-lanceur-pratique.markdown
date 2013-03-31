@@ -1,6 +1,7 @@
 ---
 date: 2011-03-26 12:21:34
 layout: post
+published: false
 title: 'Gmrun: un lanceur pratique'
 description: "Un petit lanceur tout simple, mais suffisamment pratique."
 tags:

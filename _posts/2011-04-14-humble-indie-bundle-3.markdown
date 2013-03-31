@@ -1,6 +1,7 @@
 ---
 date: 2011-04-14 10:57:42
 layout: post
+published: false
 title: 'Humble Indie Bundle #3'
 description: "Encore un nouveau bundle avec une tripotée de jeux natifs."
 categories:

@@ -1,6 +1,7 @@
 ---
 date: 2011-06-17 11:39:36
 layout: post
+published: false
 title: 'Funtoo: Compilez!'
 description: "Ma découverte de Funtoo avec ses heures de compilations."
 categories:

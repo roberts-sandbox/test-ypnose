@@ -1,6 +1,7 @@
 ---
 date: 2011-01-26 13:00:22
 layout: post
+published: false
 title: Petit script Openbox
 description: "Afficher la température de votre GPU Nvidia, dans le menu Openbox."
 categories:

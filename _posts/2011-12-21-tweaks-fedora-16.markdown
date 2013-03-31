@@ -1,6 +1,7 @@
 ---
 date: 2011-12-21 16:22:38
 layout: post
+published: false
 title: "Tweaks sous Fedora 16"
 description: "Beaucoup d'optimisations avec ma Fedora pour gagner en autonomie."
 categories:

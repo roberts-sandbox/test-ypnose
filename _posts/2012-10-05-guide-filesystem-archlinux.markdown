@@ -1,6 +1,7 @@
 ---
 date: 2012-10-05 14:04:00
 layout: post
+published: false
 description: "La procédure pour bien effectuer la mise de jour de filesystem, avec la distribution Archlinux."
 title: "Guide de l'upgrade de filesystem sous Archlinux"
 categories:

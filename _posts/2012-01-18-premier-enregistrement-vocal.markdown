@@ -1,6 +1,7 @@
 ---
 date: 2012-01-18 10:11:09
 layout: post
+published: false
 title: "Premier enregistrement vocal"
 description: "Mon tout premier podcast audio."
 categories:

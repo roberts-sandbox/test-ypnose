@@ -42,6 +42,10 @@ body {
 #container {
 	max-width:900px;
 	margin:20px auto;
+	-webkit-transform:rotate(-210deg);
+	-moz-transform:rotate(-210deg); 
+	-o-transform:rotate(-210deg); 
+	transform:rotate(-210deg);
 }
 
 /* GLOBAL */
@@ -130,7 +134,7 @@ h4 {
 
 /* GITHUB */
 
-#githubrib {
+/*#githubrib {
 	background-image:url(/assets/images/github_forkme.png);
 	display:block;
 	position:fixed;
@@ -142,7 +146,7 @@ h4 {
 	top:0;
 	right:0;
 	opacity:0.8;
-}
+}*/
 
 /* LINKS */
 

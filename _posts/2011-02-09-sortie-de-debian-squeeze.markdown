@@ -1,6 +1,7 @@
 ---
 date: 2011-02-09 16:57:33
 layout: post
+published: false
 title: Sortie de Debian Squeeze
 description: "La légendaire Debian est de retour avec une nouvelle release stable."
 categories:

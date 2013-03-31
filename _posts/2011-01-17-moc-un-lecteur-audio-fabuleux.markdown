@@ -1,6 +1,7 @@
 ---
 date: 2011-01-17 23:01:39
 layout: post
+published: false
 title: "Moc, un lecteur audio fabuleux"
 description: "Le meilleur lecteur audio CLI pour moi. Un must-have."
 categories:

@@ -1,6 +1,7 @@
 ---
 date: 2011-02-26 12:20:28
 layout: post
+published: false
 title: 'QJoypad: Outil incontournable'
 description: "Utiliser son pad pour les jeux ou les applications qui ne les supporte pas."
 categories:

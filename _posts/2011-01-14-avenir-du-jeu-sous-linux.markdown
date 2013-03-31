@@ -1,6 +1,7 @@
 ---
 date: 2011-01-14 19:44:40
 layout: post
+published: false
 title: "L'avenir du jeu sous Linux"
 description: "Quand le jeu n'est pas au rendez-vous, sous Linux."
 categories:

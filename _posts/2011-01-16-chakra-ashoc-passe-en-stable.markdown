@@ -1,6 +1,7 @@
 ---
 date: 2011-01-16 18:15:40
 layout: post
+published: false
 title: "Chakra Ashoc passe en stable"
 description: "Une distrib KDE extrèmement agréable et simple d'utilisation."
 categories:

@@ -1,6 +1,7 @@
 ---
 date: 2011-01-02 14:09:02
 layout: post
+published: false
 title: "Xonotic Pre-Release"
 description: "Sortie de la version 0.1 Preview de Xonotic."
 categories:

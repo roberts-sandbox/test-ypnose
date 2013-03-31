@@ -1,6 +1,7 @@
 ---
 date: 2011-05-16 11:19:12
 layout: post
+published: false
 title: 'Netcfg: simplicité et efficacité'
 description: "Quand gérer son réseau n'a jamais été aussi KISS."
 categories:

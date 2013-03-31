@@ -1,6 +1,7 @@
 ---
 date: 2011-11-09 13:09:51
 layout: post
+published: false
 title: Logitech Compact K300
 description: "Le test de mon nouveau clavier Logitech K300"
 categories:

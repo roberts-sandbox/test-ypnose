@@ -1,6 +1,7 @@
 ---
 date: 2011-03-04 12:46:18
 layout: post
+published: false
 title: Test de la version 0.59 d'OilRush
 description: "Un tour d'horizon de la build 0.59 d'OilRush."
 categories:
