@@ -47,4 +47,6 @@ fichier exécutable."
 
 Si vous êtes dans un cas similaire, foncez!! Vous ne le regretterez pas.
 
+Une vie sans cochon? NON, NON et NOOOOOONNNNNNNN!!!
+
 <p style="color:#D8D8D8;text-align:center;">Heureux 1er avril et dites moi ce vous pensez de cet article, sur Twitter<p>
