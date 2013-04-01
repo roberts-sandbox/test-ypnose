@@ -2,7 +2,8 @@
 layout: post
 title: "L'avenir, c'est le saucisson!"
 description: "Rien ne peux remplacer le saucisson..."
-date: 2013-03-31 19:49:28
+date: 2013-04-01 00:00:00
+index: false
 categories:
 - News
 ---
