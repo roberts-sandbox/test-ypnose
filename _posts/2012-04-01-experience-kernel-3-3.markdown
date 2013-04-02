@@ -6,6 +6,7 @@ description: "Attention aux ravages du noyau Linux 3.3!"
 categories:
 - Avis
 - Personnalisation
+- Joke
 ---
 
 Bonjour,

@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /2013/04/avenir-saucisson/
+Disallow: /2013/04/avenir-saucisson/index.html
