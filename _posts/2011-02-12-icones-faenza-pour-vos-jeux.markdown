@@ -1,7 +1,6 @@
 ---
 date: 2011-02-12 16:24:25
 layout: post
-published: false
 title: Icones Faenza pour vos jeux
 description: "De jolis icônes pour vos jeux favoris."
 categories:

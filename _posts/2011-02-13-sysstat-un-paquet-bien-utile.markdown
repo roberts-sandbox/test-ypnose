@@ -1,7 +1,6 @@
 ---
 date: 2011-02-13 13:11:27
 layout: post
-published: false
 title: 'Sysstat: un paquet bien utile'
 description: "Monitorer votre ordinateur comme si c'était un serveur!"
 categories:

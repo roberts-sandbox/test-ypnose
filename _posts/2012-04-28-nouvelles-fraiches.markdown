@@ -1,7 +1,6 @@
 ---
 date: 2012-04-28 11:17:16
 layout: post
-published: false
 title: "Des nouvelles fraîches"
 description: "Après un long moment d'inactivité, me voici de retour!"
 categories:

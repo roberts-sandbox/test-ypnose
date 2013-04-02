@@ -1,7 +1,6 @@
 ---
 date: 2011-05-28 10:15:05
 layout: post
-published: false
 title: 'cpufreq: votre PC va aimer'
 description: "Réduire la consommation et la température de votre CPU."
 categories:

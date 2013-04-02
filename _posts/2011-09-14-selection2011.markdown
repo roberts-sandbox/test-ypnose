@@ -1,7 +1,6 @@
 ---
 date: 2011-09-14 21:57:33
 layout: post
-published: false
 title: 'Ma sélection logicielle: Mi-2011'
 description: "Mes logiciels favoris de 2011 (CLI + GUI)."
 categories:

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="archive">
-{% for post in site.posts reverse %}
+{% for post in site.posts reverse %}{% if post.index != false %}
 	<article>
 		{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 		{% unless year == this_year %}{% assign year = this_year %}
@@ -22,5 +22,5 @@ layout: default
 		{% endif %}
 		<div> &middot; &middot; &middot; &middot; &middot; &middot; &middot; </div>
 	</article>
-{% endfor %}
+{% endif %}{% endfor %}
 </div>

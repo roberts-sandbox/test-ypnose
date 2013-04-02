@@ -1,7 +1,6 @@
 ---
 date: 2011-05-03 11:13:34
 layout: post
-published: false
 title: Arrivée de GTK3
 description: "GTK3 est arrivé, pour le meilleur (et pour le pire)."
 categories:

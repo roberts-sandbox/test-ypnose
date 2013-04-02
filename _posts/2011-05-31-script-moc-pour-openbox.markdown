@@ -1,7 +1,6 @@
 ---
 date: 2011-05-31 16:16:17
 layout: post
-published: false
 title: Script moc pour Openbox
 description: "Intégration de moc dans le menu d'Openbox."
 categories:

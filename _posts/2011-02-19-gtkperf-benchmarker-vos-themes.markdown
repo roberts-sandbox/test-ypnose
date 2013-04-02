@@ -1,7 +1,6 @@
 ---
 date: 2011-02-19 12:26:46
 layout: post
-published: false
 title: 'GtkPerf: Benchmarker vos thèmes!'
 description: "Mesurer la vitesse d'affichage de vos thèmes GTK2."
 categories:

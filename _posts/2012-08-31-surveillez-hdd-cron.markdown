@@ -1,7 +1,6 @@
 ---
 date: 2012-08-31 17:46:47
 layout: post
-published: false
 title: "Surveiller son HDD avec cron"
 description: "Quelques idées pour être sûr que son disque dur ne s'abime pas prématurément."
 categories:

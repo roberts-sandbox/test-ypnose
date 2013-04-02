@@ -1,7 +1,6 @@
 ---
 date: 2011-03-04 22:40:23
 layout: post
-published: false
 title: Bande son Minecraft
 description: "Voilà de quoi écouter de la bonne musique!"
 categories:

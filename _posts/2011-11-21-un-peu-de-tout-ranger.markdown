@@ -1,7 +1,6 @@
 ---
 date: 2011-11-21 12:47:09
 layout: post
-published: false
 title: "Un peu de tout (mais surtout Ranger)!"
 description: "Changer le layout de moc et ma découverte de Ranger."
 categories:

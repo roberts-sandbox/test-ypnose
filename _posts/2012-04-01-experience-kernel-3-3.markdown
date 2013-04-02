@@ -1,7 +1,6 @@
 ---
 date: 2012-04-01 10:12:27
 layout: post
-published: false
 title: "L'expérience Kernel 3.3"
 description: "Attention aux ravages du noyau Linux 3.3!"
 categories:

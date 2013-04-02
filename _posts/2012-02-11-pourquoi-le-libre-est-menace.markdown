@@ -1,7 +1,6 @@
 ---
 date: 2012-02-11 12:08:03
 layout: post
-published: false
 title: "Pourquoi le Libre est menacé?"
 description: "Mes préocupations sur l'avenir du Libre et cela s'annonce rude."
 categories:

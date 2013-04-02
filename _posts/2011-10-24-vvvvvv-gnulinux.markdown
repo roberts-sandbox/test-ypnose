@@ -1,7 +1,6 @@
 ---
 date: 2011-10-24 17:18:30
 layout: post
-published: false
 title: Profiter de VVVVVV sous GNU/Linux.
 description: "Un bon jeu 8bits sous GNU/Linux, ça fait plaisir."
 categories:

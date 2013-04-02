@@ -1,7 +1,6 @@
 ---
 date: 2011-01-23 17:06:38
 layout: post
-published: false
 title: "Jouer à Quake 3"
 description: "Le guide pour bien installer Quake3 sous GNU/Linux, avant de fragger!"
 categories:

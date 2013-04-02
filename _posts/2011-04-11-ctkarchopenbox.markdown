@@ -1,7 +1,6 @@
 ---
 date: 2011-04-11 10:22:17
 layout: post
-published: false
 title: 'CTKArch: un liveCD basé sur Arch / Openbox'
 description: "Qui a dit que Arch était difficile ?"
 categories:

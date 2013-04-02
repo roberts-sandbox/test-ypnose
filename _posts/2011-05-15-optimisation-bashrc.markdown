@@ -1,7 +1,6 @@
 ---
 date: 2011-05-15 10:46:42
 layout: post
-published: false
 title: Optimisation .bashrc
 description: "Changer son PS1 pour améliorer la lisibilité du prompt."
 categories:

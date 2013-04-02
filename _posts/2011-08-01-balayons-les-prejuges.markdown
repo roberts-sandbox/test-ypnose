@@ -1,7 +1,6 @@
 ---
 date: 2011-08-01 16:02:05
 layout: post
-published: false
 title: Balayons les préjugés!
 description: "Fini les jugements à l'emporte-pièce, rétablissons la vérité!"
 categories:

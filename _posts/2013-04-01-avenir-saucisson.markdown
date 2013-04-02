@@ -5,7 +5,7 @@ description: "Rien ne peux remplacer le saucisson..."
 date: 2013-04-01 00:00:00
 index: false
 categories:
-- News
+- Joke
 ---
 
 Lassé de votre vie morne et triste? Vous n'avez plus aucun espoir en la politique et vous avez des difficultés à boucler vos fins de mois? Utiliser du Apple,

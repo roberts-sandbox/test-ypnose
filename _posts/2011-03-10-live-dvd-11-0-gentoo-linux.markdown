@@ -1,7 +1,6 @@
 ---
 date: 2011-03-10 11:49:50
 layout: post
-published: false
 title: Live DVD 11.0 Gentoo Linux
 description: "Un liveDVD pour se faire une idée de la puissance de Gentoo."
 categories:

@@ -1,7 +1,6 @@
 ---
 date: 2011-06-01 10:54:11
 layout: post
-published: false
 title: '"Moc Controller" v 1.04'
 description: "Nouvelle version de mon script moc pour Openbox."
 categories:

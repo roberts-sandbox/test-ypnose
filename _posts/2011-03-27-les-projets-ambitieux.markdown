@@ -1,7 +1,6 @@
 ---
 date: 2011-03-27 12:13:38
 layout: post
-published: false
 title: "Les projets ambitieux"
 description: "Une petite liste des projets à suivre de près."
 categories:

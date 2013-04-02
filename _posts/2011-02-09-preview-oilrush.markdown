@@ -1,7 +1,6 @@
 ---
 date: 2011-02-08 23:08:22
 layout: post
-published: false
 title: Preview d'Oilrush
 description: "Un aperçu d'OilRush."
 categories:

@@ -1,7 +1,6 @@
 ---
 date: 2011-06-28 14:51:37
 layout: post
-published: false
 title: 'Dwm: Le WM Tiling excellent'
 description: "Le tiling, le vrai, avec un WM extrèmement KISS."
 categories:

@@ -1,7 +1,6 @@
 ---
 date: 2012-02-01 17:15:15
 layout: post
-published: false
 title: Second enregistrement vocal!
 description: "Mon deuxième enregistrement vocal avec du Cinnamon et du GRUB2."
 categories:
