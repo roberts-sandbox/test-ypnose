@@ -15,7 +15,7 @@ layout: nil
   </author>
   	<rights>Copyright (c) 2011 - {{ site.time | date: "%Y" }}, Ypnose; all rights reserved.</rights>
 
-  {% for post in site.posts limit:20 %}
+  {% for post in site.posts limit:20 %}{% if post.index != false %}
   <entry>
     <id>http://tetedulinuxien.fr{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="http://tetedulinuxien.fr{{ post.url }}"/>
@@ -28,6 +28,6 @@ layout: nil
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
-  {% endfor %}
+  {% endif %}{% endfor %}
  
 </feed>
