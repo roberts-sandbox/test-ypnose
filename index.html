@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="index">
-{% for post in site.posts limit:9 %}{% if post.index != false %}
+{% for post in site.posts limit:8 %}
 	<article>
 		<p class="datart">{{ post.date | date: "%d . %m . %Y" }}</p>
 		<div class="fix">
@@ -20,7 +20,7 @@ layout: default
 		{% endif %}
 		<div class="barart"></div>
 	</article>
-{% endif %}{% endfor %}
+{% endfor %}
 	<div class="archold">
 		<a href="/archives/">&rarr; Anciens Articles &larr;</a>
 	</div>
