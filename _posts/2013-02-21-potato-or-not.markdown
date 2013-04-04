@@ -9,7 +9,7 @@ categories:
 
 Salut,
 
-Bon OK, le titre peut vous sembler étrange, voire inadapté avec ce qui est fait d'habitude, mais cela fait du bien de se renouveler un peu. Sachant que [Neros](http://neros.fr/blog) m'a taggué au jeu
+Bon OK, le titre peut vous sembler étrange, voire inadapté avec ce qui est fait d'habitude, mais cela fait du bien de se renouveler un peu. Sachant que [Neros](http://neros.fr/blog/) m'a taggué au jeu
 de la patate chaude via son [Twitter](https://twitter.com/NerosTie), je me suis dit que cela pouvait être amusant et intéressant.  
 En toute franchise, je n'ai pas compris de suite quel était l'objectif et pourquoi on m'avait mentionné sur Twitter.
 
