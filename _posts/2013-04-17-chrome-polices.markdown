@@ -31,7 +31,7 @@ ces polices proviennent de [Google Font](http://www.google.com/fonts).
 <figcaption>Bravo à Chrome, qui n'affiche pas mon site correctement</figcaption>
 </figure>
 
-Bref, je pousse un coup de gueule. Afin que vous puissiez voir de quoi je parle, voici des images (pas d'aperçus, car les images sont trop nombreuses).
+Bref, je pousse un coup de gueule parce que j'en ai marre. Afin que vous puissiez voir de quoi je parle, voici des images (pas d'aperçus, car les images sont trop nombreuses).
 Je vous laisse comparer:
 
 ### Windows Vista ###
