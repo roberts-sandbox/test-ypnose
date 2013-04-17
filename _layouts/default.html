@@ -6,13 +6,12 @@
 	<![endif]-->
 	<meta charset="utf-8" />
 	<meta name="author" content="{{ site.author }}" />
-	{% if site.description %}
-	<meta name="description" content="{{ site.description }}" />
-	{% endif %}
+	{% if site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 	<link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/atom.xml" />
 	<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
 	{% if page.title %}
 	<title>{{ page.title }} | {{ site.title }}</title>
 	{% else %}
@@ -36,27 +35,23 @@
 		<li><a href="/qui-suis-je/">Qui suis-je?</a> &middot;</li>
 		<li><a href="/hardware/">Hardware</a> &middot;</li>
 		<li><a href="/a-savoir/">À savoir</a> &middot;</li>
-		<li><a href="/me-contacter/">Me contacter</a> &middot;</li>
-		<li><a href="/atom.xml">RSS</a></li>
+		<li><a href="/me-contacter/">Me contacter</a></li>
 		</ul>
 	</nav>
 
-	<div class="barnav"></div>
-
 {{ content }}
-
-	<div class="barfoot"></div>
+	<div id="barfoot"></div>
 
 	<footer>
 		<div>
-			Blogs amis:
-			<a href="http://lazonelibre.eklablog.com/">Dempiller</a>  &#124;
-			<a href="http://schoewilliam.fr/">Schoewilliam</a>  &#124;
-			<a href="http://blog.rolinh.ch/">Rolinh</a>  &#124;
-			<a href="http://postblue.info/">Postblue</a>
+			Blogs amis {
+			<a href="http://lazonelibre.eklablog.com/">Dempiller</a> :
+			<a href="http://schoewilliam.fr/">Schoewilliam</a> :
+			<a href="http://blog.rolinh.ch/">Rolinh</a> :
+			<a href="http://postblue.info/">Postblue</a> }
 		</div>
 		<div>
-			Copyright &copy; "{{ site.title }}" 2011 / {{ site.time | date: "%Y" }} 
+			Copyright "{{ site.title }}" 2011 / {{ site.time | date: "%Y" }} 
 			- Design par<a href="/qui-suis-je/">{{ site.author }}</a>
 		</div>
 		<div>
@@ -70,7 +65,7 @@
 	</footer>
 </div>
 
-	<div id="button"><a href="#"></a></div>
+<div id="button"><a href="#"></a></div>
 
 </body>
 </html>

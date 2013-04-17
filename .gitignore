@@ -3,3 +3,4 @@ site/_site/
 *.BAK
 *.bak
 *~
+_config.yml

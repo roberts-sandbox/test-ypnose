@@ -31,7 +31,7 @@ Il existe plusieurs moyens de me contacter:
 
   <label for='email'>Message</label>
   <br/>
-  <textarea name="message" placeholder="Message" rows="8" cols="50"></textarea>
+  <textarea name="message" placeholder="Message" rows="8" cols="35"></textarea>
   <br/>
   <input type='submit' value='Go!' />
 

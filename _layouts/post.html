@@ -2,30 +2,25 @@
 layout: default
 ---
 
-<article>
-	<div id="infobox">
-		<h1>{{ page.title }}</h1>
-		<p>
-			{% if page.previous %}<a href="{{ page.previous.url }}" class="leftar">
-				<img src="/assets/images/arrowp.png" alt="prec" title="Article précédent" /></a>{% endif %}
-			Par <a href="/qui-suis-je/">{{ site.author }}</a> - Posté le {{ page.date | date: "%d.%m.%Y" }}
-			{% if page.next %}<a href="{{ page.next.url }}" class="rightar">
-				<img src="/assets/images/arrown.png" alt="suiv" title="Article suivant" /></a>{% endif %}
-		</p>
-		<p>
-			{% for cat in page.categories limit:7 %}<span> &rarr; </span><a href="/categories/{{ cat }}/">{{ cat }}</a>{% endfor %}
-		</p>
+	<article>
+		<div id="infobox">
+			<h1>{{ page.title }}</h1>
+			<p>
+				Par <a href="/qui-suis-je/">{{ site.author }}</a> - le {{ page.date | date: "%d.%m.%Y" }}
+			</p>
+			<p>
+				{% for cat in page.categories limit:5 %}<span> &rarr; </span><a href="/categories/{{ cat }}/">{{ cat }}</a>{% endfor %}
+			</p>
+		</div>
+
+		{{ content }}
+	</article>
+
+	<div class="difart">
+		{% if page.previous %}<p class="prevart"><a href="{{ page.previous.url }}" title="Article précédent: {{ page.previous.title }}">
+			<img src="/assets/images/arrowp.png" alt="prec" />{{ page.previous.title | truncate:36 }}</a>
+		</p>{% endif %}
+		{% if page.next %}<p class="nextart"><a href="{{ page.next.url }}" title="Article suivant: {{ page.next.title }}">
+			{{ page.next.title | truncate:36 }}<img src="/assets/images/arrown.png" alt="suiv" /></a>
+		</p>{% endif %}
 	</div>
-
-	{{ content }}
-
-</article>
-
-<div class="barart"></div>
-
-<div id="lastart">
-	<h4>Derniers articles</h4>
-	{% for post in site.posts limit:5 %}
-		<div class="artlink"><span>&rsaquo; </span>{{ post.date | date: "%d.%m.%Y" }}<span>&nbsp;&rarr; </span><a href="{{ post.url }}">{{ post.title }}</a></div>
-	{% endfor %}
-</div>

@@ -2,15 +2,14 @@
 layout: default
 ---
 
-<div>
-	<h2>Catégorie: Conseil</h2>
-</div>
-
-<article>
-	<div class="category">
-	{% for post in site.categories.Conseil %}
-		<div><span>{{ post.date | date: "%d.%m.%Y" }}</span><span>&nbsp;&raquo; </span>
-		<a href="{{ post.url }}">{{ post.title }}</a></div>
-	{% endfor %}
+	<div>
+		<h2>Catégorie: Conseil</h2>
 	</div>
-</article>
+
+	<article>
+		<div id="category">
+		{% for post in site.categories.Conseil %}
+			<p><span>{{ post.date | date: "%d.%m.%Y" }}</span><span>&nbsp;&raquo; </span><a href="{{ post.url }}">{{ post.title }}</a></p>
+		{% endfor %}
+		</div>
+	</article>

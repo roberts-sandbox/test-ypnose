@@ -118,7 +118,7 @@ _11 > Morpheus te dit que tu te trouves dans la Matrice, quelle est ta réaction
 
 Et pour finir, les personnes que j'invite à "jouer":
 
-[Schoewilliam](http://schoewilliam.legtux.org/), [Postblue](http://postblue.info/), [Dempiller](http://lazonelibre.eklablog.com/), [Rolinh](http://blog.rolinh.ch/), [mart-e](http://mart-e.be/), [Tux-planet](www.tux-planet.fr/), 
+[Schoewilliam](http://schoewilliam.legtux.org/), [Postblue](http://postblue.info/), [Dempiller](http://lazonelibre.eklablog.com/), [Rolinh](http://blog.rolinh.ch/), [mart-e](http://mart-e.be/), [Tux-planet](http://www.tux-planet.fr/), 
 [blogiGor](http://id-libre.org/blogigor/), [Influence PC](http://influence-pc.fr/)
 
 Bon, je sais, cela ne fait pas 11 personnes mais vous ne m'en voudrez pas, si je n'ai pas d'amis. :(

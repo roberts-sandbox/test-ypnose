@@ -103,7 +103,7 @@ Si vous voulez le regarder, rendez-vous [ici](http://linuxien.legtux.org/uploads
  
 Vous pouvez aussi le télécharger avec curl / wget.
 
-<video width="750" height="468" class="centvideo" controls="controls"><source src="http://linuxien.legtux.org/uploads/media/cast.ogv" type="video/ogg" /></video>
+<video width="700" height="437" class="centvideo" controls="controls"><source src="http://linuxien.legtux.org/uploads/media/cast.ogv" type="video/ogg" /></video>
 
 	curl -O http://linuxien.legtux.org/uploads/media/cast.ogv
 	#ou

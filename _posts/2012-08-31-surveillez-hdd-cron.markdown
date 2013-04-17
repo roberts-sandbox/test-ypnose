@@ -42,7 +42,6 @@ Par conséquent, il faut être sûr du logiciel qui est mis en place, sur votre 
 Afin de fixer cette valeur à chaque sortie de mise en veille, il faut créer une règle pm-utils et la placer dans `/etc/pm/sleep.d`. Pour plus de clarté, je vous conseille d'inclure hdparm dans le nom du fichier. J'ai appelé la règle 50-hdparm_pm avec les lignes suivantes:
 
 	#!/bin/sh
-	
 	if [ -n "$1" ] && ([ "$1" = "resume" ] || [ "$1" = "thaw" ]); then
  	hdparm -B 254 /dev/sda > /dev/null
 	fi
@@ -62,7 +61,6 @@ La seconde méthode consiste à vérifier la ligne `193 Load_Cycle_Count` et tou
 J'ai écrit un petit bout de code que j'ai placé dans /etc/cron.d:
 
 	#!/bin/sh
-	
 	DATE=$(date '+%A %d %B')
 	TIME=$(date '+%R')
 	APM=$(/usr/sbin/hdparm -I /dev/sda | grep 'Advanced power')

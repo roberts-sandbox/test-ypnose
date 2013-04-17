@@ -126,4 +126,4 @@ Voici une liste exhaustive du matériel informatique, sur lequel j'effectue mes 
 
 * Tourne sous Fedora et Windows Vista (64 bits)
 
-Mon parc informatique est constitué de 3 ordinateurs, 2 Dockstars et 2 Raspberri Pi, tournant tous sur des OS UNIX.
+Mon parc informatique est constitué de 3 ordinateurs, 2 Dockstars et 2 Raspberry Pi, tournant tous sur des OS UNIX.
