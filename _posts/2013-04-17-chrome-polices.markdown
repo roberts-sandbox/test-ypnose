@@ -57,5 +57,5 @@ Aussi dingue que cela puisse paraître, je m'y attendais après les soucis que j
 
 J'ai une idée pour "contourner" ce problème, mais cela va me prendre du temps supplémentaire, alors que j'aurais pu m'en passer.
 
-Alors, par pitié, les gars de chez Google, pensez aux webmasters / designers et affichez <span style="text-decoration:underline">CORRECTEMENT</span> les polices webs!!
+Alors, par pitié, les gars de chez Google, pensez aux webmasters / designers et affichez <span style="text-decoration:underline">CORRECTEMENT</span> les polices web!!
 Tout le monde sera heureux et on gagnera du temps.
