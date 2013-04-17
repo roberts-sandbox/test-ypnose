@@ -60,7 +60,7 @@ body,nav ul,.more,#infobox p,.archive article p,#category p {
 	margin:0;
 }
 
-#githubrib,#githubrib:hover {
+#githubrib,#githubrib:hover,.prevart img,.nextart img,footer img {
 	border:0;
 }
 
