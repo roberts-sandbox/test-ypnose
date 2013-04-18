@@ -495,9 +495,15 @@ footer img {
 	}
 }
 
-/*
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face: {
+		font-family:"Titillium";
+		src:url('/assets/fonts/titilliuweb-semibold-webfont.woff') format('woff');
+	}
+	
 	body {
+		font-family: "Titillium", serif;
 	}
 }
-*/
+
