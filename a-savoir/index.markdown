@@ -3,6 +3,13 @@ layout: page
 title: "À savoir"
 ---
 
+Ce site a été uniquement créé avec des outils libres tels que [Geany](http://www.geany.org/) pour la création du design, des layouts et l'écriture des articles;
+[Jekyll](http://jekyllrb.com/) pour la génération des pages statiques; [sed](http://www.gnu.org/software/sed/) pour les substitutions, mon script 
+[postjek](https://github.com/Ypnose/Scripts/blob/master/postjek) pour la création des nouveaux articles/pages; [git](http://git-scm.com/about) 
+pour l'envoi des fichiers sur mon hébergeur et [GIMP](http://www.gimp.org/) pour la partie image.
+
+<p style="text-align:center">---</p>
+
 À travers les nombreux articles, ce blog essaie de transmettre des idées et des messages, voilà pourquoi:
 
   * Nous soutenons les projets Opensource et Libre.

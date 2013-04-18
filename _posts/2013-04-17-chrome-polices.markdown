@@ -50,6 +50,11 @@ Par conséquent, si vous utilisez encore Chrome, malgré le fait que ce soit un 
 sachez que ce n'est pas par ma faute.  
 Je me suis appliqué à écrire un code propre et conforme aux normes, ce n'est pas mon problème si Chrome à décidé, de ne pas faire son travail correctement.
 
+<figure>
+<img alt="breakit" src="http://linuxien.legtux.org/uploads/images/2013/breakit.jpg">
+<figcaption>Voilà ce que j'éprouve, quand je vois un résultat pareil</figcaption>
+</figure>
+
 Ce "bug" est plus que récurrent (il existe depuis un moment déjà) et personne ne semble disposé à s'en [occuper](http://code.google.com/p/chromium/issues/detail?id=137692).
 Si vous êtes curieux, je vous laisse chercher de votre côté. Mais si vous lancez une recherche sur Google (tiens donc!) avec des termes tels que "chrome font bug" ou "chrome font rendering",
 vous vous apercevrez de la situation.  
