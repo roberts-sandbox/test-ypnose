@@ -19,6 +19,7 @@
 	font-family:"Kreon";
 	src:url('/assets/fonts/kreon-regular-webfont.eot');
 	src:url('/assets/fonts/kreon-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/kreon-regular-webfont.woff') format('woff'),
 		url('/assets/fonts/kreon-regular-webfont.otf') format('opentype'),
 		url('/assets/fonts/kreon-regular-webfont.svg#kreonregular') format('svg');
 	font-weight:normal;
