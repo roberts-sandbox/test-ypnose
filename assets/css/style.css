@@ -499,7 +499,7 @@ footer img {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	@font-face: {
 		font-family:"Titillium";
-		src:url('/assets/fonts/titilliumweb-semibold-webfont.svg#titillium_websemibold') format('svg'),
+		src:url('/assets/fonts/titilliumweb-semibold-webfont.svg') format('svg'),
 			url('/assets/fonts/titilliumweb-semibold-webfont.woff') format('woff'),
 			url('/assets/fonts/titilliumweb-semibold-webfont.ttf') format('truetype');
 		font-weight:normal;
@@ -507,7 +507,7 @@ footer img {
 	}
 	
 	body {
-		font-family: "Titillium", serif;
+		font-family:"Titillium", sans-serif;
 	}
 }
 
