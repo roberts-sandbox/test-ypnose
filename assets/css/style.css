@@ -19,7 +19,6 @@
 	font-family:"Kreon";
 	src:url('/assets/fonts/Kreon-Regular-webfont.eot');
 	src:url('/assets/fonts/Kreon-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/Kreon-Regular-webfont.ttf') format('truetype'),
 		url('/assets/fonts/Kreon-Regular-webfont.woff') format('woff'),
 		url('/assets/fonts/Kreon-Regular-webfont.otf') format('opentype'),
 		url('/assets/fonts/Kreon-Regular-webfont.svg#kreonregular') format('svg');
@@ -375,11 +374,16 @@ article a:hover img {
 	font-size:1.2em;
 	max-width:84%;
 	margin:22px auto;
-	text-shadow:1px 1px #F4F4F4;
 }
 
 .difart a {
 	padding:4px 8px;
+	text-shadow:none;
+}
+
+.difart a:hover {
+	text-shadow:0px 1px 12px #4C5A80;
+	transition:text-shadow .4s ease;
 }
 
 .prevart img {
