@@ -264,7 +264,23 @@ form {
 
 /* BUTTON */
 
-
+#button a {
+	display:block;
+	bottom:35px;
+	right:10px;
+	background-color:#242C42;
+	background-image:url("/assets/images/button.png");
+	background-position:center center;
+	border:0;
+	width:35px;
+	height:30px;
+	padding:4px 0px;
+	/*border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;*/
+	font-weight:bold;
+	color:#FFF;
+}
 
 /* INDEX */
 
