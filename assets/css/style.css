@@ -29,7 +29,7 @@
 /* MAIN */
 
 html {
-	background-image:url("/assets/images/back_d.png");
+	background-color:#F4F4F4;
 	font-size:100%;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 #container {
-	max-width:780px;
+	max-width:830px;
 	margin:30px auto;
 }
 
@@ -94,7 +94,7 @@ code,pre {
 
 #githubrib:hover,#button a:hover,footer img:hover,article a:hover img {
 	opacity:1.0;
-	transition:all .5s ease;
+	transition:opacity .5s ease;
 }
 
 article img,pre,figcaption,.centvideo,.difart a {
@@ -212,7 +212,7 @@ nav a {
 
 #barfoot {
 	border-top:2px solid #BDBDBD;
-	max-width:65%;
+	max-width:70%;
 	clear:both;
 }
 
@@ -266,21 +266,20 @@ form {
 
 #button a {
 	display:block;
-	bottom:30px;
-	right:40px;
+	bottom:35px;
+	right:10px;
 	background-color:#242C42;
 	background-image:url("/assets/images/button.png");
 	background-position:center center;
-	border:2px solid #323D5C;
-	width:30px;
-	height:16px;
+	border:0;
+	width:35px;
+	height:30px;
 	padding:4px 0px;
-	border-radius:2px;
+	/*border-radius:2px;
 	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
+	-moz-border-radius:2px;*/
 	font-weight:bold;
 	color:#FFF;
-	opacity:0.5;
 }
 
 /* INDEX */
@@ -330,7 +329,7 @@ article h1 {
 }
 
 article {
-	max-width:730px;
+	max-width:780px;
 	margin:18px auto;
 	text-align:justify;
 	line-height:1.8em;

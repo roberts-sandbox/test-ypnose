@@ -1,6 +1,7 @@
 _site/
+_drafts/
 site/_site/
 *.BAK
 *.bak
 *~
-_config.yml
+*.css

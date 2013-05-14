@@ -3,14 +3,13 @@ layout: default
 ---
 
 	<div>
-		<h2>Catégorie: Joke</h2>
+		<h2>Catégorie: Avis</h2>
 	</div>
 
 	<article>
 		<div id="category">
-		{% for post in site.categories.Joke %}
+		{% for post in site.categories.avis %}
 			<p><span>{{ post.date | date: "%d.%m.%Y" }}</span><span>&nbsp;&raquo; </span><a href="{{ post.url }}">{{ post.title }}</a></p>
 		{% endfor %}
 		</div>
 	</article>
-

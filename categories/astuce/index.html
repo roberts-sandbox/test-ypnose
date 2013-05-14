@@ -3,12 +3,12 @@ layout: default
 ---
 
 	<div>
-		<h2>Catégorie: Libre</h2>
+		<h2>Catégorie: Astuce</h2>
 	</div>
 
 	<article>
 		<div id="category">
-		{% for post in site.categories.Libre %}
+		{% for post in site.categories.astuce %}
 			<p><span>{{ post.date | date: "%d.%m.%Y" }}</span><span>&nbsp;&raquo; </span><a href="{{ post.url }}">{{ post.title }}</a></p>
 		{% endfor %}
 		</div>
