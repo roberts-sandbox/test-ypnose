@@ -12,7 +12,7 @@ destination: ./_site
 layouts:     ./_layouts
 
 pygments:    false
-markdown:    rdiscount
+markdown:    kramdown
 permalink:   /:year/:month/:title/
 
 exclude:     ['CNAME','README','design_old','*.BAK']
