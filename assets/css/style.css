@@ -1,0 +1,485 @@
+/* By Ypnose */
+/* SI TU TE TROUVES ICI, C'EST QUE TU ES UN GROS CURIEUX! */
+
+/* FONT */
+/* BYE BYE WEBKIT MAUVAIS RENDERING!! */
+
+	@font-face {
+	font-family:"Gabriela";
+	src:url('/assets/fonts/gabriela-regular-webfont.eot');
+	src:url('/assets/fonts/gabriela-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/gabriela-regular-webfont.woff') format('woff'),
+		url('/assets/fonts/gabriela-regular-webfont.svg#gabrielaregular') format('svg'),
+		url('/assets/fonts/gabriela-regular-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+	@font-face {
+	font-family:"Kreon";
+	src:url('/assets/fonts/Kreon-Regular-webfont.eot');
+	src:url('/assets/fonts/Kreon-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Kreon-Regular-webfont.svg#kreonregular') format('svg'),
+		url('/assets/fonts/Kreon-Regular-webfont.woff') format('woff'),
+		url('/assets/fonts/Kreon-Regular-webfont.otf') format('opentype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+/* MAIN */
+
+html {
+	background-color:#F4F4F4;
+	font-size:100%;
+}
+
+body {
+	font-family:"Kreon", serif;
+	font-size:1em;
+}
+
+#container {
+	max-width:830px;
+	margin:30px auto;
+}
+
+/* GLOBAL */
+
+h1,h2,h3,h4,h5,h6,.index h1 a,.archive article h1 a,.headline h1 {
+	color:#3B486C;
+	font-family:"Gabriela", serif;
+	line-height:1.2em;
+	font-weight:normal;
+}
+
+body,nav ul,#infobox,#button a,.archive article,figure,.more {
+	text-align:center;
+}
+
+body,nav ul,.more,#infobox p,.archive article p,#category p {
+	margin:0;
+}
+
+#githubrib,#githubrib:hover,.prevart img,.nextart img,footer img {
+	border:0;
+}
+
+#githubrib:hover,a,a:hover,nav a:hover {
+	text-decoration:none;
+}
+
+#githubrib,header,#button a {
+	background-repeat:no-repeat;
+}
+
+#infobox,.archive article h2 {
+	border-bottom:2px solid #C8C8C8;
+}
+
+.index article,article {
+	padding:0;
+}
+
+code,pre {
+	color:#224568;
+}
+
+#barfoot,.centaudio {
+	margin:10px auto;
+}
+
+#githubrib,#button a {
+	position:fixed;
+}
+
+#githubrib:hover,#button a:hover,footer img:hover,article a:hover img {
+	opacity:1.0;
+	transition:opacity .5s ease;
+}
+
+article img,pre,figcaption,.centvideo,.difart a {
+	box-shadow:0px 1px 2px #555;
+}
+
+.imgleft,.prevart {
+	float:left;
+}
+
+.imgright,.nextart {
+	float:right;
+}
+
+.prevart,.nextart,footer img {
+	margin-top:5px;
+}
+
+#category,figure {
+	margin:0 auto;
+}
+
+/* H FAMILY */
+
+h1 {
+	font-size:2.2em;
+}
+
+h2 {
+	font-size:1.8em;
+}
+
+h3 {
+	font-size:1.5em;
+	font-style:italic;
+}
+
+h4 {
+	font-size:1.3em;
+}
+
+/* GITHUB */
+
+#githubrib {
+	background-image:url(/assets/images/github_forkme.png);
+	display:block;
+	width:149px;
+	height:149px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	top:0;
+	right:0;
+	opacity:0.7;
+}
+
+/* LINKS */
+
+a {
+	color:#074475;
+	outline:none;
+	text-shadow:1px 1px #FFF;
+}
+
+a:hover,.archive article a:hover {
+	color:#4E5F8F;
+	border-bottom:2px solid #344061;
+	text-shadow:0px 1px 12px #4C5A80;
+	transition:text-shadow .4s ease;
+}
+
+a:visited {
+	color:#346E94;
+}
+
+/* HEADER */
+
+header {
+	background-image:url("/assets/images/logo.png");
+	background-position:center top;
+	display:block;
+	height:76px;
+}
+
+/* NAVIGATION */
+
+nav {
+	margin:30px auto 20px;
+	max-width:85%;
+	font-size:1.2em;
+	padding-bottom:4px;
+	border-bottom:2px solid #BDBDBD;
+}
+
+nav ul {
+	list-style-type:none;
+	padding:4px 0 12px;
+}
+
+nav ul li {
+	display:inline;
+}
+
+nav a {
+	margin:0 6px;
+}
+
+/* BAR */
+
+.barart {
+	max-width:90%;
+	border-bottom:1px solid #BDBDBD;
+	margin:17px auto;
+}
+
+#barfoot {
+	border-top:2px solid #BDBDBD;
+	max-width:70%;
+	clear:both;
+}
+
+/* VARIOUS */
+
+#infobox {
+	margin:0 auto 30px;
+	max-width:80%;
+	padding:0 0 10px;
+}
+
+#category {
+	max-width:86%;
+}
+
+pre {
+	display:block;
+	background-color:#D6D6D6;
+	border:1px solid #9D9D9D;
+	padding:8px 18px;
+	overflow-x:auto;
+}
+
+form {
+	margin-left:22px;
+}
+
+/* ARCHIVE */
+
+.archive article h1 {
+	margin-top:20px;
+	line-height:1.5em;
+}
+
+.archive article h1 a:hover,.headline h1 a:hover,.headline h1 a:visited {
+	color:#344061;
+}
+
+.archive article h2 {
+	margin:20px auto;
+	max-width:40%;
+	padding-bottom:10px;
+}
+
+#ancart {
+	margin:16px auto;
+	font-size:1.1em;
+}
+
+/* BUTTON */
+
+/* INDEX */
+
+.desc {
+	padding:0 10px;
+	color:#232328;
+}
+
+/* IMAGES */
+
+.imgcenter,.imgleft,.imgright {
+	display:block;
+	margin-bottom:15px;
+	margin-top:8px;
+	max-width:98%;
+}
+
+.imgcenter,figcaption {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.imgleft {
+	margin-right:25px;
+}
+
+.imgright {
+	margin-left:25px;
+}
+
+figcaption,article img,article a img,.difart a {
+	background-color:#E6E6E6;
+	border:1px solid #CFCFCF;
+}
+
+figcaption {
+	font-size:.75em;
+	padding:0 6px;
+	max-width:60%;
+}
+
+/* CONTENT */
+
+article h1 {
+	margin-bottom:12px;
+}
+
+article {
+	max-width:780px;
+	margin:18px auto;
+	text-align:justify;
+	line-height:1.8em;
+	color:#1d1d1d;
+	font-size:1.4em;
+}
+
+article ul,article ol {
+	padding-left:25px;
+	margin:25px 0;
+}
+
+article img {
+	padding:5px;
+	max-width:99%;
+}
+
+article a:hover img {
+	border:1px solid #6F7996;
+}
+
+.more {
+	font-size:.9em;
+}
+
+.index article {
+	line-height:1.6em;
+}
+
+.datart {
+	margin-bottom:5px;
+	padding-left:8px;
+	font-style:italic;
+}
+
+.headline h1 {
+	font-size:1.8em;
+}
+
+.difart {
+	font-size:1.2em;
+	max-width:84%;
+	margin:22px auto;
+}
+
+.difart a {
+	padding:4px 8px;
+	text-shadow:none;
+}
+
+.difart a:hover {
+	text-shadow:0px 1px 12px #4C5A80;
+	transition:text-shadow .4s ease;
+}
+
+.prevart img {
+	padding:0 6px 0 2px;
+}
+
+.nextart img {
+	padding:0 2px 0 6px;
+}
+
+.nextart {
+	margin-left:6px;
+}
+
+/* FOOTER */
+
+footer {
+	line-height:1.4em;
+	font-size:1.05em;
+	margin:0 20px;
+}
+
+footer div {
+	margin:8px 0;
+}
+
+footer a {
+	margin:0 5px;
+}
+
+footer img {
+	opacity:0.7;
+}
+
+/* MEDIA */
+.centaudio,.centvideo {
+	display:block;
+	margin:25px auto;
+}
+
+.centaudio {
+	width:400px;
+}
+
+@media screen and (max-width:800px) {
+	.imgcenter,.imgleft,.imgright,article img,.centaudio,.centvideo {
+		max-width:98%;
+	}
+
+	.index article {
+		margin:8px 20px;
+	}
+
+	article {
+		margin:0 25px;
+	}
+}
+
+@media screen and (max-width:690px) {
+	nav {
+		line-height:1.4em;
+	}
+
+	.archive article h1 {
+		font-size:1.7em;
+	}
+
+	.headline h1 {
+		text-align:center;
+	}
+}
+
+@media screen and (max-width:550px) {
+	nav {
+		margin-top:15px;
+	}
+
+	article,#ancart {
+		line-height:1.5em;
+	}
+
+	article {
+		font-size:1.2em;
+	}
+
+	#githubrib {
+		display:none;
+		background:none;
+	}
+
+	header {
+		background-image:url("/assets/images/logo_s.png");
+		background-position:center top;
+		background-repeat:no-repeat;
+		display:block;
+		height:53px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.difart {
+		display:none;
+	}
+}
+
+@media screen and (max-width:350px) {
+	.imgcenter,.imgleft,.imgright,article img,figcaption,header {
+		display:none;
+	}
+}
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	body {
+	}
+}
+*/
+
